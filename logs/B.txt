@@ -1,0 +1,13 @@
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/B/checkpoint_epoch5.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/B/checkpoint_epoch5.pth
+INFO: Validation Dice score: 0.8272505402565002
+INFO: TPR: 0.894990366088632
+INFO: FPR: 0.06062008329477094
+INFO: TPR Patient: 0.9532710280373832
+INFO: FPR Patient: 0.2631578947368421

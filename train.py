@@ -11,14 +11,37 @@ from torch import optim
 from torch.utils.data import DataLoader, random_split
 from tqdm import tqdm
 
-from utils.data_loading import BasicDataset, CarvanaDataset
+from utils.data_loading import BasicDataset, CarvanaDataset, TumorSliceSubsetDataset
 from utils.dice_score import dice_loss
-from evaluate import evaluate
+from evaluate import evaluate, evaluate_metrics
 from unet import UNet
 
-dir_img = Path('./data/imgs/')
-dir_mask = Path('./data/masks/')
-dir_checkpoint = Path('./checkpoints/')
+dir_root = Path('/data/data/')
+
+def evaluate_net(net,
+                 device,
+                 amp: bool = False):
+    
+    val_set = TumorSliceSubsetDataset(dir_root, 'test', dataset_mode = args.dataset_mode, unregistered= args.unregistered)
+    n_val = len(val_set)
+
+    # 3. Create data loaders
+    loader_args = dict(batch_size=1, num_workers=4, pin_memory=True)
+    val_loader = DataLoader(val_set, shuffle=False, drop_last=False, **loader_args)
+
+    logging.info('''Starting evaluation for checkpoint {}'''.format(args.load))
+    metrics = evaluate_metrics(net, val_loader, device)
+    logging.info('Validation Dice score: {}'.format(metrics[0]))
+    logging.info('TPR: {}'.format(metrics[1]))
+    logging.info('FPR: {}'.format(metrics[2]))
+    logging.info('TPR Patient: {}'.format(metrics[3]))
+    logging.info('FPR Patient: {}'.format(metrics[4]))
+
+
+    
+
+
+
 
 
 def train_net(net,
@@ -29,17 +52,23 @@ def train_net(net,
               val_percent: float = 0.1,
               save_checkpoint: bool = True,
               img_scale: float = 0.5,
-              amp: bool = False):
+              amp: bool = False,
+              ):
     # 1. Create dataset
-    try:
-        dataset = CarvanaDataset(dir_img, dir_mask, img_scale)
-    except (AssertionError, RuntimeError):
-        dataset = BasicDataset(dir_img, dir_mask, img_scale)
+    train_set = TumorSliceSubsetDataset(dir_root, 'train', unregistered= args.unregistered)
+    val_set = TumorSliceSubsetDataset(dir_root, 'test', unregistered= args.unregistered)
+    n_train = len(train_set)
+    n_val = len(val_set)
+
+    # try:
+    #     dataset = CarvanaDataset(dir_img, dir_mask, img_scale)
+    # except (AssertionError, RuntimeError):
+    #     dataset = BasicDataset(dir_img, dir_mask, img_scale)
 
     # 2. Split into train / validation partitions
-    n_val = int(len(dataset) * val_percent)
-    n_train = len(dataset) - n_val
-    train_set, val_set = random_split(dataset, [n_train, n_val], generator=torch.Generator().manual_seed(0))
+    # n_val = int(len(dataset) * val_percent)
+    # n_train = len(dataset) - n_val
+    # train_set, val_set = random_split(dataset, [n_train, n_val], generator=torch.Generator().manual_seed(0))
 
     # 3. Create data loaders
     loader_args = dict(batch_size=batch_size, num_workers=4, pin_memory=True)
@@ -150,18 +179,29 @@ def get_args():
     parser.add_argument('--learning-rate', '-l', metavar='LR', type=float, default=0.00001,
                         help='Learning rate', dest='lr')
     parser.add_argument('--load', '-f', type=str, default=False, help='Load model from a .pth file')
-    parser.add_argument('--scale', '-s', type=float, default=0.5, help='Downscaling factor of the images')
+    parser.add_argument('--scale', '-s', type=float, default=1.0, help='Downscaling factor of the images')
     parser.add_argument('--validation', '-v', dest='val', type=float, default=10.0,
                         help='Percent of the data that is used as validation (0-100)')
+    parser.add_argument('--name', '-n', dest='name', type=str, default='B',
+                        help='name of the checkpoint subfolder')
     parser.add_argument('--amp', action='store_true', default=False, help='Use mixed precision')
+    parser.add_argument('--unregistered', action='store_true', default=False, help='Use unregistered dataset')
+    parser.add_argument('--eval_only',action='store_true',help='only evaluate given checkpoint')
+    parser.add_argument('--dataset_mode',type=str, default='B',help='type of input to the network')
+
 
     return parser.parse_args()
 
 
 if __name__ == '__main__':
     args = get_args()
+    dir_checkpoint = Path('./checkpoint/{}/'.format(args.name))
+    logging_file_name = './logs/{}.txt/'.format(args.name)
 
-    logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
+    logging.basicConfig(filename=logging_file_name,
+                            filemode='a',level=logging.INFO, format='%(levelname)s: %(message)s')
+    # device = torch.device('cpu')
+
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     logging.info(f'Using device {device}')
 
@@ -181,14 +221,18 @@ if __name__ == '__main__':
 
     net.to(device=device)
     try:
-        train_net(net=net,
-                  epochs=args.epochs,
-                  batch_size=args.batch_size,
-                  learning_rate=args.lr,
-                  device=device,
-                  img_scale=args.scale,
-                  val_percent=args.val / 100,
-                  amp=args.amp)
+        if args.eval_only :
+            assert args.load, 'to evaluate a model, you need to give pth path'
+            evaluate_net(net,device,args.amp)
+        else :
+            train_net(net=net,
+                    epochs=args.epochs,
+                    batch_size=args.batch_size,
+                    learning_rate=args.lr,
+                    device=device,
+                    img_scale=args.scale,
+                    val_percent=args.val / 100,
+                    amp=args.amp)
     except KeyboardInterrupt:
         torch.save(net.state_dict(), 'INTERRUPTED.pth')
         logging.info('Saved interrupt')

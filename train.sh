@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0 python train.py -n A_un --unregistered --dataset_mode A
