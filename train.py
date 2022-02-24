@@ -11,16 +11,17 @@ from torch import optim
 from torch.utils.data import DataLoader, random_split
 from tqdm import tqdm
 
-from utils.data_loading import BasicDataset, CarvanaDataset, TumorSliceSubsetDataset
+from utils.data_loading import BasicDataset, CarvanaDataset, TumorSliceSubsetDataset, DukeBreastCancerMRIDataset
 from utils.dice_score import dice_loss
 from evaluate import evaluate, evaluate_metrics
-from unet import UNet
+from unet import UNet, UNet3d
 
 dir_root = Path('/data/data/')
 
 def evaluate_net(net,
                  device,
-                 amp: bool = False):
+                 amp: bool = False,
+                 d3 = False):
     
     val_set = TumorSliceSubsetDataset(dir_root, 'test', dataset_mode = args.dataset_mode, unregistered= args.unregistered)
     n_val = len(val_set)
@@ -38,12 +39,6 @@ def evaluate_net(net,
     logging.info('FPR Patient: {}'.format(metrics[4]))
 
 
-    
-
-
-
-
-
 def train_net(net,
               device,
               epochs: int = 5,
@@ -53,12 +48,18 @@ def train_net(net,
               save_checkpoint: bool = True,
               img_scale: float = 0.5,
               amp: bool = False,
-              ):
+              d3 = False):
     # 1. Create dataset
-    train_set = TumorSliceSubsetDataset(dir_root, 'train', unregistered= args.unregistered)
-    val_set = TumorSliceSubsetDataset(dir_root, 'test', unregistered= args.unregistered)
-    n_train = len(train_set)
-    n_val = len(val_set)
+    if d3 :
+        train_set = DukeBreastCancerMRIDataset(dir_root, 'train', unregistered= args.unregistered)
+        val_set = DukeBreastCancerMRIDataset(dir_root, 'test', unregistered= args.unregistered)
+        n_train = len(train_set)
+        n_val = len(val_set)
+    else :
+        train_set = TumorSliceSubsetDataset(dir_root, 'train', unregistered= args.unregistered)
+        val_set = TumorSliceSubsetDataset(dir_root, 'test', unregistered= args.unregistered)
+        n_train = len(train_set)
+        n_val = len(val_set)
 
     # try:
     #     dataset = CarvanaDataset(dir_img, dir_mask, img_scale)
@@ -182,6 +183,7 @@ def get_args():
     parser.add_argument('--scale', '-s', type=float, default=1.0, help='Downscaling factor of the images')
     parser.add_argument('--validation', '-v', dest='val', type=float, default=10.0,
                         help='Percent of the data that is used as validation (0-100)')
+    parser.add_argument('d3',action='store_ture',help='if specified, use 3d data and 3d unet model')
     parser.add_argument('--name', '-n', dest='name', type=str, default='B',
                         help='name of the checkpoint subfolder')
     parser.add_argument('--amp', action='store_true', default=False, help='Use mixed precision')
@@ -208,7 +210,12 @@ if __name__ == '__main__':
     # Change here to adapt to your data
     # n_channels=3 for RGB images
     # n_classes is the number of probabilities you want to get per pixel
-    net = UNet(n_channels=3, n_classes=2, bilinear=True)
+    if not args.d3:
+        net = UNet(n_channels=3, n_classes=2, bilinear=True)
+    else :
+        net = UNet3d(n_channels=1,n_classes=2,bilinear=True) 
+
+    
 
     logging.info(f'Network:\n'
                  f'\t{net.n_channels} input channels\n'
@@ -223,7 +230,7 @@ if __name__ == '__main__':
     try:
         if args.eval_only :
             assert args.load, 'to evaluate a model, you need to give pth path'
-            evaluate_net(net,device,args.amp)
+            evaluate_net(net,device,args.amp,args.d3)
         else :
             train_net(net=net,
                     epochs=args.epochs,
@@ -232,7 +239,8 @@ if __name__ == '__main__':
                     device=device,
                     img_scale=args.scale,
                     val_percent=args.val / 100,
-                    amp=args.amp)
+                    amp=args.amp,
+                    d3=args.d3)
     except KeyboardInterrupt:
         torch.save(net.state_dict(), 'INTERRUPTED.pth')
         logging.info('Saved interrupt')

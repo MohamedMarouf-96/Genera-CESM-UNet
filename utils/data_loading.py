@@ -83,7 +83,7 @@ class CarvanaDataset(BasicDataset):
 
 
 import os.path
-from utils.image_folder import make_dataset
+from utils.image_folder import make_dataset, make_duke_dataset
 
 class TumorSliceSubsetDataset():
     """ "
@@ -113,7 +113,7 @@ class TumorSliceSubsetDataset():
         self.patient_ids = []
 
         for img_path in self.image_paths :
-            patient_id = img_path[img_path.find('patient-')+len('patient-'):][:3]
+            patient_id = img_path[img_path.find('patient-')+len('patient-'):][:5]
             self.patient_ids.append(patient_id)
         
         self.registered = not unregistered
@@ -212,3 +212,135 @@ class TumorSliceSubsetDataset():
 
     def __len__(self):
         return len(self.image_paths)
+
+class DukeBreastCancerMRIDataset():
+    """ "
+    a class used to load data from final training data provided by kasper available in 'bucket_dca_1/data/axial/png/tumor_slice_subset/unetpp_specnorm_tts_w_segm_and_class'
+    and convert it to the same format as BasicDataset. This dataset is split into train set and test set each in different folder in the main directory. Each
+    image consists of five channels attach width-wise. In this dataset we only care about the first and second channels which represent pre-contrast and post-contrast iamges
+    respectivley.
+
+    Attributes
+    ----------
+    opt : BaseOptions
+        an object containing run related options
+    root : str
+        dataset root in the file system.
+    dir_image : str
+        path of directory containining the images of the subset.
+    image_path : list(str)
+        list of paths for all instances inside the selected subset.
+
+    """
+    def __init__(self, data_root: str, phase: str, scale: float = 1.0, unregistered = False, dataset_mode = 'B'):
+
+        self.root = data_root
+        dir_mri = "Duke-Breast-Cancer-MRI/manifest-1607053360376/Duke-Breast-Cancer-MRI/"
+        self.dir_mri = os.path.join(self.root, dir_mri)
+        dir_mask = "Duke-Breast-Cancer-MRI/manifest-1607053360376/Segmentation/"
+        self.dir_mask = os.path.join(self.root,dir_mask)
+        self.pre_paths,self.post_paths,self.mask_paths = make_duke_dataset(self.dir_image,self.dir_mask)
+        exit()
+        self.patient_ids = []
+
+        for img_path in self.image_paths :
+            patient_id = img_path[img_path.find('patient-')+len('patient-'):][:5]
+            self.patient_ids.append(patient_id)
+        
+        self.registered = not unregistered
+
+        assert 0 < scale <= 1, 'Scale must be between 0 and 1'
+        self.scale = scale
+        self.dataset_mode = dataset_mode
+
+        logging.info(f'Creating dataset with {len(self.image_paths)} examples')
+
+
+
+        self.dataset_size = len(self.image_paths)
+
+    def __getitem__(self, index):
+        """
+        Parameters
+        ----------
+        index : int
+            the index of the item to fetch
+        """
+        # input image (both pre and post contrast) where A and B are side by side
+        image_path = self.image_paths[index]
+        image = Image.open(image_path)
+        _ , image_h = image.size
+
+        # input A (pre contrast image) 
+        offset = 3 if self.registered else 0 
+        A = image.crop((offset * image_h, 0, (offset+1) * image_h, image_h))
+        # A = A.convert("RGB")
+ 
+
+        B_tensor = difference_tensor = breast_mask_tensor = tumor_mask_tensor = 0
+        # input B (post contrast image) which is the second crop in image
+        # if self.opt.isTrain or self.opt.use_vae:
+        B = image.crop((image_h, 0, 2 * image_h, image_h))
+        # B = B.convert("RGB")
+
+        # input C (difference map image) 
+        offset = 4 if self.registered else 2 
+        C = image.crop((offset * image_h, 0, (offset+1) * image_h, image_h))
+        # C = C.convert("RGB")
+
+        # input D (breast mask image) 
+        offset = 5 
+        D = image.crop((offset * image_h, 0, (offset+1) * image_h, image_h))
+        D = D.convert("RGB")
+
+        # input E (tumor mask image) 
+        offset = 6 
+        E = image.crop((offset * image_h, 0, (offset+1) * image_h, image_h))
+
+        img = A
+        mask = E
+        assert img.size == mask.size, \
+            'Image and mask {name} should be the same size, but are {img.size} and {mask.size}'
+            
+
+        if self.dataset_mode == 'A' :
+            img = A.convert('RGB')
+            img = self.preprocess(img, self.scale, is_mask=False)
+        elif self.dataset_mode == 'B' :
+            img = B.convert('RGB')
+            img = self.preprocess(img, self.scale, is_mask=False)
+        elif self.dataset_mode == 'ABD' :
+            imgA = self.preprocess(A, self.scale, is_mask=False)
+            imgB = self.preprocess(B, self.scale, is_mask=False)
+            imgC = self.preprocess(C, self.scale, is_mask=False)
+            img = np.concatenate([imgA,imgB,imgC],axis=0)
+        
+        mask = self.preprocess(mask, self.scale, is_mask=True) / 255
+
+        return {
+            'image': torch.as_tensor(img.copy()).float().contiguous(),
+            'mask': torch.as_tensor(mask.copy()).long().contiguous(),
+            'patient_id': self.patient_ids[index]
+        }
+
+    @classmethod
+    def preprocess(cls, pil_img, scale, is_mask):
+        w, h = pil_img.size
+        newW, newH = int(scale * w), int(scale * h)
+        assert newW > 0 and newH > 0, 'Scale is too small, resized images would have no pixel'
+        pil_img = pil_img.resize((newW, newH), resample=Image.NEAREST if is_mask else Image.BICUBIC)
+        img_ndarray = np.asarray(pil_img)
+
+        if img_ndarray.ndim == 2 and not is_mask:
+            img_ndarray = img_ndarray[np.newaxis, ...]
+        elif not is_mask:
+            img_ndarray = img_ndarray.transpose((2, 0, 1))
+
+        if not is_mask:
+            img_ndarray = img_ndarray / 127.5 - 1
+
+        return img_ndarray
+
+    def __len__(self):
+        return len(self.image_paths)
+
