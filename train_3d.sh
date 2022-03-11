@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py -n A_un_3d --unregistered --dataset_mode A --d3 --batch-size 4
