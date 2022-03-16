@@ -1,10 +1,11 @@
 """ Full assembly of the parts to form the complete network """
 
+from turtle import forward
 from .unet_parts import *
 
 
 class UNet(nn.Module):
-    def __init__(self, n_channels, n_classes, bilinear=True):
+    def __init__(self, n_channels, n_classes, bilinear=True, with_confidence = True):
         super(UNet, self).__init__()
         self.n_channels = n_channels
         self.n_classes = n_classes
@@ -21,6 +22,9 @@ class UNet(nn.Module):
         self.up3 = Up(256, 128 // factor, bilinear)
         self.up4 = Up(128, 64, bilinear)
         self.outc = OutConv(64, n_classes)
+        self.with_confidence = with_confidence
+        if with_confidence :
+            self.confidence_scorer = ConfidenceScorer2D(1024 // factor , 1024 // factor)
 
     def forward(self, x):
         x1 = self.inc(x)
@@ -33,7 +37,13 @@ class UNet(nn.Module):
         x = self.up3(x, x2)
         x = self.up4(x, x1)
         logits = self.outc(x)
-        return logits
+            
+        if self.with_confidence:
+            confidence = self.confidence_scorer(x5.detach())
+        else :
+            confidence = None
+        return logits, confidence
+
 
 
 class UNet3d(nn.Module):

@@ -1,0 +1,118 @@
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Pretrained network <class 'unet_local.unet_model.UNet'> has fewer layers; The following are not initialized:
+INFO: ['confidence_scorer']
+INFO: Model loaded from ./checkpoint/ABD/checkpoint_epoch5.pth
+INFO: Creating dataset with 21058 examples
+INFO: Creating dataset with 2632 examples
+INFO: Starting training:
+        Epochs:          1
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   21058
+        Validation size: 2632
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.9812131968400747
+INFO: PR auc : 0.9768091438253907
+INFO: accuracy : 0.9310213327407837
+INFO: Validation Dice score: 0.8522576689720154
+INFO: roc_auc : 0.9807883344166595
+INFO: PR auc : 0.9753600990369096
+INFO: accuracy : 0.9336889982223511
+INFO: Validation Dice score: 0.8471319079399109
+INFO: roc_auc : 0.9834943138515662
+INFO: PR auc : 0.9774465528015523
+INFO: accuracy : 0.9405487179756165
+INFO: Validation Dice score: 0.8497759699821472
+INFO: roc_auc : 0.9831608479494766
+INFO: PR auc : 0.9789053292402481
+INFO: accuracy : 0.9363566637039185
+INFO: Validation Dice score: 0.8430242538452148
+INFO: roc_auc : 0.9843533827516953
+INFO: PR auc : 0.9801462710320714
+INFO: accuracy : 0.9405487179756165
+INFO: Validation Dice score: 0.846126139163971
+INFO: roc_auc : 0.9855289814573102
+INFO: PR auc : 0.9809282515899183
+INFO: accuracy : 0.9428353309631348
+INFO: Validation Dice score: 0.8497887253761292
+INFO: roc_auc : 0.9859482958490795
+INFO: PR auc : 0.9811800842288655
+INFO: accuracy : 0.9447408318519592
+INFO: Validation Dice score: 0.8488705158233643
+INFO: roc_auc : 0.9858881435059705
+INFO: PR auc : 0.9814065808900775
+INFO: accuracy : 0.9443597197532654
+INFO: Validation Dice score: 0.8519243001937866
+INFO: roc_auc : 0.9853467724179898
+INFO: PR auc : 0.9806359069400694
+INFO: accuracy : 0.9428353309631348
+INFO: Validation Dice score: 0.8442147374153137
+INFO: roc_auc : 0.9857911989529988
+INFO: PR auc : 0.9811885629666892
+INFO: accuracy : 0.9443597197532654
+INFO: Validation Dice score: 0.8529173135757446
+INFO: Checkpoint 1 saved!
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/ABD_with_conf_freeze/checkpoint_epoch1.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/ABD_with_conf_freeze/checkpoint_epoch1.pth
+INFO: roc_auc : 0.980806181395718
+INFO: PR auc : 0.9746180817640558
+INFO: accuracy : 0.9383997917175293
+INFO: Validation Dice score: 0.8367916941642761
+INFO: TPR: 0.8786127167630058
+INFO: FPR: 0.03701989819527996
+INFO: TPR Patient: 0.9065420560747663
+INFO: FPR Patient: 0.15862068965517243
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/ABD_with_conf_freeze/checkpoint_epoch1.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/ABD_with_conf_freeze/checkpoint_epoch1.pth
+INFO: roc_auc : 0.980806181395718
+INFO: PR auc : 0.9746180817640558
+INFO: accuracy : 0.9383997917175293
+INFO: fnddg : 0.3462923765182495
+INFO: Validation Dice score: 0.8367916941642761
+INFO: TPR: 0.8786127167630058
+INFO: FPR: 0.03701989819527996
+INFO: TPR Patient: 0.9065420560747663
+INFO: FPR Patient: 0.15862068965517243
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/ABD_with_conf_freeze/checkpoint_epoch1.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/ABD_with_conf_freeze/checkpoint_epoch1.pth
+INFO: roc_auc : 0.980806181395718
+INFO: PR auc : 0.9746180817640558
+INFO: accuracy : 0.9383997917175293
+INFO: fnddg : 0.3462923765182495
+INFO: DPO : 0.7203680276870728
+INFO: Validation Dice score: 0.8367916941642761
+INFO: TPR: 0.8786127167630058
+INFO: FPR: 0.03701989819527996
+INFO: TPR Patient: 0.9065420560747663
+INFO: FPR Patient: 0.15862068965517243

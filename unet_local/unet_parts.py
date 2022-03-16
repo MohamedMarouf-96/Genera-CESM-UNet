@@ -144,3 +144,25 @@ class OutConv3d(nn.Module):
 
     def forward(self, x):
         return self.conv(x)
+
+class ConfidenceScorer2D(nn.Module):
+    def __init__(self,input_channels,intermediate_channels):
+        super().__init__()
+        self.conv1 = nn.Sequential(nn.Conv2d(input_channels,intermediate_channels,3,2,1,bias=False),nn.BatchNorm2d(intermediate_channels),
+            nn.ReLU(inplace=True))
+        self.conv2 = nn.Sequential(nn.Conv2d(intermediate_channels,intermediate_channels,3,2,1,bias=False),nn.BatchNorm2d(intermediate_channels),
+            nn.ReLU(inplace=True))
+        self.conv3 = nn.Sequential(nn.Conv2d(intermediate_channels,intermediate_channels,3,2,1,bias=False),nn.BatchNorm2d(intermediate_channels),
+            nn.ReLU(inplace=True))
+        self.conv4 = nn.Sequential(nn.Conv2d(intermediate_channels,intermediate_channels,3,2,1),
+            nn.ReLU(inplace=True))
+        self.last = nn.Linear(intermediate_channels,1)
+
+    def forward(self,x):
+        out = self.conv1(x)
+        out = self.conv2(out)
+        out = self.conv3(out)
+        out = self.conv4(out)
+        out = out.squeeze(-1).squeeze(-1)
+        out = self.last(out)
+        return torch.sigmoid(out.squeeze(-1))

@@ -1,0 +1,758 @@
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: accuracy : 0.8894413113594055
+INFO: Validation Dice score: 0.6573461890220642
+INFO: accuracy : 0.7888258099555969
+INFO: Validation Dice score: 0.7123870253562927
+INFO: accuracy : 0.911695122718811
+INFO: Validation Dice score: 0.7806639671325684
+INFO: accuracy : 0.886363685131073
+INFO: Validation Dice score: 0.7762431502342224
+INFO: accuracy : 0.8894413113594055
+INFO: Validation Dice score: 0.7803162336349487
+INFO: accuracy : 0.786695122718811
+INFO: Validation Dice score: 0.7639906406402588
+INFO: accuracy : 0.8764204978942871
+INFO: Validation Dice score: 0.8139097094535828
+INFO: accuracy : 0.9015151858329773
+INFO: Validation Dice score: 0.8223698139190674
+INFO: accuracy : 0.8944129347801208
+INFO: Validation Dice score: 0.8154267072677612
+INFO: accuracy : 0.8986742496490479
+INFO: Validation Dice score: 0.8131826519966125
+INFO: Checkpoint 1 saved!
+INFO: accuracy : 0.9026988744735718
+INFO: Validation Dice score: 0.8252978920936584
+INFO: accuracy : 0.9169034361839294
+INFO: Validation Dice score: 0.8295890688896179
+INFO: accuracy : 0.9119318723678589
+INFO: Validation Dice score: 0.8233140110969543
+INFO: accuracy : 0.9083806872367859
+INFO: Validation Dice score: 0.8180175423622131
+INFO: accuracy : 0.908143937587738
+INFO: Validation Dice score: 0.8229268193244934
+INFO: accuracy : 0.9114583730697632
+INFO: Validation Dice score: 0.8254960179328918
+INFO: accuracy : 0.9126420617103577
+INFO: Validation Dice score: 0.828747570514679
+INFO: accuracy : 0.911695122718811
+INFO: Validation Dice score: 0.8278478384017944
+INFO: accuracy : 0.9114583730697632
+INFO: Validation Dice score: 0.8275811672210693
+INFO: accuracy : 0.9124053120613098
+INFO: Validation Dice score: 0.8283436894416809
+INFO: Checkpoint 2 saved!
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: accuracy : 0.7850378751754761
+INFO: Validation Dice score: 0.6963672637939453
+INFO: accuracy : 0.8778409361839294
+INFO: Validation Dice score: 0.621829628944397
+INFO: accuracy : 0.9017519354820251
+INFO: Validation Dice score: 0.7399553656578064
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.9150495778660438
+INFO: accuracy : 0.8186553120613098
+INFO: Validation Dice score: 0.7149530053138733
+INFO: roc_auc : 0.9204132625052475
+INFO: accuracy : 0.8392519354820251
+INFO: Validation Dice score: 0.7112351655960083
+INFO: roc_auc : 0.9549594460770067
+INFO: accuracy : 0.8330966234207153
+INFO: Validation Dice score: 0.7789995670318604
+INFO: roc_auc : 0.9646684822194235
+INFO: accuracy : 0.9133523106575012
+INFO: Validation Dice score: 0.7306053638458252
+INFO: roc_auc : 0.9572057889581382
+INFO: accuracy : 0.8989109992980957
+INFO: Validation Dice score: 0.7828665971755981
+INFO: roc_auc : 0.973240106852097
+INFO: accuracy : 0.9211648106575012
+INFO: Validation Dice score: 0.8210979104042053
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.9311110303800103
+INFO: PR auc : 0.9220449982074145
+INFO: accuracy : 0.8285984992980957
+INFO: Validation Dice score: 0.569791316986084
+INFO: roc_auc : 0.9466577099995335
+INFO: PR auc : 0.9341371986165738
+INFO: accuracy : 0.8664773106575012
+INFO: Validation Dice score: 0.7667872309684753
+INFO: roc_auc : 0.9432657703720447
+INFO: PR auc : 0.9375822975491226
+INFO: accuracy : 0.8596117496490479
+INFO: Validation Dice score: 0.7845050692558289
+INFO: roc_auc : 0.9585792268113368
+INFO: PR auc : 0.9529159787591076
+INFO: accuracy : 0.8517992496490479
+INFO: Validation Dice score: 0.7962349653244019
+INFO: roc_auc : 0.9687873381341429
+INFO: PR auc : 0.9627017680783438
+INFO: accuracy : 0.9114583730697632
+INFO: Validation Dice score: 0.7977846264839172
+INFO: roc_auc : 0.9617749450131502
+INFO: PR auc : 0.9510670684541854
+INFO: accuracy : 0.9041193723678589
+INFO: Validation Dice score: 0.7966570854187012
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.9591114914442972
+INFO: PR auc : 0.9525485093933788
+INFO: accuracy : 0.9008049368858337
+INFO: Validation Dice score: 0.7837419509887695
+INFO: roc_auc : 0.9581745621683297
+INFO: PR auc : 0.957629260172077
+INFO: accuracy : 0.908143937587738
+INFO: Validation Dice score: 0.7842748165130615
+INFO: roc_auc : 0.9667856553391962
+INFO: PR auc : 0.9625076325478831
+INFO: accuracy : 0.886363685131073
+INFO: Validation Dice score: 0.8162450194358826
+INFO: roc_auc : 0.9676295195961293
+INFO: PR auc : 0.9654811677070749
+INFO: accuracy : 0.9050663113594055
+INFO: Validation Dice score: 0.8070140480995178
+INFO: roc_auc : 0.9682870295619352
+INFO: PR auc : 0.9615917163778377
+INFO: accuracy : 0.8972538113594055
+INFO: Validation Dice score: 0.8140292167663574
+INFO: Checkpoint 1 saved!
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/A_with_conf/checkpoint_epoch1.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A_with_conf/checkpoint_epoch1.pth
+INFO: Validation Dice score: 0.49405884742736816
+INFO: TPR: 0.057803468208092484
+INFO: FPR: 0.03146691346598797
+INFO: TPR Patient: 0.2803738317757009
+INFO: FPR Patient: 0.1793103448275862
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 21058 examples
+INFO: Creating dataset with 2632 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   21058
+        Validation size: 2632
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.726011489931008
+INFO: PR auc : 0.6850002357139953
+INFO: accuracy : 0.6669207215309143
+INFO: Validation Dice score: 0.33445316553115845
+INFO: roc_auc : 0.7442257412929233
+INFO: PR auc : 0.7103234151631208
+INFO: accuracy : 0.6791158318519592
+INFO: Validation Dice score: 0.486458957195282
+INFO: roc_auc : 0.7977396140292583
+INFO: PR auc : 0.7704602394066009
+INFO: accuracy : 0.6894054412841797
+INFO: Validation Dice score: 0.3228157162666321
+INFO: roc_auc : 0.7964480898208305
+INFO: PR auc : 0.7807109229958555
+INFO: accuracy : 0.7210365533828735
+INFO: Validation Dice score: 0.4746515154838562
+INFO: roc_auc : 0.8075037235887526
+INFO: PR auc : 0.7999042246342012
+INFO: accuracy : 0.7221798300743103
+INFO: Validation Dice score: 0.5319497585296631
+INFO: roc_auc : 0.8252317952215644
+INFO: PR auc : 0.8039629636444183
+INFO: accuracy : 0.7473322749137878
+INFO: Validation Dice score: 0.5645607709884644
+INFO: roc_auc : 0.8437491802275252
+INFO: PR auc : 0.8358628045501953
+INFO: accuracy : 0.7637194991111755
+INFO: Validation Dice score: 0.5168113112449646
+INFO: roc_auc : 0.8458711157358423
+INFO: PR auc : 0.8444855651459546
+INFO: accuracy : 0.7648627758026123
+INFO: Validation Dice score: 0.6336004734039307
+INFO: roc_auc : 0.8618946435702147
+INFO: PR auc : 0.8464177760183256
+INFO: accuracy : 0.7545731663703918
+INFO: Validation Dice score: 0.5847044587135315
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 21058 examples
+INFO: Creating dataset with 2632 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   21058
+        Validation size: 2632
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Saved interrupt
+INFO: Creating dataset with 21058 examples
+INFO: Creating dataset with 2632 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   21058
+        Validation size: 2632
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.615898022751579
+INFO: PR auc : 0.5899864275610978
+INFO: accuracy : 0.602134108543396
+INFO: Validation Dice score: 0.39550286531448364
+INFO: roc_auc : 0.6084994301574264
+INFO: PR auc : 0.5855605648076412
+INFO: accuracy : 0.5838414430618286
+INFO: Validation Dice score: 0.4129326045513153
+INFO: roc_auc : 0.7171907580193349
+INFO: PR auc : 0.667114808614365
+INFO: accuracy : 0.6745426654815674
+INFO: Validation Dice score: 0.455086350440979
+INFO: roc_auc : 0.7518066466812228
+INFO: PR auc : 0.7161263645646825
+INFO: accuracy : 0.6962652206420898
+INFO: Validation Dice score: 0.5216531157493591
+INFO: roc_auc : 0.7781048229509655
+INFO: PR auc : 0.7494444807636866
+INFO: accuracy : 0.7130334973335266
+INFO: Validation Dice score: 0.4917905628681183
+INFO: roc_auc : 0.7909423698430418
+INFO: PR auc : 0.758038991192876
+INFO: accuracy : 0.6768292188644409
+INFO: Validation Dice score: 0.5409272909164429
+INFO: roc_auc : 0.8468311136385442
+INFO: PR auc : 0.8191931443887673
+INFO: accuracy : 0.7808688879013062
+INFO: Validation Dice score: 0.5933777689933777
+INFO: roc_auc : 0.8531766090739532
+INFO: PR auc : 0.8293099930271662
+INFO: accuracy : 0.7675304412841797
+INFO: Validation Dice score: 0.569689154624939
+INFO: roc_auc : 0.8403721177315819
+INFO: PR auc : 0.8157658088968107
+INFO: accuracy : 0.7553353309631348
+INFO: Validation Dice score: 0.586943507194519
+INFO: roc_auc : 0.8464859317920672
+INFO: PR auc : 0.820838112455724
+INFO: accuracy : 0.7629572749137878
+INFO: Validation Dice score: 0.588872492313385
+INFO: Checkpoint 1 saved!
+INFO: roc_auc : 0.8792290626733222
+INFO: PR auc : 0.8661025127849767
+INFO: accuracy : 0.8033536076545715
+INFO: Validation Dice score: 0.6466175317764282
+INFO: roc_auc : 0.8864644252078697
+INFO: PR auc : 0.8759493051935511
+INFO: accuracy : 0.8128810524940491
+INFO: Validation Dice score: 0.6534995436668396
+INFO: roc_auc : 0.8880083826533836
+INFO: PR auc : 0.8760486423849477
+INFO: accuracy : 0.8090701103210449
+INFO: Validation Dice score: 0.6479737758636475
+INFO: roc_auc : 0.8908821677888001
+INFO: PR auc : 0.879582696235014
+INFO: accuracy : 0.8086889982223511
+INFO: Validation Dice score: 0.6613388061523438
+INFO: roc_auc : 0.8912729838454895
+INFO: PR auc : 0.880158614117282
+INFO: accuracy : 0.8124999403953552
+INFO: Validation Dice score: 0.663112998008728
+INFO: roc_auc : 0.8954730863469464
+INFO: PR auc : 0.8816356266501717
+INFO: accuracy : 0.8185975551605225
+INFO: Validation Dice score: 0.6246190667152405
+INFO: roc_auc : 0.8904948620559734
+INFO: PR auc : 0.878657615121517
+INFO: accuracy : 0.8163109421730042
+INFO: Validation Dice score: 0.6666949391365051
+INFO: roc_auc : 0.9046081191450723
+INFO: PR auc : 0.8907442362997384
+INFO: accuracy : 0.8239328861236572
+INFO: Validation Dice score: 0.6408467888832092
+INFO: roc_auc : 0.897176178474226
+INFO: PR auc : 0.881712545175035
+INFO: accuracy : 0.8159298300743103
+INFO: Validation Dice score: 0.6584624648094177
+INFO: roc_auc : 0.8984410651726729
+INFO: PR auc : 0.8826954523039421
+INFO: accuracy : 0.8163109421730042
+INFO: Validation Dice score: 0.6539536118507385
+INFO: Checkpoint 2 saved!
+INFO: roc_auc : 0.9035538518783744
+INFO: PR auc : 0.8882046545567199
+INFO: accuracy : 0.8239328861236572
+INFO: Validation Dice score: 0.664027750492096
+INFO: roc_auc : 0.9056740874913118
+INFO: PR auc : 0.889837389467678
+INFO: accuracy : 0.8243139982223511
+INFO: Validation Dice score: 0.6610206961631775
+INFO: roc_auc : 0.9042500661110994
+INFO: PR auc : 0.8906452347229278
+INFO: accuracy : 0.8254572749137878
+INFO: Validation Dice score: 0.673540472984314
+INFO: roc_auc : 0.9041991664150933
+INFO: PR auc : 0.8905277385679815
+INFO: accuracy : 0.820884108543396
+INFO: Validation Dice score: 0.6690131425857544
+INFO: roc_auc : 0.9050147316591428
+INFO: PR auc : 0.8926732976173234
+INFO: accuracy : 0.8193597197532654
+INFO: Validation Dice score: 0.67516028881073
+INFO: roc_auc : 0.9060777747354971
+INFO: PR auc : 0.8924116229967604
+INFO: accuracy : 0.8266005516052246
+INFO: Validation Dice score: 0.6748471856117249
+INFO: roc_auc : 0.9030571410518333
+INFO: PR auc : 0.8902576060244434
+INFO: accuracy : 0.8201219439506531
+INFO: Validation Dice score: 0.674416720867157
+INFO: roc_auc : 0.903721177315819
+INFO: PR auc : 0.8912408473607284
+INFO: accuracy : 0.8254572749137878
+INFO: Validation Dice score: 0.6661231517791748
+INFO: roc_auc : 0.9020368069158061
+INFO: PR auc : 0.8898721815886843
+INFO: accuracy : 0.8243139982223511
+INFO: Validation Dice score: 0.6749411225318909
+INFO: roc_auc : 0.9035263543414515
+INFO: PR auc : 0.8893865025970432
+INFO: accuracy : 0.8239328861236572
+INFO: Validation Dice score: 0.6665062308311462
+INFO: Checkpoint 3 saved!
+INFO: roc_auc : 0.9059423347398032
+INFO: PR auc : 0.8928770032823355
+INFO: accuracy : 0.825076162815094
+INFO: Validation Dice score: 0.6718466281890869
+INFO: roc_auc : 0.9052013638778312
+INFO: PR auc : 0.8927947278203184
+INFO: accuracy : 0.825076162815094
+INFO: Validation Dice score: 0.6701334714889526
+INFO: roc_auc : 0.9044911083496563
+INFO: PR auc : 0.8915215336912072
+INFO: accuracy : 0.8254572749137878
+INFO: Validation Dice score: 0.6755646467208862
+INFO: roc_auc : 0.9031776621711118
+INFO: PR auc : 0.890946766557918
+INFO: accuracy : 0.8224084973335266
+INFO: Validation Dice score: 0.670953094959259
+INFO: roc_auc : 0.9049152724830392
+INFO: PR auc : 0.8917336176419639
+INFO: accuracy : 0.8292682766914368
+INFO: Validation Dice score: 0.6723835468292236
+INFO: roc_auc : 0.90496324690916
+INFO: PR auc : 0.8919749177585754
+INFO: accuracy : 0.825076162815094
+INFO: Validation Dice score: 0.6661277413368225
+INFO: roc_auc : 0.9034187044096689
+INFO: PR auc : 0.890639561822247
+INFO: accuracy : 0.8235517740249634
+INFO: Validation Dice score: 0.6767323017120361
+INFO: roc_auc : 0.9039891320373219
+INFO: PR auc : 0.8916957858246636
+INFO: accuracy : 0.8220273852348328
+INFO: Validation Dice score: 0.6696650981903076
+INFO: roc_auc : 0.9070685636456819
+INFO: PR auc : 0.8944559081352366
+INFO: accuracy : 0.8258383870124817
+INFO: Validation Dice score: 0.6652946472167969
+INFO: roc_auc : 0.9035579472562139
+INFO: PR auc : 0.8904050900518025
+INFO: accuracy : 0.8258383870124817
+INFO: Validation Dice score: 0.6707881093025208
+INFO: Checkpoint 4 saved!
+INFO: roc_auc : 0.9038393582191893
+INFO: PR auc : 0.8916470329615268
+INFO: accuracy : 0.8254572749137878
+INFO: Validation Dice score: 0.6732081174850464
+INFO: roc_auc : 0.9066569781728062
+INFO: PR auc : 0.8943337546573134
+INFO: accuracy : 0.825076162815094
+INFO: Validation Dice score: 0.6778892278671265
+INFO: roc_auc : 0.9015202042540446
+INFO: PR auc : 0.8889863181475475
+INFO: accuracy : 0.8220273852348328
+INFO: Validation Dice score: 0.6736640334129333
+INFO: roc_auc : 0.9075000409537783
+INFO: PR auc : 0.8941947803073556
+INFO: accuracy : 0.8273627758026123
+INFO: Validation Dice score: 0.6632012724876404
+INFO: roc_auc : 0.904671304974597
+INFO: PR auc : 0.8916079614914576
+INFO: accuracy : 0.8254572749137878
+INFO: Validation Dice score: 0.6700897216796875
+INFO: roc_auc : 0.9029196533672197
+INFO: PR auc : 0.8891940257447372
+INFO: accuracy : 0.8227896094322205
+INFO: Validation Dice score: 0.6693956255912781
+INFO: roc_auc : 0.9032484537023386
+INFO: PR auc : 0.8910266013891811
+INFO: accuracy : 0.8254572749137878
+INFO: Validation Dice score: 0.6806055903434753
+INFO: roc_auc : 0.9042360248156496
+INFO: PR auc : 0.8907879411855142
+INFO: accuracy : 0.825076162815094
+INFO: Validation Dice score: 0.6728282570838928
+INFO: roc_auc : 0.9089223071720596
+INFO: PR auc : 0.8959209297252445
+INFO: accuracy : 0.8273627758026123
+INFO: Validation Dice score: 0.6705392003059387
+INFO: roc_auc : 0.9037761723896646
+INFO: PR auc : 0.8919140192923115
+INFO: accuracy : 0.8254572749137878
+INFO: Validation Dice score: 0.6721277832984924
+INFO: Checkpoint 5 saved!
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/A_with_conf/checkpoint_epoch5.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A_with_conf/checkpoint_epoch5.pth
+INFO: Validation Dice score: 0.6399632096290588
+INFO: TPR: 0.6994219653179191
+INFO: FPR: 0.13604812586765386
+INFO: TPR Patient: 0.9065420560747663
+INFO: FPR Patient: 0.4482758620689655
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/A_with_conf/checkpoint_epoch1.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A_with_conf/checkpoint_epoch1.pth
+INFO: Validation Dice score: 0.5863100290298462
+INFO: TPR: 0.6382466281310212
+INFO: FPR: 0.2077741786210088
+INFO: TPR Patient: 0.8598130841121495
+INFO: FPR Patient: 0.5310344827586206
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/A_with_conf/checkpoint_epoch2.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A_with_conf/checkpoint_epoch2.pth
+INFO: Validation Dice score: 0.629657506942749
+INFO: TPR: 0.7225433526011561
+INFO: FPR: 0.15918556223970384
+INFO: TPR Patient: 0.9158878504672897
+INFO: FPR Patient: 0.496551724137931
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/A_with_conf/checkpoint_epoch3.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A_with_conf/checkpoint_epoch3.pth
+INFO: Validation Dice score: 0.6373055577278137
+INFO: TPR: 0.6907514450867052
+INFO: FPR: 0.13419713095788988
+INFO: TPR Patient: 0.897196261682243
+INFO: FPR Patient: 0.45517241379310347

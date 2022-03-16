@@ -1,0 +1,257 @@
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Pretrained network <class 'unet_local.unet_model.UNet'> has fewer layers; The following are not initialized:
+INFO: ['confidence_scorer']
+INFO: Model loaded from ./checkpoint/A/checkpoint_epoch5.pth
+INFO: Creating dataset with 21058 examples
+INFO: Creating dataset with 2632 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   21058
+        Validation size: 2632
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.8359403338552015
+INFO: PR auc : 0.8373214240962851
+INFO: accuracy : 0.6768292188644409
+INFO: Validation Dice score: 0.6262256503105164
+INFO: roc_auc : 0.8640305304567399
+INFO: PR auc : 0.85395127875611
+INFO: accuracy : 0.7888719439506531
+INFO: Validation Dice score: 0.6197671890258789
+INFO: roc_auc : 0.8826802960841167
+INFO: PR auc : 0.8666015188140087
+INFO: accuracy : 0.7873475551605225
+INFO: Validation Dice score: 0.6272565722465515
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Pretrained network <class 'unet_local.unet_model.UNet'> has fewer layers; The following are not initialized:
+INFO: ['confidence_scorer']
+INFO: Model loaded from ./checkpoint/A/checkpoint_epoch5.pth
+INFO: Creating dataset with 21058 examples
+INFO: Creating dataset with 2632 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   21058
+        Validation size: 2632
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.8419680070648925
+INFO: PR auc : 0.8228362980751192
+INFO: accuracy : 0.765625
+INFO: Validation Dice score: 0.618231475353241
+INFO: roc_auc : 0.8473227468974283
+INFO: PR auc : 0.8327083660296606
+INFO: accuracy : 0.7728658318519592
+INFO: Validation Dice score: 0.6219117641448975
+INFO: roc_auc : 0.8590064527885766
+INFO: PR auc : 0.8443358676360188
+INFO: accuracy : 0.7842987775802612
+INFO: Validation Dice score: 0.6179813146591187
+INFO: roc_auc : 0.8674433219946173
+INFO: PR auc : 0.856202445289953
+INFO: accuracy : 0.7999237775802612
+INFO: Validation Dice score: 0.6208989024162292
+INFO: roc_auc : 0.8657746383447966
+INFO: PR auc : 0.8496622068978081
+INFO: accuracy : 0.7945883870124817
+INFO: Validation Dice score: 0.6137663722038269
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Pretrained network <class 'unet_local.unet_model.UNet'> has fewer layers; The following are not initialized:
+INFO: ['confidence_scorer']
+INFO: Model loaded from ./checkpoint/A/checkpoint_epoch5.pth
+INFO: Creating dataset with 21058 examples
+INFO: Creating dataset with 2632 examples
+INFO: Starting training:
+        Epochs:          1
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   21058
+        Validation size: 2632
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.8609453574932093
+INFO: PR auc : 0.84563496722985
+INFO: accuracy : 0.7865853309631348
+INFO: Validation Dice score: 0.632286012172699
+INFO: roc_auc : 0.869206616485826
+INFO: PR auc : 0.8554406732017915
+INFO: accuracy : 0.796875
+INFO: Validation Dice score: 0.6377827525138855
+INFO: roc_auc : 0.8833362644117033
+INFO: PR auc : 0.8735474437156033
+INFO: accuracy : 0.8140243887901306
+INFO: Validation Dice score: 0.6287070512771606
+INFO: roc_auc : 0.8865649300076013
+INFO: PR auc : 0.8703525490852527
+INFO: accuracy : 0.8025914430618286
+INFO: Validation Dice score: 0.6255255937576294
+INFO: roc_auc : 0.8944391113749406
+INFO: PR auc : 0.8799672433822997
+INFO: accuracy : 0.801067054271698
+INFO: Validation Dice score: 0.6310828328132629
+INFO: roc_auc : 0.8973475980445715
+INFO: PR auc : 0.8826452170635644
+INFO: accuracy : 0.8243139982223511
+INFO: Validation Dice score: 0.6169708967208862
+INFO: roc_auc : 0.9041584114451112
+INFO: PR auc : 0.8911872487820991
+INFO: accuracy : 0.8304115533828735
+INFO: Validation Dice score: 0.6287326216697693
+INFO: roc_auc : 0.9058037104530824
+INFO: PR auc : 0.8943113634256368
+INFO: accuracy : 0.8269816637039185
+INFO: Validation Dice score: 0.6170189380645752
+INFO: roc_auc : 0.9021619673008507
+INFO: PR auc : 0.8914431724647025
+INFO: accuracy : 0.8273627758026123
+INFO: Validation Dice score: 0.6274087429046631
+INFO: roc_auc : 0.9056383625769262
+INFO: PR auc : 0.8940140403177318
+INFO: accuracy : 0.8266005516052246
+INFO: Validation Dice score: 0.6285295486450195
+INFO: Checkpoint 1 saved!
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: roc_auc : 0.884577182297142
+INFO: PR auc : 0.8901166092265729
+INFO: accuracy : 0.7986782789230347
+INFO: Validation Dice score: 0.569039523601532
+INFO: TPR: 0.6811175337186898
+INFO: FPR: 0.2017584451642758
+INFO: TPR Patient: 0.9439252336448598
+INFO: FPR Patient: 0.5655172413793104
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: roc_auc : 0.8814627994955864
+INFO: PR auc : 0.827337175843226
+INFO: accuracy : 0.018409252166748047
+INFO: fnddg : 0.38930392265319824
+INFO: DPO : 22.399688720703125
+INFO: Validation Dice score: 0.013311232440173626
+INFO: TPR: 0.8205128205128205
+INFO: FPR: 0.22950819672131148
+INFO: TPR Patient: 1.0
+INFO: FPR Patient: 0.3333333333333333
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: roc_auc : 0.8814627994955864
+INFO: PR auc : 0.827337175843226
+INFO: accuracy : 0.018409252166748047
+INFO: fnddg : 0.38930392265319824
+INFO: DPO : 0.5743510127067566
+INFO: Validation Dice score: 0.013311232440173626
+INFO: TPR: 0.8205128205128205
+INFO: FPR: 0.22950819672131148
+INFO: TPR Patient: 1.0
+INFO: FPR Patient: 0.3333333333333333
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: roc_auc : 0.884577182297142
+INFO: PR auc : 0.8901166092265729
+INFO: accuracy : 0.7986782789230347
+INFO: fnddg : 0.238265722990036
+INFO: DPO : 0.40993332862854004
+INFO: Validation Dice score: 0.569039523601532
+INFO: TPR: 0.6811175337186898
+INFO: FPR: 0.2017584451642758
+INFO: TPR Patient: 0.9439252336448598
+INFO: FPR Patient: 0.5655172413793104
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Pretrained network <class 'unet_local.unet_model.UNet'> has excessive layers; Only loading layers that are used
+INFO: Model loaded from ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A_with_conf_freeze/checkpoint_epoch1.pth
+INFO: roc_auc : 0.884577182297142
+INFO: PR auc : 0.8901166092265729
+INFO: accuracy : 0.7986782789230347
+INFO: fnddg : 0.15616149108152938
+INFO: DPO : 0.40993332862854004
+INFO: Validation Dice score: 0.569039523601532
+INFO: TPR: 0.6811175337186898
+INFO: FPR: 0.2017584451642758
+INFO: TPR Patient: 0.9439252336448598
+INFO: FPR Patient: 0.5655172413793104

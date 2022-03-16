@@ -2,6 +2,7 @@ import argparse
 import logging
 import sys
 from pathlib import Path
+from unittest.util import strclass
 from matplotlib.animation import ImageMagickBase
 
 import torch
@@ -35,7 +36,7 @@ def evaluate_net(net,
     val_loader = DataLoader(val_set, shuffle=False, drop_last=False, **loader_args)
 
     logging.info('''Starting evaluation for checkpoint {}'''.format(args.load))
-    metrics = evaluate_metrics(net, val_loader, device)
+    metrics = evaluate_metrics(net,net_single_device, val_loader, device)
     logging.info('Validation Dice score: {}'.format(metrics[0]))
     logging.info('TPR: {}'.format(metrics[1]))
     logging.info('FPR: {}'.format(metrics[2]))
@@ -56,7 +57,7 @@ def train_net(net,
               d3 = False):
     # 1. Create dataset
     if d3 :
-        dataset = DukeBreastCancerMRIDataset(dir_root, 'train', unregistered= args.unregistered)
+        dataset = DukeBreastCancerMRIDataset(dir_root, 'train', dataset_mode = args.dataset_mode, unregistered= args.unregistered)
         # test_set = DukeBreastCancerMRIDataset(dir_root, 'test', unregistered= args.unregistered)
         n_val = int(len(dataset) * val_percent)
         n_train = len(dataset) - n_val
@@ -64,8 +65,8 @@ def train_net(net,
         n_train = len(train_set)
         n_val = len(val_set)
     else :
-        train_set = TumorSliceSubsetDataset(dir_root, 'train', unregistered= args.unregistered)
-        val_set = TumorSliceSubsetDataset(dir_root, 'test', unregistered= args.unregistered)
+        train_set = TumorSliceSubsetDataset(dir_root, 'train', dataset_mode = args.dataset_mode, unregistered= args.unregistered)
+        val_set = TumorSliceSubsetDataset(dir_root, 'val', dataset_mode = args.dataset_mode , unregistered= args.unregistered)
         n_train = len(train_set)
         n_val = len(val_set)
 
@@ -133,6 +134,7 @@ def train_net(net,
 
                 images = images.to(device=device, dtype=torch.float32)
                 true_masks = true_masks.to(device=device, dtype=torch.long)
+                is_slice_positive = true_masks.amax(dim=(1,2)).float()
 
                 if args.d3 :
                     true_masks_one_hot = F.one_hot(true_masks, net_single_device.n_classes).permute(0, 4, 1, 2, 3).float()
@@ -140,11 +142,18 @@ def train_net(net,
                     true_masks_one_hot = F.one_hot(true_masks, net_single_device.n_classes).permute(0, 3, 1, 2).float()
 
                 with torch.cuda.amp.autocast(enabled=amp):
-                    masks_pred = net(images)
-                    loss = criterion(masks_pred, true_masks) \
-                           + dice_loss(F.softmax(masks_pred, dim=1).float(),
-                                       true_masks_one_hot,
-                                       multiclass=True, threeD=args.d3)
+                    masks_pred, confidence = net(images)
+                    if args.stage == 'seg':
+                        loss = criterion(masks_pred, true_masks) \
+                       + dice_loss(F.softmax(masks_pred, dim=1).float(),
+                                   true_masks_one_hot,
+                                   multiclass=True, threeD=args.d3) \
+                       + F.binary_cross_entropy(confidence, is_slice_positive)
+
+                    elif args.stage == 'conf':
+                        loss = F.binary_cross_entropy(confidence, is_slice_positive)
+
+
 
                 optimizer.zero_grad(set_to_none=True)
                 grad_scaler.scale(loss).backward()
@@ -211,11 +220,20 @@ def get_args():
     parser.add_argument('--unregistered', action='store_true', default=False, help='Use unregistered dataset')
     parser.add_argument('--eval_only',action='store_true',help='only evaluate given checkpoint')
     parser.add_argument('--dataset_mode',type=str, default='B',help='type of input to the network')
+    parser.add_argument('--gpu_ids',type=str, default="0",help='type of input to the network')
+    parser.add_argument('--stage',type=str,default='seg',help='stage of training the model, should be seg | conf for training segmentation ,confidence score for metrics ')
 
 
-    return parser.parse_args()
 
+    args = parser.parse_args()
+    str_ids = args.gpu_ids.split(',')
+    args.gpu_ids = []
+    for str_id in str_ids:
+        id = int(str_id)
+        if id >= 0:
+           args.gpu_ids.append(id)
 
+    return args
 if __name__ == '__main__':
     args = get_args()
     dir_checkpoint = Path('./checkpoint/{}/'.format(args.name))
@@ -223,6 +241,7 @@ if __name__ == '__main__':
 
     logging.basicConfig(filename=logging_file_name,
                             filemode='a',level=logging.INFO, format='%(levelname)s: %(message)s')
+    logging.getLogger().addHandler(logging.StreamHandler())
     # device = torch.device('cpu')
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -249,17 +268,44 @@ if __name__ == '__main__':
 
 
     if args.load:
-        net.load_state_dict(torch.load(args.load, map_location=device))
+        try:
+            net.load_state_dict(torch.load(args.load, map_location=device))
+        except:   
+            pretrained_dict = torch.load(args.load, map_location=device)                
+            model_dict = net.state_dict()
+            try:
+                pretrained_dict = {k: v for k, v in pretrained_dict.items() if k in model_dict}                    
+                net.load_state_dict(pretrained_dict)
+                logging.info('Pretrained network %s has excessive layers; Only loading layers that are used' % type(net))
+            except:
+                logging.info('Pretrained network %s has fewer layers; The following are not initialized:' % type(net))
+                for k, v in pretrained_dict.items():                      
+                    if v.size() == model_dict[k].size():
+                        model_dict[k] = v
+
+                if sys.version_info >= (3,0):
+                    not_initialized = set()
+                else:
+                    from sets import Set
+                    not_initialized = Set()                    
+
+                for k, v in model_dict.items():
+                    if k not in pretrained_dict or v.size() != pretrained_dict[k].size():
+                        not_initialized.add(k.split('.')[0])
+                
+                logging.info(sorted(not_initialized))
+                net.load_state_dict(model_dict)
+
         logging.info(f'Model loaded from {args.load}')
 
     net.to(device=device)
     net_single_device = net
-    net = torch.nn.DataParallel(net,[0,1,2,3])
+    net = torch.nn.DataParallel(net,args.gpu_ids)
 
     try:
         if args.eval_only :
             assert args.load, 'to evaluate a model, you need to give pth path'
-            evaluate_net(net,device,args.amp,args.d3)
+            evaluate_net(net,net_single_device,device,args.amp,args.d3)
         else :
             train_net(net=net,
                     net_single_device= net_single_device,

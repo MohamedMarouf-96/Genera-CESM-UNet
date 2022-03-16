@@ -37,3 +37,541 @@ INFO: TPR: 0.6671483622350675
 INFO: FPR: 0.18371124479407683
 INFO: TPR Patient: 0.9252336448598131
 INFO: FPR Patient: 0.5103448275862069
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Validation Dice score: 0.7283374667167664
+INFO: Validation Dice score: 0.7327485084533691
+INFO: Validation Dice score: 0.7896724343299866
+INFO: Validation Dice score: 0.753985583782196
+INFO: Validation Dice score: 0.7994112372398376
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Validation Dice score: 0.6857603192329407
+INFO: Validation Dice score: 0.7950223088264465
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 23690 examples
+INFO: Creating dataset with 4237 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      1
+        Learning rate:   1e-05
+        Training size:   23690
+        Validation size: 4237
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Validation Dice score: 0.7329980134963989
+INFO: Validation Dice score: 0.6641521453857422
+INFO: Validation Dice score: 0.7414162158966064
+INFO: Using device cpu
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cpu
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cpu
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Pretrained network <class 'unet_local.unet_model.UNet'> has fewer layers; The following are not initialized:
+INFO: ['confidence_scorer']
+INFO: Model loaded from ./checkpoint/A/checkpoint_epoch5.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A/checkpoint_epoch5.pth
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Pretrained network <class 'unet_local.unet_model.UNet'> has fewer layers; The following are not initialized:
+INFO: ['confidence_scorer']
+INFO: Model loaded from ./checkpoint/A/checkpoint_epoch5.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Pretrained network <class 'unet_local.unet_model.UNet'> has fewer layers; The following are not initialized:
+INFO: ['confidence_scorer']
+INFO: Model loaded from ./checkpoint/A/checkpoint_epoch5.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A/checkpoint_epoch5.pth
+INFO: Validation Dice score: 0.5777502655982971
+INFO: TPR: 0.6671483622350675
+INFO: FPR: 0.18371124479407683
+INFO: TPR Patient: 0.9252336448598131
+INFO: FPR Patient: 0.5103448275862069
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Pretrained network <class 'unet_local.unet_model.UNet'> has fewer layers; The following are not initialized:
+INFO: ['confidence_scorer']
+INFO: Model loaded from ./checkpoint/A/checkpoint_epoch5.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A/checkpoint_epoch5.pth
+INFO: Validation Dice score: 0.5777502655982971
+INFO: TPR: 0.6671483622350675
+INFO: FPR: 0.18371124479407683
+INFO: TPR Patient: 0.9252336448598131
+INFO: FPR Patient: 0.5103448275862069
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Pretrained network <class 'unet_local.unet_model.UNet'> has fewer layers; The following are not initialized:
+INFO: ['confidence_scorer']
+INFO: Model loaded from ./checkpoint/A/checkpoint_epoch5.pth
+INFO: Creating dataset with 4237 examples
+INFO: Starting evaluation for checkpoint ./checkpoint/A/checkpoint_epoch5.pth
+INFO: roc_auc : 0.35630604364103896
+INFO: PR auc : 0.41713468382199553
+INFO: accuracy : 0.5100306868553162
+INFO: Validation Dice score: 0.5777502655982971
+INFO: TPR: 0.6671483622350675
+INFO: FPR: 0.18371124479407683
+INFO: TPR Patient: 0.9252336448598131
+INFO: FPR Patient: 0.5103448275862069

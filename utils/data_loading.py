@@ -113,8 +113,13 @@ class TumorSliceSubsetDataset():
 
         self.root = data_root
         dir_image = "data/axial/png/tumor_slice_subset/third_iteration/registered_images"
-        self.dir_image = os.path.join(self.root, dir_image, phase)
+        if phase == 'val':
+            self.dir_image = os.path.join(self.root, dir_image, 'train')
+        else :
+            self.dir_image = os.path.join(self.root, dir_image, phase)
         self.image_paths = sorted(make_dataset(self.dir_image))
+
+        self.image_paths = self.filter_according_to_phase(self.image_paths,phase)
         self.patient_ids = []
 
         for img_path in self.image_paths :
@@ -130,8 +135,18 @@ class TumorSliceSubsetDataset():
         logging.info(f'Creating dataset with {len(self.image_paths)} examples')
 
 
-
         self.dataset_size = len(self.image_paths)
+
+    def filter_according_to_phase(self,patients,phase):
+        np.random.shuffle(patients)
+        if phase == 'train':
+            return sorted(patients[len(patients)//9:])
+        elif phase == 'val' :
+            return sorted(patients[0:len(patients)//9])
+        elif phase == 'test' :
+            return sorted(patients)
+        else :
+            raise Exception('split "{}" is not defined'.format(phase))
 
     def __getitem__(self, index):
         """
@@ -301,16 +316,6 @@ class DukeBreastCancerMRIDataset():
         spacing_subject = I_breast_mask.GetSpacing()
         img_pre = np.array(sitk.GetArrayFromImage(I_pre))
         img_post = np.array(sitk.GetArrayFromImage(I_post))
-        print(patient_dir)
-        print(img_pre.dtype,img_pre.max(),img_pre.min())
-        print(img_post.dtype,img_post.max(),img_post.min())
-        N_I = img_pre.astype(np.float32)
-        I_sort = np.sort(N_I.flatten())
-        I_min = I_sort[int(0.001*len(I_sort))]
-        I_max = I_sort[-int(0.001*len(I_sort))]
-        print(I_max,I_min)
-    
-        exit()
         img_bbox = np.array(sitk.GetArrayFromImage(I_bbox))
         img_breast_mask = np.array(sitk.GetArrayFromImage(I_breast_mask))
         img_tumor_mask = np.array(sitk.GetArrayFromImage(I_tumor_mask))
