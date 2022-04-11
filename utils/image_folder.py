@@ -9,6 +9,8 @@ Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses
 # Modified the original code so that it also loads images from the current
 # directory as well as the subdirectories
 ###############################################################################
+from fileinput import filename
+import logging
 import torch.utils.data as data
 from PIL import Image
 import os
@@ -65,9 +67,25 @@ def make_dataset(dir, recursive=False, read_cache=False, write_cache=False):
     return images
 
 def make_duke_dataset(dir_mri,read_cache=False, write_cache=False):
-    images = []
     patient_inputs = sorted(list(glob.glob(f'{dir_mri}/*')))
-    return patient_inputs
+    pre_paths = list()
+    post_paths = list()
+    segmentation_paths = list()
+    breast_mask_paths = list()
+    bbox_paths =  list()
+    for file in patient_inputs:
+        filename = os.path.basename(file)
+        if 'pre' in filename :
+            pre_paths.append(file)
+        elif 'post' in filename :
+            post_paths.append(file)
+        elif 'tumor' in filename :
+            segmentation_paths.append(file)
+        elif 'breast_mask' in filename :
+            breast_mask_paths.append(file)
+        elif 'bbox' in filename :
+            bbox_paths.append(file) 
+    return pre_paths,post_paths,segmentation_paths,breast_mask_paths,bbox_paths
 
 
 def default_loader(path):

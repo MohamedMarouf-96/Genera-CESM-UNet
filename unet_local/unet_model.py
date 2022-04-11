@@ -64,6 +64,7 @@ class UNet3d(nn.Module):
         self.up3 = Up3d(256, 128 // factor, bilinear)
         self.up4 = Up3d(128, 64, bilinear)
         self.outc = OutConv3d(64, n_classes)
+        self.confidence_scorer = ConfidenceScorer3D(1024//factor,1024//factor)
 
     def forward(self, x):
         x1 = self.inc(x)
@@ -76,4 +77,5 @@ class UNet3d(nn.Module):
         x = self.up3(x, x2)
         x = self.up4(x, x1)
         logits = self.outc(x)
-        return logits
+        conf = self.confidence_scorer(x5.detach())
+        return logits,conf

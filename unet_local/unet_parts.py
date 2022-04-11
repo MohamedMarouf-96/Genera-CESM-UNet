@@ -109,7 +109,7 @@ class Up3d(nn.Module):
         # if bilinear, use the normal convolutions to reduce the number of channels
         if bilinear:
             self.up = nn.Upsample(scale_factor=2, mode='trilinear', align_corners=True)
-            self.conv = DoubleConv(in_channels, out_channels, in_channels // 2)
+            self.conv = DoubleConv3d(in_channels, out_channels, in_channels // 2)
         else:
             self.up = nn.ConvTranspose3d(in_channels, in_channels // 2, kernel_size=2, stride=2)
             self.conv = DoubleConv3d(in_channels, out_channels)
@@ -164,5 +164,26 @@ class ConfidenceScorer2D(nn.Module):
         out = self.conv3(out)
         out = self.conv4(out)
         out = out.squeeze(-1).squeeze(-1)
+        out = self.last(out)
+        return torch.sigmoid(out.squeeze(-1))
+
+
+class ConfidenceScorer3D(nn.Module):
+    def __init__(self,input_channels,intermediate_channels):
+        super().__init__()
+        self.conv1 = nn.Sequential(nn.Conv3d(input_channels,intermediate_channels,3,2,1,bias=False),nn.BatchNorm3d(intermediate_channels),
+            nn.ReLU(inplace=True))
+        self.conv2 = nn.Sequential(nn.Conv3d(intermediate_channels,intermediate_channels,3,2,1,bias=False),nn.BatchNorm3d(intermediate_channels),
+            nn.ReLU(inplace=True))
+        self.conv3 = nn.Sequential(nn.Conv3d(intermediate_channels,intermediate_channels,3,2,1,bias=False),nn.BatchNorm3d(intermediate_channels),
+            nn.ReLU(inplace=True))
+        self.last = nn.Linear(intermediate_channels,1)
+
+    def forward(self,x):
+        x_in = F.interpolate(x,size = [8,8,8])
+        out = self.conv1(x_in)
+        out = self.conv2(out)
+        out = self.conv3(out)
+        out = out.squeeze(-1).squeeze(-1).squeeze(-1)
         out = self.last(out)
         return torch.sigmoid(out.squeeze(-1))

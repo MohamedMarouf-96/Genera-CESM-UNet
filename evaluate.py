@@ -17,8 +17,12 @@ def evaluate(net, net_single_device, dataloader, device, threeD = False):
     num_val_batches = len(dataloader)
     dice_score = 0
     accuracy = 0.0
+    tp = 0
+    tn = 0
     predictions_all = []
     gt_all = []
+    dice_all = []
+
 
     # iterate over the validation set
     for batch in tqdm(dataloader, total=num_val_batches, desc='Validation round', unit='batch', leave=False):
@@ -26,33 +30,46 @@ def evaluate(net, net_single_device, dataloader, device, threeD = False):
         # move images and labels to correct device and type
         image = image.to(device=device, dtype=torch.float32)
         mask_true = mask_true.to(device=device, dtype=torch.long)
-        is_slice_positive = mask_true.amax(dim=(1,2)).float()
 
         if threeD :
+            is_slice_positive = mask_true.amax(dim=(1,2,3)).float()
             mask_true = F.one_hot(mask_true, net_single_device.n_classes).permute(0, 4, 1, 2, 3).float()
         else :
+            is_slice_positive = mask_true.amax(dim=(1,2)).float()
             mask_true = F.one_hot(mask_true, net_single_device.n_classes).permute(0, 3, 1, 2).float()
+
 
         with torch.no_grad():
             # predict the mask
-            mask_pred, confidence = net(image)
+            masks_pred = net(image)
+            try: 
+                masks_pred , confidence = masks_pred
+            except :
+                if threeD :
+                    confidence = torch.zeros_like(masks_pred.detach()).to(masks_pred.device).sum(dim=[1,2,3,4])
+                else :
+                    confidence = torch.zeros_like(masks_pred.detach()).to(masks_pred.device).sum(dim=[1,2,3])
 
             # convert to one-hot format
             if net_single_device.n_classes == 1:
-                mask_pred = (F.sigmoid(mask_pred) > 0.5).float()
+                masks_pred = (F.sigmoid(masks_pred) > 0.5).float()
                 # compute the Dice score
-                dice_score += dice_coeff(mask_pred, mask_true, reduce_batch_first=False, threeD=threeD)
+                dice_score += dice_coeff(masks_pred, mask_true, reduce_batch_first=False, threeD=threeD)
             else:
                 if threeD :
-                    mask_pred = F.one_hot(mask_pred.argmax(dim=1), net_single_device.n_classes).permute(0, 4, 1, 2, 3).float()
+                    masks_pred = F.one_hot(masks_pred.argmax(dim=1), net_single_device.n_classes).permute(0, 4, 1, 2, 3).float()
                 else :
-                    mask_pred = F.one_hot(mask_pred.argmax(dim=1), net_single_device.n_classes).permute(0, 3, 1, 2).float()
+                    masks_pred = F.one_hot(masks_pred.argmax(dim=1), net_single_device.n_classes).permute(0, 3, 1, 2).float()
     
                 # compute the Dice score, ignoring background
-                dice_score += multiclass_dice_coeff(mask_pred[:, 1:, ...], mask_true[:, 1:, ...], reduce_batch_first=False, threeD=threeD)
+                dice_score += multiclass_dice_coeff(masks_pred[:, 1:, ...], mask_true[:, 1:, ...], reduce_batch_first=False, threeD=threeD)
             accuracy += (((confidence > 0.5) == is_slice_positive)*1.0).mean()
+            tp += (((confidence > 0.5) * is_slice_positive) == 1).sum()
+            tn += (((confidence <= 0.5) * (1 - is_slice_positive)) == 1).sum()
             predictions_all.append(confidence)
             gt_all.append(is_slice_positive)
+            dice_all.append(dice_score.unsqueeze(0))
+
 
 
     
@@ -67,6 +84,8 @@ def evaluate(net, net_single_device, dataloader, device, threeD = False):
     logging.info('roc_auc : {}'.format(roc_auc))
     logging.info('PR auc : {}'.format(pr_auc))
     logging.info('accuracy : {}'.format(accuracy/num_val_batches))
+    logging.info(f'TP : {tp}')
+    logging.info(f'TN : {tn}')
 
     # Fixes a potential division by zero error
     if num_val_batches == 0:

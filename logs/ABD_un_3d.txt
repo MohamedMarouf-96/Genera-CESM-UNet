@@ -1,0 +1,1888 @@
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.015987930819392204
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.018076440319418907
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.1387963891029358
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.20433638989925385
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.4187667965888977
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.36544331908226013
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.4192776083946228
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.45339319109916687
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3925248086452484
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.33464017510414124
+INFO: Checkpoint 1 saved!
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.5130683779716492
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.4644748270511627
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.45140278339385986
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.43850404024124146
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.462787926197052
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.5380445718765259
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.5411850214004517
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.5357638001441956
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.5426856875419617
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.5354347825050354
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.572785496711731
+INFO: Checkpoint 2 saved!
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.42634761333465576
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.01207104790955782
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.048259980976581573
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.07530248910188675
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.23501886427402496
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.2160954773426056
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.32596302032470703
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.4285883903503418
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.35472720861434937
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.37404435873031616
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.24458497762680054
+INFO: Checkpoint 1 saved!
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.37780946493148804
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.33799588680267334
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3919987082481384
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.36104413866996765
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.37428897619247437
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3554759621620178
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.35956236720085144
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3583223819732666
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3781293034553528
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3949955999851227
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.35185039043426514
+INFO: Checkpoint 2 saved!
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.37746015191078186
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.39949533343315125
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3773440420627594
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.39490166306495667
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3456101417541504
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3580111861228943
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.354057639837265
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.36969444155693054
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.33614006638526917
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.33398154377937317
+INFO: Checkpoint 3 saved!
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3452751338481903
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3544236421585083
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.38908860087394714
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3722011148929596
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.36973661184310913
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3467152714729309
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.37858596444129944
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3613007366657257
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3670653998851776
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.338960736989975
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.36164799332618713
+INFO: Checkpoint 4 saved!
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3238239586353302
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3773440718650818
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3717319071292877
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.36478081345558167
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3676118552684784
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.37434616684913635
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3724444508552551
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.38624852895736694
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.36688947677612305
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3678942620754242
+INFO: Checkpoint 5 saved!
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.07820874452590942
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.12163941562175751
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.24529415369033813
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.22977754473686218
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.4171796143054962
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3604913353919983
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.48388928174972534
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.2454942911863327
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3594288229942322
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.2356528341770172
+INFO: Checkpoint 1 saved!
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.4186444878578186
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.4572332501411438
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.4401169717311859
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3836401104927063
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.4516361653804779
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.47291056910569107
+INFO: PR auc : 0.48120125699927185
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.17575307190418243
+INFO: roc_auc : 0.49925203252032524
+INFO: PR auc : 0.5113901193426178
+INFO: accuracy : 0.4879032075405121
+INFO: Validation Dice score: 0.16225169599056244
+INFO: roc_auc : 0.491219512195122
+INFO: PR auc : 0.48086012862432276
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.2667493522167206
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.7751869918699186
+INFO: PR auc : 0.7531606374521732
+INFO: accuracy : 0.7419354915618896
+INFO: Validation Dice score: 0.017977174371480942
+INFO: roc_auc : 0.7192195121951219
+INFO: PR auc : 0.7370989156321063
+INFO: accuracy : 0.596774160861969
+INFO: Validation Dice score: 0.10656639188528061
+INFO: roc_auc : 0.671869918699187
+INFO: PR auc : 0.7095436039642641
+INFO: accuracy : 0.6330645084381104
+INFO: Validation Dice score: 0.5629567503929138
+INFO: roc_auc : 0.5663089430894309
+INFO: PR auc : 0.6099273606993598
+INFO: accuracy : 0.5564516186714172
+INFO: Validation Dice score: 0.35238951444625854
+INFO: roc_auc : 0.6117723577235772
+INFO: PR auc : 0.6475758011890729
+INFO: accuracy : 0.5645161271095276
+INFO: Validation Dice score: 0.4705251455307007
+INFO: roc_auc : 0.6333008130081301
+INFO: PR auc : 0.670156146379862
+INFO: accuracy : 0.6048386693000793
+INFO: Validation Dice score: 0.5675809979438782
+INFO: roc_auc : 0.5676097560975609
+INFO: PR auc : 0.6191238972929403
+INFO: accuracy : 0.5362902879714966
+INFO: Validation Dice score: 0.5533068180084229
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-06
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.4853983739837398
+INFO: PR auc : 0.48972032994019016
+INFO: accuracy : 0.49596771597862244
+INFO: Validation Dice score: 0.017416099086403847
+INFO: roc_auc : 0.6197073170731706
+INFO: PR auc : 0.6131420034724961
+INFO: accuracy : 0.5080645084381104
+INFO: Validation Dice score: 0.04250616580247879
+INFO: roc_auc : 0.5983739837398374
+INFO: PR auc : 0.6394465946909837
+INFO: accuracy : 0.6290322542190552
+INFO: Validation Dice score: 0.11913328617811203
+INFO: roc_auc : 0.6528130081300814
+INFO: PR auc : 0.6780999661068623
+INFO: accuracy : 0.6330645084381104
+INFO: Validation Dice score: 0.18469657003879547
+INFO: roc_auc : 0.7028292682926829
+INFO: PR auc : 0.7308008351325983
+INFO: accuracy : 0.721774160861969
+INFO: Validation Dice score: 0.21266239881515503
+INFO: roc_auc : 0.7767804878048781
+INFO: PR auc : 0.7430247713156494
+INFO: accuracy : 0.7016128897666931
+INFO: Validation Dice score: 0.1060141921043396
+INFO: roc_auc : 0.7536260162601626
+INFO: PR auc : 0.7520374207218967
+INFO: accuracy : 0.6733870506286621
+INFO: Validation Dice score: 0.34649839997291565
+INFO: roc_auc : 0.7702113821138212
+INFO: PR auc : 0.7628351807985451
+INFO: accuracy : 0.6854838728904724
+INFO: Validation Dice score: 0.48351433873176575
+INFO: roc_auc : 0.7713170731707317
+INFO: PR auc : 0.7632660941250242
+INFO: accuracy : 0.721774160861969
+INFO: Validation Dice score: 0.5695752501487732
+INFO: roc_auc : 0.8013658536585365
+INFO: PR auc : 0.7773219139866019
+INFO: accuracy : 0.7137096524238586
+INFO: Validation Dice score: 0.5550479888916016
+INFO: Checkpoint 1 saved!
+INFO: roc_auc : 0.7712520325203253
+INFO: PR auc : 0.774739207036224
+INFO: accuracy : 0.6572580337524414
+INFO: Validation Dice score: 0.4053294062614441
+INFO: roc_auc : 0.7862113821138212
+INFO: PR auc : 0.7656216076001694
+INFO: accuracy : 0.7096773982048035
+INFO: Validation Dice score: 0.5868775844573975
+INFO: roc_auc : 0.7594146341463415
+INFO: PR auc : 0.7547340106324529
+INFO: accuracy : 0.6693547964096069
+INFO: Validation Dice score: 0.5822176933288574
+INFO: roc_auc : 0.776
+INFO: PR auc : 0.7704377574987009
+INFO: accuracy : 0.6733870506286621
+INFO: Validation Dice score: 0.48670855164527893
+INFO: roc_auc : 0.8048780487804879
+INFO: PR auc : 0.7828099328790328
+INFO: accuracy : 0.7258064150810242
+INFO: Validation Dice score: 0.5312095284461975
+INFO: roc_auc : 0.7784065040650406
+INFO: PR auc : 0.7728733958747742
+INFO: accuracy : 0.7096773982048035
+INFO: Validation Dice score: 0.5447456240653992
+INFO: roc_auc : 0.7754796747967481
+INFO: PR auc : 0.7693525375380016
+INFO: accuracy : 0.7379031777381897
+INFO: Validation Dice score: 0.507904589176178
+INFO: roc_auc : 0.7934308943089431
+INFO: PR auc : 0.7784304225554152
+INFO: accuracy : 0.7419354915618896
+INFO: Validation Dice score: 0.5453159809112549
+INFO: roc_auc : 0.7869918699186992
+INFO: PR auc : 0.7790364838055585
+INFO: accuracy : 0.7258064150810242
+INFO: Validation Dice score: 0.5125523209571838
+INFO: roc_auc : 0.7778861788617886
+INFO: PR auc : 0.7761671924231539
+INFO: accuracy : 0.7177419066429138
+INFO: Validation Dice score: 0.5210816264152527
+INFO: roc_auc : 0.7629918699186992
+INFO: PR auc : 0.7658459618077933
+INFO: accuracy : 0.721774160861969
+INFO: Validation Dice score: 0.5682327747344971
+INFO: Checkpoint 2 saved!
+INFO: roc_auc : 0.7654634146341464
+INFO: PR auc : 0.7697672097421815
+INFO: accuracy : 0.6975806355476379
+INFO: Validation Dice score: 0.5646473169326782
+INFO: roc_auc : 0.774308943089431
+INFO: PR auc : 0.7720473178673211
+INFO: accuracy : 0.7016128897666931
+INFO: Validation Dice score: 0.5507354140281677
+INFO: roc_auc : 0.7941463414634147
+INFO: PR auc : 0.7823347188633489
+INFO: accuracy : 0.7338709235191345
+INFO: Validation Dice score: 0.5571305155754089
+INFO: roc_auc : 0.7676747967479677
+INFO: PR auc : 0.7728737773224029
+INFO: accuracy : 0.6895161271095276
+INFO: Validation Dice score: 0.5276881456375122
+INFO: roc_auc : 0.7873170731707316
+INFO: PR auc : 0.7776190779000288
+INFO: accuracy : 0.7338709235191345
+INFO: Validation Dice score: 0.521263837814331
+INFO: roc_auc : 0.7601300813008129
+INFO: PR auc : 0.7684563908495177
+INFO: accuracy : 0.7056451439857483
+INFO: Validation Dice score: 0.48866376280784607
+INFO: roc_auc : 0.7577235772357723
+INFO: PR auc : 0.7663572855983762
+INFO: accuracy : 0.7016128897666931
+INFO: Validation Dice score: 0.5394524335861206
+INFO: roc_auc : 0.7735934959349593
+INFO: PR auc : 0.7725360628720488
+INFO: accuracy : 0.7298386693000793
+INFO: Validation Dice score: 0.5392805933952332
+INFO: roc_auc : 0.792260162601626
+INFO: PR auc : 0.7816030979244215
+INFO: accuracy : 0.7379031777381897
+INFO: Validation Dice score: 0.5382603406906128
+INFO: roc_auc : 0.7455609756097561
+INFO: PR auc : 0.7543977842092618
+INFO: accuracy : 0.7056451439857483
+INFO: Validation Dice score: 0.5479856729507446
+INFO: Checkpoint 3 saved!
+INFO: roc_auc : 0.7718373983739838
+INFO: PR auc : 0.7754689269466775
+INFO: accuracy : 0.6975806355476379
+INFO: Validation Dice score: 0.5951954126358032
+INFO: roc_auc : 0.7719674796747967
+INFO: PR auc : 0.7722524008224033
+INFO: accuracy : 0.7056451439857483
+INFO: Validation Dice score: 0.5746810436248779
+INFO: roc_auc : 0.7966829268292683
+INFO: PR auc : 0.7821453548660944
+INFO: accuracy : 0.7419354915618896
+INFO: Validation Dice score: 0.5611819624900818
+INFO: roc_auc : 0.8094634146341463
+INFO: PR auc : 0.784937286535701
+INFO: accuracy : 0.7540322542190552
+INFO: Validation Dice score: 0.5543879866600037
+INFO: roc_auc : 0.7646178861788618
+INFO: PR auc : 0.7708303638843608
+INFO: accuracy : 0.6895161271095276
+INFO: Validation Dice score: 0.5550005435943604
+INFO: roc_auc : 0.7730731707317073
+INFO: PR auc : 0.7703634040811091
+INFO: accuracy : 0.7177419066429138
+INFO: Validation Dice score: 0.6088396906852722
+INFO: roc_auc : 0.7746991869918699
+INFO: PR auc : 0.7755689407152763
+INFO: accuracy : 0.7056451439857483
+INFO: Validation Dice score: 0.5841526985168457
+INFO: roc_auc : 0.8066341463414635
+INFO: PR auc : 0.7893259388017788
+INFO: accuracy : 0.7620967626571655
+INFO: Validation Dice score: 0.5052265524864197
+INFO: roc_auc : 0.7728780487804878
+INFO: PR auc : 0.7725193456850447
+INFO: accuracy : 0.7137096524238586
+INFO: Validation Dice score: 0.536554753780365
+INFO: roc_auc : 0.7901138211382114
+INFO: PR auc : 0.7870569949239802
+INFO: accuracy : 0.7258064150810242
+INFO: Validation Dice score: 0.5378929972648621
+INFO: roc_auc : 0.8026666666666666
+INFO: PR auc : 0.7869648901255286
+INFO: accuracy : 0.7338709235191345
+INFO: Validation Dice score: 0.5215099453926086
+INFO: Checkpoint 4 saved!
+INFO: roc_auc : 0.782178861788618
+INFO: PR auc : 0.77725155489562
+INFO: accuracy : 0.7258064150810242
+INFO: Validation Dice score: 0.599992573261261
+INFO: roc_auc : 0.7828943089430894
+INFO: PR auc : 0.7786386015706108
+INFO: accuracy : 0.7056451439857483
+INFO: Validation Dice score: 0.5705925822257996
+INFO: roc_auc : 0.7967479674796749
+INFO: PR auc : 0.7859932057574185
+INFO: accuracy : 0.7258064150810242
+INFO: Validation Dice score: 0.5687889456748962
+INFO: roc_auc : 0.8115772357723577
+INFO: PR auc : 0.7947554405087824
+INFO: accuracy : 0.7419354915618896
+INFO: Validation Dice score: 0.5670246481895447
+INFO: roc_auc : 0.7834796747967481
+INFO: PR auc : 0.7790875306051047
+INFO: accuracy : 0.7258064150810242
+INFO: Validation Dice score: 0.584604024887085
+INFO: roc_auc : 0.7813333333333332
+INFO: PR auc : 0.778904047409911
+INFO: accuracy : 0.7056451439857483
+INFO: Validation Dice score: 0.5635708570480347
+INFO: roc_auc : 0.7816585365853658
+INFO: PR auc : 0.7798233959452473
+INFO: accuracy : 0.721774160861969
+INFO: Validation Dice score: 0.5303903222084045
+INFO: roc_auc : 0.7696260162601627
+INFO: PR auc : 0.7727405237584557
+INFO: accuracy : 0.6854838728904724
+INFO: Validation Dice score: 0.5730209946632385
+INFO: roc_auc : 0.7911544715447155
+INFO: PR auc : 0.782165527172291
+INFO: accuracy : 0.7096773982048035
+INFO: Validation Dice score: 0.5568001866340637
+INFO: roc_auc : 0.7877073170731707
+INFO: PR auc : 0.7811048173239653
+INFO: accuracy : 0.7338709235191345
+INFO: Validation Dice score: 0.4877886474132538
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-06
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.5053658536585366
+INFO: PR auc : 0.5103637176306762
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.045756466686725616
+INFO: roc_auc : 0.487739837398374
+INFO: PR auc : 0.4972787875085596
+INFO: accuracy : 0.5120967626571655
+INFO: Validation Dice score: 0.06637898832559586
+INFO: roc_auc : 0.5172682926829268
+INFO: PR auc : 0.5209503497842418
+INFO: accuracy : 0.5080645084381104
+INFO: Validation Dice score: 0.13719594478607178
+INFO: roc_auc : 0.49821138211382116
+INFO: PR auc : 0.51626966457341
+INFO: accuracy : 0.49193546175956726
+INFO: Validation Dice score: 0.1602257341146469
+INFO: roc_auc : 0.536910569105691
+INFO: PR auc : 0.544011105821673
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.0631624236702919
+INFO: roc_auc : 0.5204552845528455
+INFO: PR auc : 0.50302671215047
+INFO: accuracy : 0.49596771597862244
+INFO: Validation Dice score: 0.3215846121311188
+INFO: roc_auc : 0.5144065040650406
+INFO: PR auc : 0.4980106397383893
+INFO: accuracy : 0.49596771597862244
+INFO: Validation Dice score: 0.2790949046611786
+INFO: roc_auc : 0.5418536585365854
+INFO: PR auc : 0.5113334179468036
+INFO: accuracy : 0.5080645084381104
+INFO: Validation Dice score: 0.2929690182209015
+INFO: roc_auc : 0.5332032520325203
+INFO: PR auc : 0.5293440504278157
+INFO: accuracy : 0.5080645084381104
+INFO: Validation Dice score: 0.3479304313659668
+INFO: roc_auc : 0.5421138211382114
+INFO: PR auc : 0.547880130142488
+INFO: accuracy : 0.5362902879714966
+INFO: Validation Dice score: 0.22916407883167267
+INFO: Checkpoint 1 saved!
+INFO: roc_auc : 0.5413983739837398
+INFO: PR auc : 0.5367410746271282
+INFO: accuracy : 0.5403225421905518
+INFO: Validation Dice score: 0.34047311544418335
+INFO: roc_auc : 0.5540162601626016
+INFO: PR auc : 0.5451289320764279
+INFO: accuracy : 0.524193525314331
+INFO: Validation Dice score: 0.20093780755996704
+INFO: roc_auc : 0.5378211382113821
+INFO: PR auc : 0.5333755350774243
+INFO: accuracy : 0.5161290168762207
+INFO: Validation Dice score: 0.24779927730560303
+INFO: roc_auc : 0.5393821138211382
+INFO: PR auc : 0.5389465629224466
+INFO: accuracy : 0.5161290168762207
+INFO: Validation Dice score: 0.2612597644329071
+INFO: roc_auc : 0.5363902439024391
+INFO: PR auc : 0.5338815537001507
+INFO: accuracy : 0.5161290168762207
+INFO: Validation Dice score: 0.307701051235199
+INFO: roc_auc : 0.5345691056910569
+INFO: PR auc : 0.5333569778597199
+INFO: accuracy : 0.5443547964096069
+INFO: Validation Dice score: 0.2974873185157776
+INFO: roc_auc : 0.5309918699186992
+INFO: PR auc : 0.5310719677050213
+INFO: accuracy : 0.5362902879714966
+INFO: Validation Dice score: 0.28770679235458374
+INFO: roc_auc : 0.5390569105691057
+INFO: PR auc : 0.532814552404546
+INFO: accuracy : 0.524193525314331
+INFO: Validation Dice score: 0.3186565339565277
+INFO: roc_auc : 0.536
+INFO: PR auc : 0.5269231726815944
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3434373140335083
+INFO: roc_auc : 0.5365853658536586
+INFO: PR auc : 0.5247239145873516
+INFO: accuracy : 0.5120967626571655
+INFO: Validation Dice score: 0.32816165685653687
+INFO: roc_auc : 0.5319674796747967
+INFO: PR auc : 0.5277217092937967
+INFO: accuracy : 0.5161290168762207
+INFO: Validation Dice score: 0.3269311487674713
+INFO: Checkpoint 2 saved!
+INFO: roc_auc : 0.5299512195121951
+INFO: PR auc : 0.5411918776599098
+INFO: accuracy : 0.5161290168762207
+INFO: Validation Dice score: 0.3261193037033081
+INFO: roc_auc : 0.5365853658536586
+INFO: PR auc : 0.5282875051732416
+INFO: accuracy : 0.524193525314331
+INFO: Validation Dice score: 0.3400462567806244
+INFO: roc_auc : 0.5409430894308943
+INFO: PR auc : 0.5471809113009174
+INFO: accuracy : 0.5483870506286621
+INFO: Validation Dice score: 0.2957245111465454
+INFO: roc_auc : 0.5402926829268292
+INFO: PR auc : 0.5444087143308303
+INFO: accuracy : 0.5322580337524414
+INFO: Validation Dice score: 0.32027971744537354
+INFO: roc_auc : 0.5388617886178861
+INFO: PR auc : 0.5313101500822544
+INFO: accuracy : 0.5483870506286621
+INFO: Validation Dice score: 0.3227231204509735
+INFO: roc_auc : 0.5341788617886178
+INFO: PR auc : 0.5329496888992099
+INFO: accuracy : 0.5161290168762207
+INFO: Validation Dice score: 0.31632962822914124
+INFO: roc_auc : 0.5371056910569106
+INFO: PR auc : 0.5262266308961567
+INFO: accuracy : 0.5322580337524414
+INFO: Validation Dice score: 0.34895244240760803
+INFO: roc_auc : 0.5291056910569105
+INFO: PR auc : 0.5300612028191422
+INFO: accuracy : 0.524193525314331
+INFO: Validation Dice score: 0.37214067578315735
+INFO: roc_auc : 0.5266341463414634
+INFO: PR auc : 0.5328344706169919
+INFO: accuracy : 0.5403225421905518
+INFO: Validation Dice score: 0.3772551119327545
+INFO: roc_auc : 0.5306991869918699
+INFO: PR auc : 0.531502217122497
+INFO: accuracy : 0.5362902879714966
+INFO: Validation Dice score: 0.323366641998291
+INFO: Checkpoint 3 saved!
+INFO: roc_auc : 0.5389918699186992
+INFO: PR auc : 0.5393365379714126
+INFO: accuracy : 0.5362902879714966
+INFO: Validation Dice score: 0.3295423686504364
+INFO: roc_auc : 0.5385365853658537
+INFO: PR auc : 0.5423410544574585
+INFO: accuracy : 0.5120967626571655
+INFO: Validation Dice score: 0.322967529296875
+INFO: roc_auc : 0.5358048780487804
+INFO: PR auc : 0.5252925791734515
+INFO: accuracy : 0.5282257795333862
+INFO: Validation Dice score: 0.3347432613372803
+INFO: roc_auc : 0.5380162601626017
+INFO: PR auc : 0.5416982508430892
+INFO: accuracy : 0.5483870506286621
+INFO: Validation Dice score: 0.324248343706131
+INFO: roc_auc : 0.5367804878048781
+INFO: PR auc : 0.5367113408904224
+INFO: accuracy : 0.5080645084381104
+INFO: Validation Dice score: 0.29542601108551025
+INFO: roc_auc : 0.5341138211382114
+INFO: PR auc : 0.5353298192956902
+INFO: accuracy : 0.5403225421905518
+INFO: Validation Dice score: 0.32105252146720886
+INFO: roc_auc : 0.5374959349593496
+INFO: PR auc : 0.5379329512839985
+INFO: accuracy : 0.5362902879714966
+INFO: Validation Dice score: 0.3406011760234833
+INFO: roc_auc : 0.5352845528455284
+INFO: PR auc : 0.535397702202981
+INFO: accuracy : 0.5
+INFO: Validation Dice score: 0.3301178514957428
+INFO: roc_auc : 0.5319674796747967
+INFO: PR auc : 0.54407130764146
+INFO: accuracy : 0.5322580337524414
+INFO: Validation Dice score: 0.3256700038909912
+INFO: roc_auc : 0.5373658536585366
+INFO: PR auc : 0.5364766107490708
+INFO: accuracy : 0.5403225421905518
+INFO: Validation Dice score: 0.33537089824676514
+INFO: roc_auc : 0.5349593495934959
+INFO: PR auc : 0.5445891864871757
+INFO: accuracy : 0.5282257795333862
+INFO: Validation Dice score: 0.3014291524887085
+INFO: Checkpoint 4 saved!
+INFO: roc_auc : 0.5288455284552845
+INFO: PR auc : 0.538781328543238
+INFO: accuracy : 0.5362902879714966
+INFO: Validation Dice score: 0.3255556523799896
+INFO: roc_auc : 0.5303414634146342
+INFO: PR auc : 0.5381103538789465
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3332335352897644
+INFO: roc_auc : 0.5376910569105691
+INFO: PR auc : 0.53257011338492
+INFO: accuracy : 0.5080645084381104
+INFO: Validation Dice score: 0.3187837302684784
+INFO: roc_auc : 0.5312520325203253
+INFO: PR auc : 0.5228778254344849
+INFO: accuracy : 0.5161290168762207
+INFO: Validation Dice score: 0.3334578573703766
+INFO: roc_auc : 0.529951219512195
+INFO: PR auc : 0.5221665847450752
+INFO: accuracy : 0.5161290168762207
+INFO: Validation Dice score: 0.32655462622642517
+INFO: roc_auc : 0.5419186991869919
+INFO: PR auc : 0.5464923704013782
+INFO: accuracy : 0.5362902879714966
+INFO: Validation Dice score: 0.36090564727783203
+INFO: roc_auc : 0.5391869918699188
+INFO: PR auc : 0.5474654901871733
+INFO: accuracy : 0.5322580337524414
+INFO: Validation Dice score: 0.3844221532344818
+INFO: roc_auc : 0.5410081300813008
+INFO: PR auc : 0.5364957950994941
+INFO: accuracy : 0.5564516186714172
+INFO: Validation Dice score: 0.35096073150634766
+INFO: roc_auc : 0.5385365853658537
+INFO: PR auc : 0.5344376826542346
+INFO: accuracy : 0.5080645084381104
+INFO: Validation Dice score: 0.34887388348579407
+INFO: roc_auc : 0.5419837398373983
+INFO: PR auc : 0.536403587992385
+INFO: accuracy : 0.5282257795333862
+INFO: Validation Dice score: 0.38329261541366577
+INFO: Checkpoint 5 saved!
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-06
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.47232520325203253
+INFO: PR auc : 0.4870119364783367
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.081446573138237
+INFO: roc_auc : 0.6089105691056911
+INFO: PR auc : 0.6434228149203951
+INFO: accuracy : 0.5403225421905518
+INFO: Validation Dice score: 0.13753463327884674
+INFO: roc_auc : 0.663869918699187
+INFO: PR auc : 0.6839610067623665
+INFO: accuracy : 0.6370967626571655
+INFO: Validation Dice score: 0.18089810013771057
+INFO: roc_auc : 0.6892357723577236
+INFO: PR auc : 0.6867533807942017
+INFO: accuracy : 0.6451612710952759
+INFO: Validation Dice score: 0.1731221228837967
+INFO: roc_auc : 0.734959349593496
+INFO: PR auc : 0.7253039950079971
+INFO: accuracy : 0.6612902879714966
+INFO: Validation Dice score: 0.11703497171401978
+INFO: roc_auc : 0.7781463414634147
+INFO: PR auc : 0.7441353899561614
+INFO: accuracy : 0.6854838728904724
+INFO: Validation Dice score: 0.36498576402664185
+INFO: roc_auc : 0.7621463414634146
+INFO: PR auc : 0.7697456152959805
+INFO: accuracy : 0.6290322542190552
+INFO: Validation Dice score: 0.43895089626312256
+INFO: roc_auc : 0.7754146341463415
+INFO: PR auc : 0.7641711723502393
+INFO: accuracy : 0.6693547964096069
+INFO: Validation Dice score: 0.4376574754714966
+INFO: roc_auc : 0.7806178861788619
+INFO: PR auc : 0.771879357290195
+INFO: accuracy : 0.6693547964096069
+INFO: Validation Dice score: 0.5347861051559448
+INFO: roc_auc : 0.7717073170731706
+INFO: PR auc : 0.7685753564520164
+INFO: accuracy : 0.6854838728904724
+INFO: Validation Dice score: 0.5068279504776001
+INFO: Checkpoint 1 saved!
+INFO: roc_auc : 0.75069918699187
+INFO: PR auc : 0.7635860413897915
+INFO: accuracy : 0.6451612710952759
+INFO: Validation Dice score: 0.5579174757003784
+INFO: roc_auc : 0.8110569105691057
+INFO: PR auc : 0.7985726591160679
+INFO: accuracy : 0.721774160861969
+INFO: Validation Dice score: 0.5337646007537842
+INFO: roc_auc : 0.8138536585365854
+INFO: PR auc : 0.812834331366135
+INFO: accuracy : 0.7096773982048035
+INFO: Validation Dice score: 0.5359275341033936
+INFO: roc_auc : 0.7845853658536586
+INFO: PR auc : 0.8036454558275442
+INFO: accuracy : 0.6854838728904724
+INFO: Validation Dice score: 0.5433701276779175
+INFO: roc_auc : 0.7797073170731708
+INFO: PR auc : 0.7965427256022011
+INFO: accuracy : 0.6572580337524414
+INFO: Validation Dice score: 0.5491909384727478
+INFO: roc_auc : 0.7739186991869919
+INFO: PR auc : 0.7930893370782065
+INFO: accuracy : 0.649193525314331
+INFO: Validation Dice score: 0.5689059495925903
+INFO: roc_auc : 0.8431219512195123
+INFO: PR auc : 0.8240334324361862
+INFO: accuracy : 0.75
+INFO: Validation Dice score: 0.48778975009918213
+INFO: roc_auc : 0.8435772357723577
+INFO: PR auc : 0.8253732923652198
+INFO: accuracy : 0.7379031777381897
+INFO: Validation Dice score: 0.5092194080352783
+INFO: roc_auc : 0.8123577235772358
+INFO: PR auc : 0.8186901277931469
+INFO: accuracy : 0.7137096524238586
+INFO: Validation Dice score: 0.5498426556587219
+INFO: roc_auc : 0.8252357723577236
+INFO: PR auc : 0.8208910029099219
+INFO: accuracy : 0.7258064150810242
+INFO: Validation Dice score: 0.526527464389801
+INFO: roc_auc : 0.839479674796748
+INFO: PR auc : 0.8220042684081702
+INFO: accuracy : 0.75
+INFO: Validation Dice score: 0.5065701007843018
+INFO: Checkpoint 2 saved!
+INFO: roc_auc : 0.8323902439024391
+INFO: PR auc : 0.819935613078999
+INFO: accuracy : 0.7459677457809448
+INFO: Validation Dice score: 0.5223487019538879
+INFO: roc_auc : 0.8446829268292683
+INFO: PR auc : 0.8252966105498308
+INFO: accuracy : 0.7701612710952759
+INFO: Validation Dice score: 0.4825285077095032
+INFO: roc_auc : 0.8302439024390242
+INFO: PR auc : 0.8208743132722034
+INFO: accuracy : 0.7379031777381897
+INFO: Validation Dice score: 0.5289514660835266
+INFO: roc_auc : 0.8210731707317074
+INFO: PR auc : 0.8179601727492156
+INFO: accuracy : 0.7177419066429138
+INFO: Validation Dice score: 0.5370609164237976
+INFO: roc_auc : 0.8091056910569104
+INFO: PR auc : 0.8110077904982291
+INFO: accuracy : 0.7096773982048035
+INFO: Validation Dice score: 0.5315752625465393
+INFO: roc_auc : 0.818211382113821
+INFO: PR auc : 0.8179238858461864
+INFO: accuracy : 0.7177419066429138
+INFO: Validation Dice score: 0.5357983708381653
+INFO: roc_auc : 0.7935609756097561
+INFO: PR auc : 0.8063043441946429
+INFO: accuracy : 0.6814516186714172
+INFO: Validation Dice score: 0.5606374144554138
+INFO: roc_auc : 0.8189268292682927
+INFO: PR auc : 0.8156663049364854
+INFO: accuracy : 0.7419354915618896
+INFO: Validation Dice score: 0.5223219990730286
+INFO: roc_auc : 0.7726829268292683
+INFO: PR auc : 0.7928783684232681
+INFO: accuracy : 0.6653225421905518
+INFO: Validation Dice score: 0.5798957347869873
+INFO: roc_auc : 0.8272520325203252
+INFO: PR auc : 0.8203503446189033
+INFO: accuracy : 0.7258064150810242
+INFO: Validation Dice score: 0.5324723720550537
+INFO: Checkpoint 3 saved!
+INFO: roc_auc : 0.8232845528455285
+INFO: PR auc : 0.8185945189363485
+INFO: accuracy : 0.7177419066429138
+INFO: Validation Dice score: 0.5356338620185852
+INFO: roc_auc : 0.8284878048780487
+INFO: PR auc : 0.8199284543039522
+INFO: accuracy : 0.7338709235191345
+INFO: Validation Dice score: 0.5244134068489075
+INFO: roc_auc : 0.8462439024390244
+INFO: PR auc : 0.8286435940183176
+INFO: accuracy : 0.7419354915618896
+INFO: Validation Dice score: 0.5207831859588623
+INFO: roc_auc : 0.7869918699186992
+INFO: PR auc : 0.804296690792894
+INFO: accuracy : 0.6653225421905518
+INFO: Validation Dice score: 0.573525607585907
+INFO: roc_auc : 0.8413008130081301
+INFO: PR auc : 0.8254865847859336
+INFO: accuracy : 0.7419354915618896
+INFO: Validation Dice score: 0.5045260787010193
+INFO: roc_auc : 0.8212032520325203
+INFO: PR auc : 0.820703579823503
+INFO: accuracy : 0.7258064150810242
+INFO: Validation Dice score: 0.5317526459693909
+INFO: roc_auc : 0.8305040650406504
+INFO: PR auc : 0.8228087205240976
+INFO: accuracy : 0.7379031777381897
+INFO: Validation Dice score: 0.5310169458389282
+INFO: roc_auc : 0.8036422764227643
+INFO: PR auc : 0.8092300564427065
+INFO: accuracy : 0.6935483813285828
+INFO: Validation Dice score: 0.5438601970672607
+INFO: roc_auc : 0.8270569105691057
+INFO: PR auc : 0.8190841151159081
+INFO: accuracy : 0.7338709235191345
+INFO: Validation Dice score: 0.5340896844863892
+INFO: roc_auc : 0.7880975609756098
+INFO: PR auc : 0.8036872634006027
+INFO: accuracy : 0.6653225421905518
+INFO: Validation Dice score: 0.5618816614151001
+INFO: roc_auc : 0.8113170731707318
+INFO: PR auc : 0.81432432001576
+INFO: accuracy : 0.7298386693000793
+INFO: Validation Dice score: 0.524121105670929
+INFO: Checkpoint 4 saved!
+INFO: roc_auc : 0.8439024390243902
+INFO: PR auc : 0.8286575517892817
+INFO: accuracy : 0.7540322542190552
+INFO: Validation Dice score: 0.5224451422691345
+INFO: roc_auc : 0.7962276422764228
+INFO: PR auc : 0.8087596520247415
+INFO: accuracy : 0.6854838728904724
+INFO: Validation Dice score: 0.5590563416481018
+INFO: roc_auc : 0.8096260162601627
+INFO: PR auc : 0.8140622897842036
+INFO: accuracy : 0.721774160861969
+INFO: Validation Dice score: 0.5434747338294983
+INFO: roc_auc : 0.8219837398373984
+INFO: PR auc : 0.8166782620631631
+INFO: accuracy : 0.7298386693000793
+INFO: Validation Dice score: 0.5381513833999634
+INFO: roc_auc : 0.8396747967479675
+INFO: PR auc : 0.8248314665406832
+INFO: accuracy : 0.7379031777381897
+INFO: Validation Dice score: 0.4760511815547943
+INFO: roc_auc : 0.8007154471544715
+INFO: PR auc : 0.8063191922425375
+INFO: accuracy : 0.7056451439857483
+INFO: Validation Dice score: 0.542447030544281
+INFO: roc_auc : 0.7943414634146341
+INFO: PR auc : 0.8092156462491156
+INFO: accuracy : 0.6895161271095276
+INFO: Validation Dice score: 0.5569056868553162
+INFO: roc_auc : 0.7927154471544715
+INFO: PR auc : 0.8071254163149031
+INFO: accuracy : 0.6693547964096069
+INFO: Validation Dice score: 0.5745514631271362
+INFO: roc_auc : 0.8448130081300812
+INFO: PR auc : 0.8229479532863352
+INFO: accuracy : 0.774193525314331
+INFO: Validation Dice score: 0.44847169518470764
+INFO: roc_auc : 0.8454634146341463
+INFO: PR auc : 0.8265687002893177
+INFO: accuracy : 0.7620967626571655
+INFO: Validation Dice score: 0.46098098158836365
+INFO: Checkpoint 5 saved!
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-06
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8438373983739836
+INFO: PR auc : 0.8120244661305648
+INFO: accuracy : 0.7782257795333862
+INFO: Validation Dice score: 0.11705850064754486
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8029268769870384
+INFO: PR auc : 0.8107806098412353
+INFO: accuracy : 0.7209031581878662
+INFO: Validation Dice score: 0.11626201868057251
+INFO: Checkpoint 1 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8467642276422764
+INFO: PR auc : 0.8222913094905502
+INFO: accuracy : 0.7943547964096069
+INFO: Validation Dice score: 0.5451250076293945
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8165908535094154
+INFO: PR auc : 0.8304815150946081
+INFO: accuracy : 0.7462755441665649
+INFO: Validation Dice score: 0.48039525747299194
+INFO: Checkpoint 2 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8468943089430894
+INFO: PR auc : 0.8480713681496974
+INFO: accuracy : 0.7943547964096069
+INFO: Validation Dice score: 0.5482560992240906
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8327728050868183
+INFO: PR auc : 0.8506905642415303
+INFO: accuracy : 0.7607076168060303
+INFO: Validation Dice score: 0.5062059164047241
+INFO: Checkpoint 3 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8509918699186992
+INFO: PR auc : 0.8405863834802758
+INFO: accuracy : 0.7661290168762207
+INFO: Validation Dice score: 0.5317949652671814
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8298576669112252
+INFO: PR auc : 0.8451459609413775
+INFO: accuracy : 0.75
+INFO: Validation Dice score: 0.46601444482803345
+INFO: Checkpoint 4 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8024065040650407
+INFO: PR auc : 0.8040562090911825
+INFO: accuracy : 0.75
+INFO: Validation Dice score: 0.5901638865470886
+INFO: Evaluating for train set
+INFO: roc_auc : 0.7942636341403766
+INFO: PR auc : 0.8234323842199014
+INFO: accuracy : 0.7444133758544922
+INFO: Validation Dice score: 0.5242966413497925
+INFO: Checkpoint 5 saved!
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          15
+        Batch size:      8
+        Learning rate:   1e-06
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: roc_auc : 0.815869918699187
+INFO: PR auc : 0.8153893188145674
+INFO: accuracy : 0.6774193048477173
+INFO: Validation Dice score: 0.4818616509437561
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8104064563462949
+INFO: PR auc : 0.8302826841367181
+INFO: accuracy : 0.6943668127059937
+INFO: Validation Dice score: 0.453386515378952
+INFO: Checkpoint 1 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8289430894308945
+INFO: PR auc : 0.8276917615548989
+INFO: accuracy : 0.7298386693000793
+INFO: Validation Dice score: 0.587478756904602
+INFO: Evaluating for train set
+INFO: roc_auc : 0.7967424798239179
+INFO: PR auc : 0.8251005674227506
+INFO: accuracy : 0.739059567451477
+INFO: Validation Dice score: 0.5236232876777649
+INFO: Checkpoint 2 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8286178861788618
+INFO: PR auc : 0.8317314161103626
+INFO: accuracy : 0.7661290168762207
+INFO: Validation Dice score: 0.4942387342453003
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8087317192467596
+INFO: PR auc : 0.8360203434141277
+INFO: accuracy : 0.7406889796257019
+INFO: Validation Dice score: 0.4255090057849884
+INFO: Checkpoint 3 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.823609756097561
+INFO: PR auc : 0.8252203939786771
+INFO: accuracy : 0.75
+INFO: Validation Dice score: 0.5192102789878845
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8031812179016875
+INFO: PR auc : 0.8357874494419091
+INFO: accuracy : 0.7621042728424072
+INFO: Validation Dice score: 0.43714094161987305
+INFO: Checkpoint 4 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8422764227642275
+INFO: PR auc : 0.8489244698106819
+INFO: accuracy : 0.7620967626571655
+INFO: Validation Dice score: 0.5215412378311157
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8295426754707753
+INFO: PR auc : 0.858003287172151
+INFO: accuracy : 0.7546554207801819
+INFO: Validation Dice score: 0.47052547335624695
+INFO: Checkpoint 5 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8726178861788619
+INFO: PR auc : 0.8687847466387527
+INFO: accuracy : 0.8346773982048035
+INFO: Validation Dice score: 0.5416014790534973
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8525057471264368
+INFO: PR auc : 0.8721099047023708
+INFO: accuracy : 0.7979515194892883
+INFO: Validation Dice score: 0.4891848862171173
+INFO: Checkpoint 6 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8716747967479673
+INFO: PR auc : 0.864671002697881
+INFO: accuracy : 0.8225806355476379
+INFO: Validation Dice score: 0.5087571740150452
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8469689410613841
+INFO: PR auc : 0.8673503161753555
+INFO: accuracy : 0.7991154789924622
+INFO: Validation Dice score: 0.4572920501232147
+INFO: Checkpoint 7 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8494308943089431
+INFO: PR auc : 0.8506796953576867
+INFO: accuracy : 0.75
+INFO: Validation Dice score: 0.5958830118179321
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8208598679383712
+INFO: PR auc : 0.855842611349032
+INFO: accuracy : 0.7553537487983704
+INFO: Validation Dice score: 0.54306960105896
+INFO: Checkpoint 8 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8621463414634147
+INFO: PR auc : 0.8606537178844206
+INFO: accuracy : 0.7782257795333862
+INFO: Validation Dice score: 0.5555424094200134
+INFO: Evaluating for train set
+INFO: roc_auc : 0.836306187331866
+INFO: PR auc : 0.862885992009908
+INFO: accuracy : 0.7788640856742859
+INFO: Validation Dice score: 0.498600572347641
+INFO: Checkpoint 9 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8605528455284552
+INFO: PR auc : 0.8620064035362027
+INFO: accuracy : 0.7701612710952759
+INFO: Validation Dice score: 0.5925616025924683
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8354091464905844
+INFO: PR auc : 0.8629223711665479
+INFO: accuracy : 0.7609403729438782
+INFO: Validation Dice score: 0.5394423007965088
+INFO: Checkpoint 10 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8705040650406504
+INFO: PR auc : 0.867749579848844
+INFO: accuracy : 0.7943547964096069
+INFO: Validation Dice score: 0.62349933385849
+INFO: Evaluating for train set
+INFO: roc_auc : 0.853445830276351
+INFO: PR auc : 0.8741370724826336
+INFO: accuracy : 0.784683346748352
+INFO: Validation Dice score: 0.5680854916572571
+INFO: Checkpoint 11 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.870569105691057
+INFO: PR auc : 0.8701973277699164
+INFO: accuracy : 0.7822580337524414
+INFO: Validation Dice score: 0.5973330140113831
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8312017608217168
+INFO: PR auc : 0.8635360640686833
+INFO: accuracy : 0.772113561630249
+INFO: Validation Dice score: 0.5394665598869324
+INFO: Checkpoint 12 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8604227642276423
+INFO: PR auc : 0.8631837027911533
+INFO: accuracy : 0.7782257795333862
+INFO: Validation Dice score: 0.5579541921615601
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8351636096845195
+INFO: PR auc : 0.8651443003267483
+INFO: accuracy : 0.767690896987915
+INFO: Validation Dice score: 0.5069445371627808
+INFO: Checkpoint 13 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8619837398373983
+INFO: PR auc : 0.863887616313182
+INFO: accuracy : 0.7822580337524414
+INFO: Validation Dice score: 0.6051436066627502
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8349210075813158
+INFO: PR auc : 0.8655742675294242
+INFO: accuracy : 0.7814245820045471
+INFO: Validation Dice score: 0.560992419719696
+INFO: Checkpoint 14 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8510569105691056
+INFO: PR auc : 0.8559194010873789
+INFO: accuracy : 0.774193525314331
+INFO: Validation Dice score: 0.619857668876648
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8192946930789924
+INFO: PR auc : 0.8550145615112397
+INFO: accuracy : 0.7737429738044739
+INFO: Validation Dice score: 0.5657058358192444
+INFO: Checkpoint 15 saved!
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          15
+        Batch size:      8
+        Learning rate:   1e-06
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: Network:
+	3 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 1430 examples and mode ABD
+INFO: Creating dataset with 252 examples and mode ABD
+INFO: Starting training:
+        Epochs:          15
+        Batch size:      8
+        Learning rate:   1e-06
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8279674796747966
+INFO: PR auc : 0.8197622565875672
+INFO: accuracy : 0.75
+INFO: TP : 74
+INFO: FP : 112
+INFO: Validation Dice score: 0.540323793888092
+INFO: Evaluating for train set
+INFO: roc_auc : 0.7880811934458303
+INFO: PR auc : 0.8108777402396163
+INFO: accuracy : 0.7181099057197571
+INFO: TP : 397
+INFO: FP : 630
+INFO: Validation Dice score: 0.49225538969039917
+INFO: Checkpoint 1 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8407154471544716
+INFO: PR auc : 0.8241202460483661
+INFO: accuracy : 0.7540322542190552
+INFO: TP : 81
+INFO: FP : 106
+INFO: Validation Dice score: 0.559424877166748
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8115431645879189
+INFO: PR auc : 0.8279004984034818
+INFO: accuracy : 0.7504655122756958
+INFO: TP : 469
+INFO: FP : 604
+INFO: Validation Dice score: 0.47825101017951965
+INFO: Checkpoint 2 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8355772357723578
+INFO: PR auc : 0.8275466954853913
+INFO: accuracy : 0.7540322542190552
+INFO: TP : 73
+INFO: FP : 114
+INFO: Validation Dice score: 0.5753559470176697
+INFO: Evaluating for train set
+INFO: roc_auc : 0.824095866960137
+INFO: PR auc : 0.8421878600803249
+INFO: accuracy : 0.7465083599090576
+INFO: TP : 414
+INFO: FP : 653
+INFO: Validation Dice score: 0.5068073272705078
+INFO: Checkpoint 3 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.7951219512195121
+INFO: PR auc : 0.8135107981381138
+INFO: accuracy : 0.6733870506286621
+INFO: TP : 45
+INFO: FP : 122
+INFO: Validation Dice score: 0.5752939581871033
+INFO: Evaluating for train set
+INFO: roc_auc : 0.7980415749572022
+INFO: PR auc : 0.8325166359187017
+INFO: accuracy : 0.6952979564666748
+INFO: TP : 289
+INFO: FP : 705
+INFO: Validation Dice score: 0.5139570832252502
+INFO: Checkpoint 4 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8467642276422765
+INFO: PR auc : 0.8406771532754607
+INFO: accuracy : 0.8024193048477173
+INFO: TP : 87
+INFO: FP : 112
+INFO: Validation Dice score: 0.5674874782562256
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8336434336023477
+INFO: PR auc : 0.844410657028309
+INFO: accuracy : 0.7602420449256897
+INFO: TP : 461
+INFO: FP : 626
+INFO: Validation Dice score: 0.5066531896591187
+INFO: Checkpoint 5 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8448780487804877
+INFO: PR auc : 0.8498836730139264
+INFO: accuracy : 0.7298386693000793
+INFO: TP : 61
+INFO: FP : 120
+INFO: Validation Dice score: 0.5433620810508728
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8230921985815604
+INFO: PR auc : 0.849633741186453
+INFO: accuracy : 0.7327746748924255
+INFO: TP : 359
+INFO: FP : 689
+INFO: Validation Dice score: 0.46639078855514526
+INFO: Checkpoint 6 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8630243902439024
+INFO: PR auc : 0.8667622575466369
+INFO: accuracy : 0.7338709235191345
+INFO: TP : 63
+INFO: FP : 119
+INFO: Validation Dice score: 0.5907556414604187
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8368011738811445
+INFO: PR auc : 0.8551981659959703
+INFO: accuracy : 0.7330073714256287
+INFO: TP : 365
+INFO: FP : 683
+INFO: Validation Dice score: 0.5601422786712646
+INFO: Checkpoint 7 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8672520325203252
+INFO: PR auc : 0.8703984577022708
+INFO: accuracy : 0.8024193048477173
+INFO: TP : 84
+INFO: FP : 115
+INFO: Validation Dice score: 0.5913202166557312
+INFO: Evaluating for train set
+INFO: roc_auc : 0.853384201516263
+INFO: PR auc : 0.8693245086826439
+INFO: accuracy : 0.7737429738044739
+INFO: TP : 474
+INFO: FP : 632
+INFO: Validation Dice score: 0.5538405179977417
+INFO: Checkpoint 8 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8674471544715446
+INFO: PR auc : 0.8720806145706913
+INFO: accuracy : 0.7983870506286621
+INFO: TP : 83
+INFO: FP : 115
+INFO: Validation Dice score: 0.5744568109512329
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8557495720224996
+INFO: PR auc : 0.8705012397400304
+INFO: accuracy : 0.7825884222984314
+INFO: TP : 475
+INFO: FP : 644
+INFO: Validation Dice score: 0.521980881690979
+INFO: Checkpoint 9 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8626991869918699
+INFO: PR auc : 0.8703115771261825
+INFO: accuracy : 0.8024193048477173
+INFO: TP : 85
+INFO: FP : 114
+INFO: Validation Dice score: 0.6307108998298645
+INFO: Evaluating for train set
+INFO: roc_auc : 0.852366837857667
+INFO: PR auc : 0.8713385888717597
+INFO: accuracy : 0.7818900942802429
+INFO: TP : 473
+INFO: FP : 645
+INFO: Validation Dice score: 0.586877167224884
+INFO: Checkpoint 10 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8703739837398373
+INFO: PR auc : 0.8765386403510906
+INFO: accuracy : 0.75
+INFO: TP : 64
+INFO: FP : 122
+INFO: Validation Dice score: 0.6084534525871277
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8420190755685988
+INFO: PR auc : 0.8653755921941699
+INFO: accuracy : 0.7476722002029419
+INFO: TP : 376
+INFO: FP : 694
+INFO: Validation Dice score: 0.5536637306213379
+INFO: Checkpoint 11 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8610081300813008
+INFO: PR auc : 0.869759069889113
+INFO: accuracy : 0.7379031777381897
+INFO: TP : 60
+INFO: FP : 123
+INFO: Validation Dice score: 0.6416333317756653
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8322171680117387
+INFO: PR auc : 0.8599116586695134
+INFO: accuracy : 0.7413873076438904
+INFO: TP : 366
+INFO: FP : 694
+INFO: Validation Dice score: 0.5918915867805481
+INFO: Checkpoint 12 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8694634146341464
+INFO: PR auc : 0.8773849230356227
+INFO: accuracy : 0.7137096524238586
+INFO: TP : 54
+INFO: FP : 123
+INFO: Validation Dice score: 0.6132711172103882
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8345766691122523
+INFO: PR auc : 0.862092358552702
+INFO: accuracy : 0.7344040274620056
+INFO: TP : 345
+INFO: FP : 705
+INFO: Validation Dice score: 0.5511733293533325
+INFO: Checkpoint 13 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8747317073170732
+INFO: PR auc : 0.8797519449017286
+INFO: accuracy : 0.8306451439857483
+INFO: TP : 92
+INFO: FP : 114
+INFO: Validation Dice score: 0.5613116025924683
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8687248716067497
+INFO: PR auc : 0.8793439753793857
+INFO: accuracy : 0.7895716428756714
+INFO: TP : 502
+INFO: FP : 627
+INFO: Validation Dice score: 0.5422379970550537
+INFO: Checkpoint 14 saved!
+INFO: Evaluating for test set
+INFO: roc_auc : 0.8686178861788617
+INFO: PR auc : 0.878730032326148
+INFO: accuracy : 0.774193525314331
+INFO: TP : 71
+INFO: FP : 121
+INFO: Validation Dice score: 0.6431568264961243
+INFO: Evaluating for train set
+INFO: roc_auc : 0.8448970408412816
+INFO: PR auc : 0.8675441220192204
+INFO: accuracy : 0.75698322057724
+INFO: TP : 391
+INFO: FP : 692
+INFO: Validation Dice score: 0.5948941111564636
+INFO: Checkpoint 15 saved!

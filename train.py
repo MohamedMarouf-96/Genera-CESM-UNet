@@ -1,4 +1,5 @@
 import argparse
+import copy
 import logging
 import sys
 from pathlib import Path
@@ -57,11 +58,13 @@ def train_net(net,
               d3 = False):
     # 1. Create dataset
     if d3 :
-        dataset = DukeBreastCancerMRIDataset(dir_root, 'train', dataset_mode = args.dataset_mode, unregistered= args.unregistered)
+        train_set = DukeBreastCancerMRIDataset(dir_root, 'train', dataset_mode = args.dataset_mode, unregistered= args.unregistered)
+        val_set = DukeBreastCancerMRIDataset(dir_root, 'test', dataset_mode = args.dataset_mode, unregistered= args.unregistered)
+        # dataset = DukeBreastCancerMRIDataset(dir_root, 'train', dataset_mode = args.dataset_mode, unregistered= args.unregistered)
         # test_set = DukeBreastCancerMRIDataset(dir_root, 'test', unregistered= args.unregistered)
-        n_val = int(len(dataset) * val_percent)
-        n_train = len(dataset) - n_val
-        train_set, val_set = random_split(dataset, [n_train, n_val], generator=torch.Generator().manual_seed(0))
+        # n_val = int(len(dataset) * val_percent)
+        # n_train = len(dataset) - n_val
+        # train_set, val_set = random_split(dataset, [n_train, n_val], generator=torch.Generator().manual_seed(0))
         n_train = len(train_set)
         n_val = len(val_set)
     else :
@@ -87,6 +90,7 @@ def train_net(net,
     # train_loader = DataLoader(train_set, shuffle=True, **loader_args)
     # val_loader = DataLoader(val_set, shuffle=False, drop_last=True, **loader_args)
     train_loader = DataLoader(train_set, shuffle=True,collate_fn= my_collate_fn, **loader_args)
+    train_loader_eval = copy.deepcopy(train_loader)
     val_loader = DataLoader(val_set, shuffle=False, drop_last=True,collate_fn= my_collate_fn, **loader_args)
 
     # # (Initialize logging)
@@ -137,12 +141,22 @@ def train_net(net,
                 is_slice_positive = true_masks.amax(dim=(1,2)).float()
 
                 if args.d3 :
+                    is_slice_positive = true_masks.amax(dim=(1,2,3)).float()
                     true_masks_one_hot = F.one_hot(true_masks, net_single_device.n_classes).permute(0, 4, 1, 2, 3).float()
                 else :
+                    is_slice_positive = true_masks.amax(dim=(1,2)).float()
                     true_masks_one_hot = F.one_hot(true_masks, net_single_device.n_classes).permute(0, 3, 1, 2).float()
 
                 with torch.cuda.amp.autocast(enabled=amp):
-                    masks_pred, confidence = net(images)
+                    masks_pred = net(images)
+                    try: 
+                        masks_pred , confidence = masks_pred
+                    except :
+                        if args.d3 :
+                            confidence = torch.zeros_like(masks_pred.detach()).to(masks_pred.device).sum(dim=[1,2,3,4])
+                        else :
+                            confidence = torch.zeros_like(masks_pred.detach()).to(masks_pred.device).sum(dim=[1,2,3])
+
                     if args.stage == 'seg':
                         loss = criterion(masks_pred, true_masks) \
                        + dice_loss(F.softmax(masks_pred, dim=1).float(),
@@ -171,7 +185,7 @@ def train_net(net,
                 pbar.set_postfix(**{'loss (batch)': loss.item()})
 
                 # Evaluation round
-                division_step = (n_train // (10 * batch_size))
+                division_step = (n_train // (1 * batch_size))
                 if division_step > 0:
                     if global_step % division_step == 0:
                         histograms = {}
@@ -180,9 +194,15 @@ def train_net(net,
                             histograms['Weights/' + tag] = wandb.Histogram(value.data.cpu())
                             histograms['Gradients/' + tag] = wandb.Histogram(value.grad.data.cpu())
 
+                        
+                        logging.info('Evaluating for test set')
                         val_score = evaluate(net,net_single_device, val_loader, device,threeD=args.d3)
                         scheduler.step(val_score)
 
+                        logging.info('Validation Dice score: {}'.format(val_score))
+
+                        logging.info('Evaluating for train set')
+                        val_score = evaluate(net,net_single_device, train_loader_eval, device,threeD=args.d3)
                         logging.info('Validation Dice score: {}'.format(val_score))
                         # experiment.log({
                         #     'learning rate': optimizer.param_groups[0]['lr'],
@@ -251,13 +271,14 @@ if __name__ == '__main__':
     # n_channels=3 for RGB images
     # n_classes is the number of probabilities you want to get per pixel
     if not args.d3:
-        net = UNet(n_channels=3, n_classes=2, bilinear=True)
+        net = UNet(3, n_classes=2, bilinear=True)
     else :
         # net = UNet3d(n_channels=1,n_classes=2,bilinear=True) 
-        net = unet.UNet3D(padding=1)
-        net.n_channels =1
-        net.n_classes =2
-        net.bilinear = False
+        # net = unet.UNet3D(in_channels = 3 ,padding=1)
+        # net.n_channels =3
+        # net.n_classes =2
+        # net.bilinear = False
+        net = UNet3d(len(args.dataset_mode),2,True)
 
     
 

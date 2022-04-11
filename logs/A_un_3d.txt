@@ -1490,3 +1490,509 @@ INFO: Starting training:
         Images scaling:  1.0
         Mixed Precision: False
     
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      4
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.5691367456073338
+INFO: PR auc : 0.4600367930681025
+INFO: accuracy : 0.3984375
+INFO: Validation Dice score: 0.0035211117938160896
+INFO: roc_auc : 0.5347593582887701
+INFO: PR auc : 0.4342629515755242
+INFO: accuracy : 0.3984375
+INFO: Validation Dice score: 0.0060935611836612225
+INFO: roc_auc : 0.4698242933537052
+INFO: PR auc : 0.37349593350175186
+INFO: accuracy : 0.3828125
+INFO: Validation Dice score: 0.003828514600172639
+INFO: roc_auc : 0.518716577540107
+INFO: PR auc : 0.3972603222564385
+INFO: accuracy : 0.40625
+INFO: Validation Dice score: 0.0040061897598207
+INFO: roc_auc : 0.47873694932518457
+INFO: PR auc : 0.4171429506718847
+INFO: accuracy : 0.453125
+INFO: Validation Dice score: 0.001340032322332263
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.43519225872167044
+INFO: PR auc : 0.3680550240926739
+INFO: accuracy : 0.59375
+INFO: Validation Dice score: 0.0013524091336876154
+INFO: roc_auc : 0.5271199388846448
+INFO: PR auc : 0.4098972649456602
+INFO: accuracy : 0.390625
+INFO: Validation Dice score: 0.0015426087193191051
+INFO: roc_auc : 0.570664629488159
+INFO: PR auc : 0.4407751556285937
+INFO: accuracy : 0.40625
+INFO: Validation Dice score: 0.0018685719696804881
+INFO: roc_auc : 0.5278838808250573
+INFO: PR auc : 0.4390425079325058
+INFO: accuracy : 0.421875
+INFO: Validation Dice score: 0.0009177060564979911
+INFO: roc_auc : 0.5092946269416858
+INFO: PR auc : 0.46753449644028244
+INFO: accuracy : 0.4921875
+INFO: Validation Dice score: 0.0013460463378578424
+INFO: roc_auc : 0.505729564553094
+INFO: PR auc : 0.4537330073580983
+INFO: accuracy : 0.53125
+INFO: Validation Dice score: 0.0016045469092205167
+INFO: roc_auc : 0.5286478227654698
+INFO: PR auc : 0.4390254923721993
+INFO: accuracy : 0.484375
+INFO: Validation Dice score: 0.001310525112785399
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      16
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4117647058823529
+INFO: accuracy : 0.5882353186607361
+INFO: Validation Dice score: 0.04403690993785858
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4117647058823529
+INFO: accuracy : 0.5882353186607361
+INFO: Validation Dice score: 0.09960370510816574
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: 1430
+INFO: Creating dataset with 1430 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4117647058823529
+INFO: accuracy : 0.5882353186607361
+INFO: Validation Dice score: 0.005535672884434462
+INFO: Using device cuda
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Transposed conv upscaling
+INFO: Creating dataset with 1430 examples
+INFO: Creating dataset with 252 examples
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   1430
+        Validation size: 252
+        Checkpoints:     True
+        Device:          cuda
+        Images scaling:  1.0
+        Mixed Precision: False
+    
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.010052929632365704
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.04847600311040878
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.15795397758483887
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.11184535920619965
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.08234614133834839
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.431471049785614
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.4395906925201416
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.22519274055957794
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.32129430770874023
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.27150076627731323
+INFO: Checkpoint 1 saved!
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.30661094188690186
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.286025732755661
+INFO: roc_auc : 0.5
+INFO: PR auc : 0.4959677419354839
+INFO: accuracy : 0.5040322542190552
+INFO: Validation Dice score: 0.3055044114589691
