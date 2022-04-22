@@ -1,0 +1,122 @@
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth', lr=1e-05, name='full2d_balanced_debugA', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth', lr=1e-05, name='full2d_balanced_debugA', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth', lr=1e-05, name='full2d_balanced_debugA', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth', lr=1e-05, name='full2d_balanced_debugA', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth', lr=1e-05, name='full2d_balanced_debugA', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth', lr=1e-05, name='full2d_balanced_debugA', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth', lr=1e-05, name='full2d_balanced_debugA', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth', lr=1e-05, name='full2d_balanced_debugA', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth', lr=1e-05, name='full2d_balanced_debugA', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth', lr=1e-05, name='full2d_balanced_debugA', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth', lr=1e-05, name='full2d_balanced_debugA', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth', lr=1e-05, name='full2d_balanced_debugA', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: accuracy : 0.0063965884037315845
+INFO: balanced accuracy : 0.5153474054529463
+INFO: roc_auc : 0.7514805042509528
+INFO: PR auc : 0.44356024516410647
+INFO: TPR : 0.03333333507180214
+INFO: FPR : 0.002638522427440633
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.280672162771225
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: TPR : 0.0
+INFO: FPR : 0.0
+INFO: Validation Dice score: 0.8081023693084717
+INFO: TPR: 0.03333333507180214
+INFO: FPR: 0.002638522427440633
+INFO: TPR Patient: 0.0
+INFO: FPR Patient: 0.0
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth', lr=1e-05, name='full2d_balanced_debugA', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_balanced_A/checkpoint_epoch5.pth
+INFO: Saved interrupt

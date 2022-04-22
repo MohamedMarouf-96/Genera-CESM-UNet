@@ -152,20 +152,17 @@ class ConfidenceScorer2D(nn.Module):
             nn.ReLU(inplace=True))
         self.conv2 = nn.Sequential(nn.Conv2d(intermediate_channels,intermediate_channels,3,2,1,bias=False),nn.BatchNorm2d(intermediate_channels),
             nn.ReLU(inplace=True))
-        self.conv3 = nn.Sequential(nn.Conv2d(intermediate_channels,intermediate_channels,3,2,1,bias=False),nn.BatchNorm2d(intermediate_channels),
-            nn.ReLU(inplace=True))
-        self.conv4 = nn.Sequential(nn.Conv2d(intermediate_channels,intermediate_channels,3,2,1),
-            nn.ReLU(inplace=True))
+        self.fc = nn.Linear(intermediate_channels,intermediate_channels)
         self.last = nn.Linear(intermediate_channels,1)
 
     def forward(self,x):
         out = self.conv1(x)
         out = self.conv2(out)
-        out = self.conv3(out)
-        out = self.conv4(out)
+        out = out.mean(dim=(2,3))
         out = out.squeeze(-1).squeeze(-1)
+        out = self.fc(out)
         out = self.last(out)
-        return torch.sigmoid(out.squeeze(-1))
+        return torch.sigmoid(out.unsqueeze(-1).unsqueeze(-1))
 
 
 class ConfidenceScorer3D(nn.Module):

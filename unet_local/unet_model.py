@@ -37,14 +37,8 @@ class UNet(nn.Module):
         x = self.up3(x, x2)
         x = self.up4(x, x1)
         logits = self.outc(x)
-            
-        if self.with_confidence:
-            confidence = self.confidence_scorer(x5.detach())
-        else :
-            confidence = None
-        return logits, confidence
-
-
+        classes = self.confidence_scorer(x5)
+        return torch.sigmoid(logits), classes
 
 class UNet3d(nn.Module):
     def __init__(self, n_channels, n_classes, bilinear=True):

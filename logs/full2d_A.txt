@@ -1,0 +1,911 @@
+INFO: Using device cuda
+INFO: expirement args: Namespace(batch_size=32, classes=2, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(batch_size=32, classes=2, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, batch_size=32, classes=2, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   136995
+        Validation size: 15131
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, batch_size=32, classes=2, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   136995
+        Validation size: 15131
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, batch_size=32, classes=2, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   136995
+        Validation size: 15131
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, batch_size=32, classes=2, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	2 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   136995
+        Validation size: 15131
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   136995
+        Validation size: 15131
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   136995
+        Validation size: 15131
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   136995
+        Validation size: 15131
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   136995
+        Validation size: 15131
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   136995
+        Validation size: 15131
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   136995
+        Validation size: 15131
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   136995
+        Validation size: 15131
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=False, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   136995
+        Validation size: 15131
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   435
+        Validation size: 469
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   435
+        Validation size: 469
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   435
+        Validation size: 469
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   435
+        Validation size: 469
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   435
+        Validation size: 469
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.47596213531967724
+INFO: PR auc : 0.19136915060054285
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563693940639496
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.26184047175667285
+INFO: PR auc : 0.14170864413080486
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563693940639496
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.2558038485412787
+INFO: PR auc : 0.13675464989993152
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563693940639496
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.23612662942271884
+INFO: PR auc : 0.13081972999917854
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563693940639496
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.2409217877094972
+INFO: PR auc : 0.13084479717975625
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563693940639496
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.2324177529484792
+INFO: PR auc : 0.1299672856033626
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563693940639496
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.2422253258845438
+INFO: PR auc : 0.130525403118369
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563693940639496
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.23960273122284295
+INFO: PR auc : 0.13016135521050307
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563693940639496
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.27638112973308504
+INFO: PR auc : 0.1350035130357566
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563693940639496
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.33476101800124153
+INFO: PR auc : 0.14408439248407579
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563693940639496
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.33693358162631903
+INFO: PR auc : 0.14447255552282637
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563693940639496
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.38576970825574175
+INFO: PR auc : 0.15436066694542425
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563693940639496
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.42676908752327747
+INFO: PR auc : 0.1645871753463529
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563693940639496
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.39309435133457477
+INFO: PR auc : 0.15615483292317447
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563693940639496
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Checkpoint 1 saved!
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.36714773432650527
+INFO: PR auc : 0.15031397196091464
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10563711822032928
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.35951272501551834
+INFO: PR auc : 0.1487678758899535
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10564201325178146
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.3620111731843576
+INFO: PR auc : 0.14917038023372123
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10566066950559616
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.35491930477964
+INFO: PR auc : 0.1477652140650731
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10569487512111664
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.33561452513966483
+INFO: PR auc : 0.14404031263692987
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10576613992452621
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.3268311607697083
+INFO: PR auc : 0.14238145377203087
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10589995980262756
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.3249224084419615
+INFO: PR auc : 0.14207418676070652
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.1060863807797432
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.32680012414649284
+INFO: PR auc : 0.1424276609199196
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.1061377301812172
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.3354438237119801
+INFO: PR auc : 0.14410092127509955
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10543406754732132
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.3499689633767846
+INFO: PR auc : 0.1469101299401439
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10435377806425095
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.3567659838609559
+INFO: PR auc : 0.14824231979409264
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10182022303342819
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.3653320918684047
+INFO: PR auc : 0.14996233065409043
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.09940044581890106
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.3785226567349472
+INFO: PR auc : 0.1526409389475352
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.09773781895637512
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.37926753569211663
+INFO: PR auc : 0.15263822915546071
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.09470997005701065
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Checkpoint 2 saved!
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.3873370577281192
+INFO: PR auc : 0.15427328566222265
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.09287678450345993
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.3971756672873991
+INFO: PR auc : 0.1565424906707119
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.09262200444936752
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4026381129733084
+INFO: PR auc : 0.15786308395663667
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.09350106120109558
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4075729360645562
+INFO: PR auc : 0.1590966928555449
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.09531525522470474
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4153631284916201
+INFO: PR auc : 0.16093643339416241
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.09862757474184036
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4187771570453135
+INFO: PR auc : 0.1617194358865861
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10063041746616364
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4247206703910615
+INFO: PR auc : 0.16301915152493654
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10485220700502396
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.42932960893854744
+INFO: PR auc : 0.1640416703768381
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.1075325757265091
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4345127250155183
+INFO: PR auc : 0.16540290211909142
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.11147825419902802
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4384543761638734
+INFO: PR auc : 0.16659529541194995
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.1126130074262619
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4404407200496586
+INFO: PR auc : 0.1674466334827482
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.11357413232326508
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4397268777157045
+INFO: PR auc : 0.16765792828047557
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.11474238336086273
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4390440720049659
+INFO: PR auc : 0.1676146291484914
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.11477157473564148
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4389509621353197
+INFO: PR auc : 0.16772622820446892
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.11233213543891907
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Checkpoint 3 saved!
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4411545623836126
+INFO: PR auc : 0.1677928898917966
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.1140083596110344
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.44826194909993794
+INFO: PR auc : 0.16913509827420237
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.11762747168540955
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4577901924270639
+INFO: PR auc : 0.17145768828299454
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.11878395825624466
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.46753569211669765
+INFO: PR auc : 0.17427014459233978
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.11583498865365982
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4705772811918063
+INFO: PR auc : 0.17537808809277827
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.11394575983285904
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.47051520794537555
+INFO: PR auc : 0.17552630807017278
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.11342936754226685
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.46945996275605223
+INFO: PR auc : 0.17542218607989657
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.11074985563755035
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4732464307883303
+INFO: PR auc : 0.17701487203141464
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.1076732948422432
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.47557417752948483
+INFO: PR auc : 0.1783047267816359
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10832132399082184
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: accuracy : 0.0
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4834264432029795
+INFO: PR auc : 0.18170944574951392
+INFO: TPR : 0.0
+INFO: FPR : 1.0
+INFO: POD : 1.6047855266876354e-09
+INFO: localization POD : 0.10368366539478302
+INFO: Validation Dice score: 0.7991071343421936
+INFO: Evaluating for test set
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0, 1, 2, 3], input_channels=1, load='./checkpoint/full2d_A/checkpoint_epoch1.pth', lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0, 1, 2, 3], input_channels=1, load='./checkpoint/full2d_A/checkpoint_epoch1.pth', lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0, 1, 2, 3], input_channels=1, load='./checkpoint/full2d_A/checkpoint_epoch1.pth', lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0, 1, 2, 3], input_channels=1, load='./checkpoint/full2d_A/checkpoint_epoch1.pth', lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0, 1, 2, 3], input_channels=1, load='./checkpoint/full2d_A/checkpoint_epoch1.pth', lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0, 1, 2, 3], input_channels=1, load='./checkpoint/full2d_A/checkpoint_epoch1.pth', lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0, 1, 2, 3], input_channels=1, load='./checkpoint/full2d_A/checkpoint_epoch1.pth', lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0, 1, 2, 3], input_channels=1, load='./checkpoint/full2d_A/checkpoint_epoch1.pth', lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, balanced=True, batch_size=32, classes=1, d3=False, dataset='duke2d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0, 1, 2, 3], input_channels=1, load='./checkpoint/full2d_A/checkpoint_epoch1.pth', lr=1e-05, name='full2d_A', unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full2d_A/checkpoint_epoch1.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/full2d_A/checkpoint_epoch1.pth
