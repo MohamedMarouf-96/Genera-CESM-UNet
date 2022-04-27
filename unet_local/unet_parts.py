@@ -172,15 +172,29 @@ class ConfidenceScorer3D(nn.Module):
             nn.ReLU(inplace=True))
         self.conv2 = nn.Sequential(nn.Conv3d(intermediate_channels,intermediate_channels,3,2,1,bias=False),nn.BatchNorm3d(intermediate_channels),
             nn.ReLU(inplace=True))
-        self.conv3 = nn.Sequential(nn.Conv3d(intermediate_channels,intermediate_channels,3,2,1,bias=False),nn.BatchNorm3d(intermediate_channels),
-            nn.ReLU(inplace=True))
-        self.last = nn.Linear(intermediate_channels,1)
+        self.fc_patient = nn.Linear(intermediate_channels,intermediate_channels)
+        self.last_patient = nn.Linear(intermediate_channels,1)
 
     def forward(self,x):
-        x_in = F.interpolate(x,size = [8,8,8])
-        out = self.conv1(x_in)
+        out = self.conv1(x)
         out = self.conv2(out)
-        out = self.conv3(out)
-        out = out.squeeze(-1).squeeze(-1).squeeze(-1)
-        out = self.last(out)
-        return torch.sigmoid(out.squeeze(-1))
+
+        out_patient = out.mean(dim=(2,3,4))
+        out_patient = self.fc_patient(out_patient)
+        out_patient = self.last_patient(out_patient)
+        out_patient = torch.sigmoid(out_patient.unsqueeze(-1).unsqueeze(-1).unsqueeze(-1))
+        return out_patient
+
+        
+class ConfidenceScorer3DSlice(nn.Module):
+    def __init__(self,input_channels,intermediate_channels):
+        super().__init__()
+        self.fc_slice = nn.Linear(input_channels,intermediate_channels)
+        self.last_slice = nn.Linear(intermediate_channels,1)
+
+    def forward(self,x):
+        out = x.mean(dim = (3,4)).transpose(1,2)
+        out = self.fc_slice(out)
+        out = self.last_slice(out)
+        out = torch.sigmoid(out).unsqueeze(-1).unsqueeze(-1).transpose(1,2)
+        return out

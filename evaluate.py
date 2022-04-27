@@ -1,3 +1,4 @@
+import einops
 import torch
 import torch.nn.functional as F
 from tqdm import tqdm
@@ -21,9 +22,6 @@ def evaluate(net, net_single_device, dataloader, device, args):
     dice_all = []
     predictions_all = []
     gt_all = []
-    if args.d3 :
-        predictions_patient_all = []
-        gt_patient_all = []
 
 
     # iterate over the validation set
@@ -34,8 +32,11 @@ def evaluate(net, net_single_device, dataloader, device, args):
         mask_true = mask_true.to(device=device, dtype=torch.float)
 
         if args.d3 :
-            is_slice_positive = mask_true.amax(dim=(1,2,3,4),keepdim = True).float()
-            is_patient_positive = is_slice_positive.amax(dim= 1 ,keepdim = True).float()
+            mask_true = mask_true[:,:,args.axial_size // 4: - args.axial_size //4]
+            is_slice_positive = mask_true.amax(dim=(1,3,4)).float()
+            mask_true = einops.rearrange(mask_true,'b c z ... -> (b z) c ...')
+            is_slice_positive = einops.rearrange(is_slice_positive,'b z -> (b z)')
+            # is_patient_positive = is_slice_positive.amax(dim= 1).float()
         else :
             is_slice_positive = mask_true.amax(dim=(1,2,3)).float()
 
@@ -44,30 +45,27 @@ def evaluate(net, net_single_device, dataloader, device, args):
             # predict the mask
             if args.d3 :
                 masks_pred, slice_class, patient_class = net(image)
+                masks_pred = masks_pred[:,:,args.axial_size // 4: - args.axial_size //4]
+                slice_class = slice_class[:,:, args.axial_size // 4: - args.axial_size //4]
+                slice_class = slice_class * patient_class
+                masks_pred = einops.rearrange(masks_pred,'b c z ... -> (b z) c ...')
+                slice_class = einops.rearrange(slice_class,'b c z ... -> (b z) c ...')
             else :
                 masks_pred, slice_class = net(image)
             
             # convert to one-hot format
-            if args.d3 :
-                masks_pred_final = (masks_pred*patient_class*slice_class >= 0.5).float()
-                confidence = patient_class * slice_class
-            else :
-                masks_pred_final = (masks_pred*slice_class >= 0.5).float()
-                confidence = slice_class
+            masks_pred_final = (masks_pred*slice_class >= 0.5).float()
+            confidence = slice_class
 
             # compute the Dice score
-            dice_score_tmp = dice_coeff(masks_pred_final, mask_true, reduce_batch_first=False, threeD=args.d3, reduce_batch=False)
+            dice_score_tmp = dice_coeff(masks_pred_final, mask_true, reduce_batch_first=False, reduce_batch=False)
             dice_all.append(dice_score_tmp)
 
-            dice_score_tmp = dice_coeff((masks_pred >= 0.5).float(), mask_true, reduce_batch_first=False, threeD=args.d3, reduce_batch=False)
+            dice_score_tmp = dice_coeff((masks_pred >= 0.5).float(), mask_true, reduce_batch_first=False, reduce_batch=False)
             localization_only_dice_all.append(dice_score_tmp)
-
 
             predictions_all.append(confidence)
             gt_all.append(is_slice_positive)
-            if args.d3:
-                predictions_patient_all.append(patient_class)
-                gt_patient_all.append(is_patient_positive)
 
 
 
@@ -85,11 +83,11 @@ def evaluate(net, net_single_device, dataloader, device, args):
 
     roc_auc = roc_auc_score(gt_all,predictions_all)
     pr_auc = average_precision_score(gt_all,predictions_all)
-    accuracy = (pred_class_all*gt_all).mean()
+    accuracy = (pred_class_all == gt_all).mean()
     balanced_accuracy = balanced_accuracy_score(gt_all, pred_class_all)
 
     tpr = (pred_class_all*gt_all)[gt_all > 0].mean()
-    fpr = ((1 - pred_class_all)*( 1 - gt_all))[gt_all == 0].mean()
+    fpr = ( pred_class_all !=  gt_all)[gt_all == 0].mean()
     logging.info('accuracy : {}'.format(accuracy))
     logging.info('balanced accuracy : {}'.format(balanced_accuracy))
     logging.info('roc_auc : {}'.format(roc_auc))
@@ -112,12 +110,8 @@ def evaluate_metrics(net, net_single_device, dataloader, device, args,dice_posit
     predictions_all = []
     gt_all = []
 
-    if args.d3 :
-        predictions_patient_all = []
-        gt_patient_all = []
-    else :
-        predictions_patient_all = dict()
-        gt_patient_all = dict()
+    predictions_patient_all = dict()
+    gt_patient_all = dict()
 
 
     # iterate over the validation set
@@ -128,26 +122,38 @@ def evaluate_metrics(net, net_single_device, dataloader, device, args,dice_posit
         mask_true = mask_true.to(device=device, dtype=torch.float)
 
         if args.d3 :
-            is_slice_positive = mask_true.amax(dim=(1,2,3,4),keepdim = True).float()
-            is_patient_positive = is_slice_positive.amax(dim= 1 ,keepdim = True).float()
+            patient_ids_temp = []
+            for patient_id in patient_ids:
+                patient_ids_temp += [patient_id]* (args.axial_size//2)
+            patient_ids = patient_ids_temp
+            mask_true = mask_true[:,:,args.axial_size // 4: - args.axial_size //4]
+            is_slice_positive = mask_true.amax(dim=(1,3,4)).float()
+            mask_true = einops.rearrange(mask_true,'b c z ... -> (b z) c ...')
+            is_slice_positive = einops.rearrange(is_slice_positive,'b z -> (b z)')
+            # is_patient_positive = is_slice_positive.amax(dim= 1).float()
         else :
             is_slice_positive = mask_true.amax(dim=(1,2,3)).float()
 
+        # mask_true = torch.nn.functional.interpolate(mask_true,size = (256,256),mode = 'nearest')
 
         with torch.no_grad():
             # predict the mask
             if args.d3 :
                 masks_pred, slice_class, patient_class = net(image)
+                masks_pred = masks_pred[:,:,args.axial_size // 4: - args.axial_size //4]
+                slice_class = slice_class[:,:, args.axial_size // 4: - args.axial_size //4]
+                slice_class = slice_class * patient_class
+                masks_pred = einops.rearrange(masks_pred,'b c z ... -> (b z) c ...')
+                slice_class = einops.rearrange(slice_class,'b c z ... -> (b z) c ...')
             else :
                 masks_pred, slice_class = net(image)
             
+            masks_pred = torch.nn.functional.interpolate(masks_pred,size = (256,256), mode = 'nearest')
+
+            
             # convert to one-hot format
-            if args.d3 :
-                masks_pred_final = (masks_pred*patient_class*slice_class >= 0.5).float()
-                confidence = patient_class * slice_class
-            else :
-                masks_pred_final = (masks_pred*slice_class >= 0.5).float()
-                confidence = slice_class
+            masks_pred_final = (masks_pred*slice_class >= 0.5).float()
+            confidence = slice_class
 
             # compute the Dice score
             dice_score_tmp = dice_coeff((masks_pred >= 0.5).float(), mask_true, reduce_batch_first=False, threeD=args.d3, reduce_batch=False)
@@ -160,25 +166,21 @@ def evaluate_metrics(net, net_single_device, dataloader, device, args,dice_posit
 
             predictions_all.append(confidence)
             gt_all.append(is_slice_positive)
-            if args.d3:
-                predictions_patient_all.append(patient_class)
-                gt_patient_all.append(is_patient_positive)
-            else :
-                for i,patient_id in enumerate(patient_ids) :
-                    gt_patient_all[patient_id] = is_slice_positive[i] or gt_patient_all.get(patient_id,torch.as_tensor(0,device='cuda'))
-                    if bool(is_slice_positive[i]) :
-                        predictions_patient_all[patient_id] = predictions_patient_all.get(patient_id,False) or (dice_score_tmp[i] >=  dice_positive_threshold)
-                    else :
-                        predictions_patient_all[patient_id] = predictions_patient_all.get(patient_id,False) or (masks_pred_final[i, 0, ...].sum() >=  dice_negative_threshold)
+            for i,patient_id in enumerate(patient_ids) :
+                gt_patient_all[patient_id] = is_slice_positive[i] or gt_patient_all.get(patient_id,torch.as_tensor(0,device='cuda'))
+                if bool(is_slice_positive[i]) :
+                    predictions_patient_all[patient_id] = predictions_patient_all.get(patient_id,False) or (dice_score_tmp[i] >=  dice_positive_threshold)
+                else :
+                    predictions_patient_all[patient_id] = predictions_patient_all.get(patient_id,False) or (masks_pred_final[i, 0, ...].sum() >=  dice_negative_threshold)
 
 
 
-    if not args.d3 :
-        predictions_patient_all_list = list()
-        gt_patient_all_list = list()
-        for patient_id in predictions_patient_all.keys():
-            predictions_patient_all_list.append(predictions_patient_all[patient_id])
-            gt_patient_all_list.append(gt_patient_all[patient_id])
+    
+    predictions_patient_all_list = list()
+    gt_patient_all_list = list()
+    for patient_id in predictions_patient_all.keys():
+        predictions_patient_all_list.append(predictions_patient_all[patient_id])
+        gt_patient_all_list.append(gt_patient_all[patient_id])
 
     
     net.train()

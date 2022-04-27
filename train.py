@@ -1,12 +1,10 @@
 import argparse
 import copy
-from genericpath import exists
 import logging
 import os
 import sys
 from pathlib import Path
-from unittest.util import strclass
-from matplotlib.animation import ImageMagickBase
+import utils
 
 import torch
 import torch.nn as nn
@@ -22,7 +20,6 @@ from evaluate import evaluate, evaluate_metrics
 from unet_local import UNet3d
 from unet_local import UNet
 # from unet_local import UNet, UNet3d
-import unet
 from utils.my_collate_fn import my_collate_fn
 from utils.balanced_sampling import get_balanced_weighted_sampler
 
@@ -34,7 +31,7 @@ def evaluate_net(net,
                  args):
     
     if args.dataset == 'duke3d' :
-        val_set = DukeBreastCancerMRIDataset(dir_root, 'test', dataset_mode = args.dataset_mode, unregistered= args.unregistered)
+        val_set = DukeBreastCancerMRIDataset(dir_root, 'test', args)
     elif args.dataset == 'duke2d' :
         val_set = DBCMRIDataset(dir_root, 'test', dataset_mode = args.dataset_mode)
     else :
@@ -65,8 +62,8 @@ def train_net(net,
               amp: bool = False):
     # 1. Create dataset
     if args.dataset == 'duke3d' :
-        train_set = DukeBreastCancerMRIDataset(dir_root, 'train', dataset_mode = args.dataset_mode, unregistered= args.unregistered)
-        val_set = DukeBreastCancerMRIDataset(dir_root, 'val', dataset_mode = args.dataset_mode, unregistered= args.unregistered)
+        train_set = DukeBreastCancerMRIDataset(dir_root, 'train', args=args)
+        val_set = DukeBreastCancerMRIDataset(dir_root, 'val', args=args)
         n_train = len(train_set)
         n_val = len(val_set)
 
@@ -106,6 +103,7 @@ def train_net(net,
     scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 'max', patience=2)  # goal: maximize Dice score
     grad_scaler = torch.cuda.amp.GradScaler(enabled=amp)
     criterion = nn.BCELoss()
+    # criterion = utils.BBCELoss()
     global_step = 0
 
     # 5. Begin training
@@ -126,7 +124,7 @@ def train_net(net,
                 true_masks = true_masks.to(device=device, dtype=torch.float)
 
                 if args.d3 :
-                    is_slice_positive = true_masks.amax(dim=(3,4),keepdim = True).float()
+                    is_slice_positive = true_masks[:,:,args.axial_size // 4:-args.axial_size // 4].amax(dim=(3,4),keepdim = True).float()
                     is_patient_positive = is_slice_positive.amax(dim = 2, keepdim = True).float()
                 else :
                     is_slice_positive = true_masks.amax(dim=(2,3), keepdim = True).float()
@@ -135,16 +133,23 @@ def train_net(net,
                     if args.d3 :
                         masks_pred, slice_class, patient_class = net(images)
                         confidence = slice_class*patient_class
+                        confidence = confidence[:,:,args.axial_size // 4:-args.axial_size // 4]
+                        masks_pred = masks_pred[:,:,args.axial_size // 4:-args.axial_size // 4]
+                        true_masks = true_masks[:,:,args.axial_size // 4:-args.axial_size // 4]
                     else :
                         masks_pred, slice_class = net(images)
                         confidence = slice_class
 
-                    loss = criterion(masks_pred, true_masks) \
+                    # loss = dice_loss(masks_pred*confidence,
+                    #             true_masks, threeD=args.d3) \
+                    # + utils.balanced_binary_cross_entropy(confidence, is_slice_positive)
+                    loss = criterion(masks_pred*confidence, true_masks) \
                     + dice_loss(masks_pred*confidence,
                                 true_masks, threeD=args.d3) \
-                    + F.binary_cross_entropy(confidence, is_slice_positive)
-                    if args.d3 :
-                        loss += F.binary_cross_entropy(patient_class,is_patient_positive)
+                    + utils.balanced_binary_cross_entropy(confidence, is_slice_positive)
+                    # + F.binary_cross_entropy(confidence, is_slice_positive)
+                    # if args.d3 :
+                    #     loss += F.binary_cross_entropy(patient_class,is_patient_positive)
 
 
 
@@ -216,6 +221,10 @@ def get_args():
     parser.add_argument('--input_channels', type=int, default= 3)
     parser.add_argument('--classes', type=int, default= 1)
     parser.add_argument('--balanced',action='store_true',help='use a balanced random sampler to create a balanced training')
+    parser.add_argument('--resample',action='store_true',help='use resampling instead of resizing for 3d volumes')
+    parser.add_argument('--axial_size',type= int, default=32)
+    parser.add_argument('--sagital_size',type=int, default=256)
+    parser.add_argument('--coronal_size',type=int,default=256)
 
 
 
