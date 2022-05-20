@@ -15,6 +15,7 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 
 from utils.data_loading import DukeBreastCancerMRIDataset, DBCMRIDataset
+from utils.kasper_datasets import KasperN4Dataset,KasperNormADataset,KasperNormBDataset
 from utils.dice_score import dice_loss
 from evaluate import evaluate, evaluate_metrics
 from unet_local import UNet3d
@@ -34,6 +35,12 @@ def evaluate_net(net,
         val_set = DukeBreastCancerMRIDataset(dir_root, 'test', args)
     elif args.dataset == 'duke2d' :
         val_set = DBCMRIDataset(dir_root, 'test', dataset_mode = args.dataset_mode)
+    elif args.dataset == 'kaspernormA' :
+        val_set = KasperNormADataset(dir_root, 'test', args = args)
+    elif args.dataset == 'kaspern4' :
+        val_set = KasperN4Dataset(dir_root, 'test', args = args)
+    elif args.dataset == 'kaspernormb' :
+        val_set = KasperNormBDataset(dir_root, 'test', args = args)
     else :
         raise Exception(f"dataset {args.dataset} is not implemented")
     n_val = len(val_set)
@@ -64,15 +71,26 @@ def train_net(net,
     if args.dataset == 'duke3d' :
         train_set = DukeBreastCancerMRIDataset(dir_root, 'train', args=args)
         val_set = DukeBreastCancerMRIDataset(dir_root, 'val', args=args)
-        n_train = len(train_set)
-        n_val = len(val_set)
 
     elif args.dataset == 'duke2d' :
         train_set = DBCMRIDataset(dir_root, 'train', dataset_mode = args.dataset_mode)
         val_set = DBCMRIDataset(dir_root, 'val', dataset_mode = args.dataset_mode)
-        n_train = len(train_set)
-        n_val = len(val_set)
 
+
+    elif args.dataset == 'kaspernormA' :
+        train_set = KasperNormADataset(dir_root, 'train', args = args)
+        val_set = KasperNormADataset(dir_root, 'val', args = args)
+    elif args.dataset == 'kaspern4' :
+        train_set = KasperN4Dataset(dir_root, 'train', args = args)
+        val_set = KasperN4Dataset(dir_root, 'val', args = args)
+    elif args.dataset == 'kaspernormb' :
+        train_set = KasperNormBDataset(dir_root, 'train', args = args)
+        val_set = KasperNormBDataset(dir_root, 'val', args = args)
+    else :
+        raise Exception('dataset not defined')
+
+    n_train = len(train_set)
+    n_val = len(val_set)
     # 3. Create data loaders
     loader_args = dict(batch_size=batch_size, num_workers=32, pin_memory=True)
 
@@ -146,8 +164,8 @@ def train_net(net,
                     loss = criterion(masks_pred*confidence, true_masks) \
                     + dice_loss(masks_pred*confidence,
                                 true_masks, threeD=args.d3) \
-                    + utils.balanced_binary_cross_entropy(confidence, is_slice_positive)
-                    # + F.binary_cross_entropy(confidence, is_slice_positive)
+                    + F.binary_cross_entropy(confidence, is_slice_positive)
+                    # + utils.balanced_binary_cross_entropy(confidence, is_slice_positive)
                     # if args.d3 :
                     #     loss += F.binary_cross_entropy(patient_class,is_patient_positive)
 
@@ -225,6 +243,7 @@ def get_args():
     parser.add_argument('--axial_size',type= int, default=32)
     parser.add_argument('--sagital_size',type=int, default=256)
     parser.add_argument('--coronal_size',type=int,default=256)
+    parser.add_argument('--experiment_type', type=str ,default='expA', help='which experiment to perform to debug the model')
 
 
 

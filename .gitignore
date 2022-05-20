@@ -4,3 +4,8 @@ __pycache__/
 *.jpg
 venv/
 .idea/
+checkpoint/
+.github/
+INTERRUPTED.pth
+LICENSE
+sync_batchnorm/

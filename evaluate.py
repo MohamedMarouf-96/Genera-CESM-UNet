@@ -116,21 +116,25 @@ def evaluate_metrics(net, net_single_device, dataloader, device, args,dice_posit
 
     # iterate over the validation set
     for batch in tqdm(dataloader, total=num_val_batches, desc='Validation round', unit='batch', leave=False):
-        image, mask_true, patient_ids = batch['image'], batch['mask'], batch['patient_id']
+        image, mask_true, patient_ids, valid_from = batch['image'], batch['mask'], batch['patient_id'],batch['valid_from'] 
         # move images and labels to correct device and type
         image = image.to(device=device, dtype=torch.float32)
         mask_true = mask_true.to(device=device, dtype=torch.float)
 
         if args.d3 :
             patient_ids_temp = []
-            for patient_id in patient_ids:
-                patient_ids_temp += [patient_id]* (args.axial_size//2)
+            for patient_id,slices_valid_from in zip(patient_ids,valid_from):
+                patient_ids_temp += [patient_id]* (args.axial_size//2 - slices_valid_from)
             patient_ids = patient_ids_temp
             mask_true = mask_true[:,:,args.axial_size // 4: - args.axial_size //4]
             is_slice_positive = mask_true.amax(dim=(1,3,4)).float()
-            mask_true = einops.rearrange(mask_true,'b c z ... -> (b z) c ...')
-            is_slice_positive = einops.rearrange(is_slice_positive,'b z -> (b z)')
-            # is_patient_positive = is_slice_positive.amax(dim= 1).float()
+            mask_true_temp = []
+            is_slice_positive_temp = []
+            for patient_mask_true,patient_is_slice_positive,patient_valid_from in zip(mask_true, is_slice_positive,valid_from) :
+                mask_true_temp.append(einops.rearrange(patient_mask_true,'c z ... -> z c ...')[patient_valid_from:])
+                is_slice_positive_temp.append(patient_is_slice_positive[patient_valid_from:])
+            mask_true = torch.cat(mask_true_temp,dim=0)
+            is_slice_positive = torch.cat(is_slice_positive_temp,dim=0)
         else :
             is_slice_positive = mask_true.amax(dim=(1,2,3)).float()
 
@@ -143,8 +147,15 @@ def evaluate_metrics(net, net_single_device, dataloader, device, args,dice_posit
                 masks_pred = masks_pred[:,:,args.axial_size // 4: - args.axial_size //4]
                 slice_class = slice_class[:,:, args.axial_size // 4: - args.axial_size //4]
                 slice_class = slice_class * patient_class
-                masks_pred = einops.rearrange(masks_pred,'b c z ... -> (b z) c ...')
-                slice_class = einops.rearrange(slice_class,'b c z ... -> (b z) c ...')
+                mask_pred_temp = []
+                slice_class_temp = []
+                for patient_mask_pred,patient_slice_class,patient_valid_from in zip(masks_pred, slice_class, valid_from) :
+                    mask_pred_temp.append(einops.rearrange(patient_mask_pred,'c z ... -> z c ...')[patient_valid_from:])
+                    slice_class_temp.append(einops.rearrange(patient_slice_class,'c z ... -> z c ...')[patient_valid_from:])
+                masks_pred = torch.cat(mask_pred_temp,dim=0)
+                slice_class = torch.cat(slice_class_temp,dim=0)
+                # masks_pred = einops.rearrange(masks_pred,'b c z ... -> (b z) c ...')
+                # slice_class = einops.rearrange(slice_class,'b c z ... -> (b z) c ...')
             else :
                 masks_pred, slice_class = net(image)
             
@@ -205,24 +216,26 @@ def evaluate_metrics(net, net_single_device, dataloader, device, args,dice_posit
     tpr = (pred_class_all*gt_all)[gt_all > 0].mean()
     fpr = (pred_class_all != gt_all)[gt_all == 0].mean()
 
+    # logging.info(f'number of patients is {len(patient_gt_all)}')
+    # logging.info(f'number of slices is {len(gt_all)}')
 
     patient_accuracy = (patient_pred_class_all == patient_gt_all).mean()
     patient_balanced_accuracy = balanced_accuracy_score(patient_gt_all, patient_pred_class_all)
     patient_tpr = (patient_pred_class_all*patient_gt_all)[patient_gt_all > 0].mean()
     patient_fpr = (patient_pred_class_all != patient_gt_all)[patient_gt_all == 0].mean()
 
-    logging.info('accuracy : {}'.format(accuracy))
+    # logging.info('accuracy : {}'.format(accuracy))
     logging.info('balanced accuracy : {}'.format(balanced_accuracy))
-    logging.info('roc_auc : {}'.format(roc_auc))
-    logging.info('PR auc : {}'.format(pr_auc))
+    # logging.info('roc_auc : {}'.format(roc_auc))
+    # logging.info('PR auc : {}'.format(pr_auc))
     logging.info(f'TPR : {tpr}')
     logging.info(f'FPR : {fpr}')
-    logging.info(f'POD : {(dice_all*gt_all)[gt_all > 0].mean()}')
-    logging.info(f'localization POD : {(localization_only_dice_all*gt_all)[gt_all > 0].mean()}')
-    logging.info('patient accuracy : {}'.format(patient_accuracy))
+    # logging.info('patient accuracy : {}'.format(patient_accuracy))
     logging.info('patient balanced accuracy : {}'.format(patient_balanced_accuracy))
     logging.info(f'patient TPR : {patient_tpr}')
     logging.info(f'patient FPR : {patient_fpr}')
+    logging.info(f'POD : {(dice_all*gt_all)[gt_all > 0].mean()}')
+    logging.info(f'localization POD : {(localization_only_dice_all*gt_all)[gt_all > 0].mean()}')
 
     # Fixes a potential division by zero error
     return [dice_all.mean(), tpr, fpr,patient_tpr,patient_fpr]

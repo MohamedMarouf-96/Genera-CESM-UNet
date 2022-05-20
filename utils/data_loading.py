@@ -93,6 +93,7 @@ class DukeBreastCancerMRIDataset():
 
 
     def get_positive_stats(self):
+        self.slices_valid_from = list()
         patient_id_category = list()
         index_of_patient_id = dict()
         patient_id_per_example = list()
@@ -106,6 +107,13 @@ class DukeBreastCancerMRIDataset():
                 raise Exception(f'patient {mask_path} does not have enough slices')
             slices_category_of_patient = [False for _ in range(-self.axial_size //4,0)] + list(img_tumor_mask.sum(axis= (1,2)) > 0) + [False for _ in range(0,self.axial_size //4)]
             start_slice_numbers_of_patient = list(range(0 ,len(img_tumor_mask) - (self.axial_size // 2),self.axial_size // 2))
+            self.slices_valid_from += [0]*len(start_slice_numbers_of_patient)
+            if self.phase in ['test']:
+                if len(img_tumor_mask) - (self.axial_size // 2) - 1 not in start_slice_numbers_of_patient :
+                    start_slice_numbers_of_patient.append(len(img_tumor_mask) - (self.axial_size // 2) - 1)
+                    self.slices_valid_from.append(start_slice_numbers_of_patient[-2]+16-start_slice_numbers_of_patient[-1])
+            else :    
+                start_slice_numbers_of_patient = list(range(0 ,len(img_tumor_mask) - (self.axial_size // 2),self.axial_size // 2))
             start_slice_numbers_per_example += (start_slice_numbers_of_patient)
             patient_id_per_example += [self.patient_ids[i]]*len(start_slice_numbers_of_patient)
             index_of_patient_id[self.patient_ids[i]] = i
@@ -221,7 +229,8 @@ class DukeBreastCancerMRIDataset():
         return {
             'image': img,
             'mask': mask,
-            'patient_id': self.patient_id_per_example[example_index]
+            'patient_id': self.patient_id_per_example[example_index],
+            'valid_from': self.slices_valid_from[example_index],
         }
 
     def get_labels(self):

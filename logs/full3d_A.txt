@@ -1,0 +1,2188 @@
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full3d_A/checkpoint_epoch5.pth', lr=1e-05, name='full3d_A', sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 1287 examples and mode A
+INFO: Creating dataset with 0 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 0 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 0 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 0
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   1287
+        Validation size: 143
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 116403 examples and mode A
+INFO: Creating dataset with 12843 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   116403
+        Validation size: 12843
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=32, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=32, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 25 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   25
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Checkpoint 1 saved!
+INFO: Checkpoint 2 saved!
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 242 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   242
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 242 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   242
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 242 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   242
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 242 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   242
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 242 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   242
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 242 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   242
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 242 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   242
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 242 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   242
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 242 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   242
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 242 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   242
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 242 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   242
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 242 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   242
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 242 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   242
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 242 examples and mode A
+INFO: Creating dataset with 27 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   242
+        Validation size: 27
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: accuracy : 0.7734375
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.5677464298153954
+INFO: PR auc : 0.24392959294819277
+INFO: TPR : 0.0
+INFO: FPR : 0.0
+INFO: POD : 4.4644554719752705e-09
+INFO: localization POD : 4.4644554719752705e-09
+INFO: Validation Dice score: 0.7734375
+INFO: Evaluating for test set
+INFO: accuracy : 0.7734375
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.5564456828824645
+INFO: PR auc : 0.3007907883577484
+INFO: TPR : 0.0
+INFO: FPR : 0.0
+INFO: POD : 4.4644554719752705e-09
+INFO: localization POD : 4.4644554719752705e-09
+INFO: Validation Dice score: 0.7734375
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: accuracy : 0.7881944444444444
+INFO: balanced accuracy : 0.5258709238528203
+INFO: roc_auc : 0.6270110534467265
+INFO: PR auc : 0.14645497696562193
+INFO: TPR : 0.18972331285476685
+INFO: FPR : 0.1379814724524622
+INFO: POD : 0.033518530428409576
+INFO: localization POD : 0.24810445308685303
+INFO: Validation Dice score: 0.7750203013420105
+INFO: Evaluating for test set
+INFO: accuracy : 0.8901909722222222
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.5259699307963146
+INFO: PR auc : 0.11693148875667833
+INFO: TPR : 0.0
+INFO: FPR : 0.0
+INFO: POD : 1.1292438095722446e-08
+INFO: localization POD : 0.2326170802116394
+INFO: Validation Dice score: 0.8901909589767456
+INFO: Evaluating for test set
+INFO: accuracy : 0.8901909722222222
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.562845105711258
+INFO: PR auc : 0.12398726889952873
+INFO: TPR : 0.0
+INFO: FPR : 0.0
+INFO: POD : 1.1292438095722446e-08
+INFO: localization POD : 0.2587622404098511
+INFO: Validation Dice score: 0.8901909589767456
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: accuracy : 0.8901909722222222
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.6295705127505098
+INFO: PR auc : 0.16457839661776016
+INFO: TPR : 0.0
+INFO: FPR : 0.0
+INFO: POD : 1.1292438095722446e-08
+INFO: localization POD : 0.15084250271320343
+INFO: Validation Dice score: 0.8901909589767456
+INFO: Evaluating for test set
+INFO: accuracy : 0.8901909722222222
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.487142533811179
+INFO: PR auc : 0.10690926738743993
+INFO: TPR : 0.0
+INFO: FPR : 0.0
+INFO: POD : 1.1292438095722446e-08
+INFO: localization POD : 0.2265467345714569
+INFO: Validation Dice score: 0.8901909589767456
+INFO: Evaluating for test set
+INFO: accuracy : 0.8901909722222222
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.6128223600771456
+INFO: PR auc : 0.1443777506913541
+INFO: TPR : 0.0
+INFO: FPR : 0.0
+INFO: POD : 1.1292438095722446e-08
+INFO: localization POD : 0.2288101613521576
+INFO: Validation Dice score: 0.8901909589767456
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: accuracy : 0.8901909722222222
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4945456247763712
+INFO: PR auc : 0.10976325706411949
+INFO: TPR : 0.0
+INFO: FPR : 0.0
+INFO: POD : 1.1292438095722446e-08
+INFO: localization POD : 0.25434452295303345
+INFO: Validation Dice score: 0.8901909589767456
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: accuracy : 0.8901909722222222
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.4617704454290001
+INFO: PR auc : 0.10235063379728644
+INFO: TPR : 0.0
+INFO: FPR : 0.0
+INFO: POD : 1.1292438095722446e-08
+INFO: localization POD : 0.2389363795518875
+INFO: Validation Dice score: 0.8901909589767456
+INFO: Evaluating for test set
+INFO: accuracy : 0.8891782407407407
+INFO: balanced accuracy : 0.5153124315462941
+INFO: roc_auc : 0.5847858098933927
+INFO: PR auc : 0.14600040581991047
+INFO: TPR : 0.036231882870197296
+INFO: FPR : 0.00560702096538274
+INFO: POD : 0.0014556297101080418
+INFO: localization POD : 0.21988901495933533
+INFO: Validation Dice score: 0.8873125910758972
+INFO: Evaluating for test set
+INFO: accuracy : 0.8901909722222222
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.6040214216872475
+INFO: PR auc : 0.13718479454004312
+INFO: TPR : 0.0
+INFO: FPR : 0.0
+INFO: POD : 1.1292438095722446e-08
+INFO: localization POD : 0.11317034810781479
+INFO: Validation Dice score: 0.8901909589767456
+INFO: Evaluating for test set
+INFO: accuracy : 0.8901909722222222
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.5121574584588385
+INFO: PR auc : 0.1073086642723926
+INFO: TPR : 0.0
+INFO: FPR : 0.0
+INFO: POD : 1.1292438095722446e-08
+INFO: localization POD : 0.19449323415756226
+INFO: Validation Dice score: 0.8901909589767456
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: accuracy : 0.8901909722222222
+INFO: balanced accuracy : 0.5
+INFO: roc_auc : 0.5776229158222036
+INFO: PR auc : 0.13545994752955898
+INFO: TPR : 0.0
+INFO: FPR : 0.0
+INFO: POD : 1.1292438095722446e-08
+INFO: localization POD : 0.0008647437789477408
+INFO: Validation Dice score: 0.8901909589767456
+INFO: Evaluating for test set
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: accuracy : 0.6691261574074074
+INFO: balanced accuracy : 0.5563017879385292
+INFO: roc_auc : 0.5793362792917622
+INFO: PR auc : 0.12834094215312583
+INFO: TPR : 0.4117259681224823
+INFO: FPR : 0.29912237932715746
+INFO: POD : 0.09503582119941711
+INFO: localization POD : 0.1853339821100235
+INFO: Validation Dice score: 0.636593222618103
+INFO: Evaluating for test set
+INFO: accuracy : 0.1814236111111111
+INFO: balanced accuracy : 0.4833404958794483
+INFO: roc_auc : 0.5144402389913594
+INFO: PR auc : 0.11454054621762143
+INFO: TPR : 0.8702239990234375
+INFO: FPR : 0.9035429871607346
+INFO: POD : 0.23134465515613556
+INFO: localization POD : 0.25812748074531555
+INFO: Validation Dice score: 0.18281114101409912
+INFO: Evaluating for test set
+INFO: accuracy : 0.6087962962962963
+INFO: balanced accuracy : 0.48458960537904006
+INFO: roc_auc : 0.49046776458113456
+INFO: PR auc : 0.100023165630585
+INFO: TPR : 0.32542818784713745
+INFO: FPR : 0.35624898423533236
+INFO: POD : 0.05718621239066124
+INFO: localization POD : 0.14455199241638184
+INFO: Validation Dice score: 0.6072633266448975
+INFO: Evaluating for test set
+INFO: accuracy : 0.8156828703703703
+INFO: balanced accuracy : 0.5205205340240212
+INFO: roc_auc : 0.6170878222369541
+INFO: PR auc : 0.1393965857970831
+INFO: TPR : 0.14229248464107513
+INFO: FPR : 0.1012514220705347
+INFO: POD : 0.033442456275224686
+INFO: localization POD : 0.2330559492111206
+INFO: Validation Dice score: 0.8042365312576294
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=8, classes=1, coronal_size=128, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=128, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: accuracy : 0.5999710648148148
+INFO: balanced accuracy : 0.5832939875082626
+INFO: roc_auc : 0.6236666315498487
+INFO: PR auc : 0.1524562769462375
+INFO: TPR : 0.5619235634803772
+INFO: FPR : 0.39533560864618883
+INFO: POD : 0.12400086969137192
+INFO: localization POD : 0.2070511132478714
+INFO: Validation Dice score: 0.5865330696105957
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full3d_A/checkpoint_epoch5.pth', lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=8, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Creating dataset with 7886 examples and mode A
+INFO: Creating dataset with 870 examples and mode A
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      8
+        Learning rate:   1e-05
+        Training size:   7886
+        Validation size: 870
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: accuracy : 0.6831597222222222
+INFO: balanced accuracy : 0.5464773842582871
+INFO: roc_auc : 0.5758147308680324
+INFO: PR auc : 0.12520834268870726
+INFO: TPR : 0.3712969124317169
+INFO: FPR : 0.2783421373425437
+INFO: POD : 3.0112303761598014e-09
+INFO: localization POD : 3.0112303761598014e-09
+INFO: Validation Dice score: 0.8901186585426331
+INFO: Evaluating for test set
+INFO: accuracy : 0.6442418981481481
+INFO: balanced accuracy : 0.5728008679976428
+INFO: roc_auc : 0.6288007866763646
+INFO: PR auc : 0.14511053235537227
+INFO: TPR : 0.48123764991760254
+INFO: FPR : 0.3356359203575782
+INFO: POD : 3.0112303761598014e-09
+INFO: localization POD : 3.0112303761598014e-09
+INFO: Validation Dice score: 0.8901186585426331
+INFO: Evaluating for test set
+INFO: accuracy : 0.6899594907407407
+INFO: balanced accuracy : 0.5635693514012806
+INFO: roc_auc : 0.6100988722290243
+INFO: PR auc : 0.1358348412468145
+INFO: TPR : 0.40157997608184814
+INFO: FPR : 0.27444128403088175
+INFO: POD : 3.0112303761598014e-09
+INFO: localization POD : 2.54848364420468e-05
+INFO: Validation Dice score: 0.8901186585426331
+INFO: Evaluating for test set
+INFO: accuracy : 0.7642505787037037
+INFO: balanced accuracy : 0.5574043692531737
+INFO: roc_auc : 0.6506799020613606
+INFO: PR auc : 0.15164540459299147
+INFO: TPR : 0.2922975718975067
+INFO: FPR : 0.17748882568061763
+INFO: POD : 0.0024133138358592987
+INFO: localization POD : 0.060500964522361755
+INFO: Validation Dice score: 0.8585551381111145
+INFO: Evaluating for test set
+INFO: accuracy : 0.7448640046296297
+INFO: balanced accuracy : 0.5727707202737959
+INFO: roc_auc : 0.6503316115871051
+INFO: PR auc : 0.15419276504512278
+INFO: TPR : 0.35220539569854736
+INFO: FPR : 0.2066639577407558
+INFO: POD : 0.018047163262963295
+INFO: localization POD : 0.15902858972549438
+INFO: Validation Dice score: 0.796904981136322
+INFO: Evaluating for test set
+INFO: accuracy : 0.7071759259259259
+INFO: balanced accuracy : 0.5830502380921172
+INFO: roc_auc : 0.6476154541459005
+INFO: PR auc : 0.1511045384348657
+INFO: TPR : 0.42396312952041626
+INFO: FPR : 0.2578626574563186
+INFO: POD : 0.022666966542601585
+INFO: localization POD : 0.19802796840667725
+INFO: Validation Dice score: 0.7850427031517029
+INFO: Evaluating for test set
+INFO: accuracy : 0.7080439814814815
+INFO: balanced accuracy : 0.58180666454625
+INFO: roc_auc : 0.6475144178078619
+INFO: PR auc : 0.15054133728214764
+INFO: TPR : 0.4200131595134735
+INFO: FPR : 0.25639983746444533
+INFO: POD : 0.03550296649336815
+INFO: localization POD : 0.19681298732757568
+INFO: Validation Dice score: 0.7464503645896912
+INFO: Evaluating for test set
+INFO: accuracy : 0.7062355324074074
+INFO: balanced accuracy : 0.5784825770499047
+INFO: roc_auc : 0.6449834535274308
+INFO: PR auc : 0.1491061790918079
+INFO: TPR : 0.41474655270576477
+INFO: FPR : 0.2577813896789923
+INFO: POD : 0.031605128198862076
+INFO: localization POD : 0.19202524423599243
+INFO: Validation Dice score: 0.7563663125038147
+INFO: Evaluating for test set
+INFO: accuracy : 0.6974826388888888
+INFO: balanced accuracy : 0.5802020673259932
+INFO: roc_auc : 0.6438598021164398
+INFO: PR auc : 0.1485102553337031
+INFO: TPR : 0.4298880696296692
+INFO: FPR : 0.26948394961397804
+INFO: POD : 0.03870626911520958
+INFO: localization POD : 0.19908462464809418
+INFO: Validation Dice score: 0.737760066986084
+INFO: Evaluating for test set
+INFO: accuracy : 0.7023292824074074
+INFO: balanced accuracy : 0.5832130679013947
+INFO: roc_auc : 0.6469862842569227
+INFO: PR auc : 0.15024443405175275
+INFO: TPR : 0.4305464029312134
+INFO: FPR : 0.26412027631044294
+INFO: POD : 0.03917928785085678
+INFO: localization POD : 0.1994841992855072
+INFO: Validation Dice score: 0.7389694452285767
+INFO: Checkpoint 1 saved!
+INFO: Evaluating for test set
+INFO: accuracy : 0.7739438657407407
+INFO: balanced accuracy : 0.5599640099843269
+INFO: roc_auc : 0.6459458801543714
+INFO: PR auc : 0.15064256331370082
+INFO: TPR : 0.2857142984867096
+INFO: FPR : 0.16578626574563185
+INFO: POD : 0.009770452976226807
+INFO: localization POD : 0.1542847454547882
+INFO: Validation Dice score: 0.8210967779159546
+INFO: Evaluating for test set
+INFO: accuracy : 0.7460214120370371
+INFO: balanced accuracy : 0.5647649614432815
+INFO: roc_auc : 0.641919620871641
+INFO: PR auc : 0.14841189868530408
+INFO: TPR : 0.332455575466156
+INFO: FPR : 0.20292563998374644
+INFO: POD : 0.01337493397295475
+INFO: localization POD : 0.16241733729839325
+INFO: Validation Dice score: 0.8026849031448364
+INFO: Evaluating for test set
+INFO: accuracy : 0.7379195601851852
+INFO: balanced accuracy : 0.5729092874517255
+INFO: roc_auc : 0.6437813163828402
+INFO: PR auc : 0.14939193335590767
+INFO: TPR : 0.36142200231552124
+INFO: FPR : 0.2156034132466477
+INFO: POD : 0.019674036651849747
+INFO: localization POD : 0.17751666903495789
+INFO: Validation Dice score: 0.7841351628303528
+INFO: Evaluating for test set
+INFO: accuracy : 0.7079716435185185
+INFO: balanced accuracy : 0.5797463204127911
+INFO: roc_auc : 0.6458113522899296
+INFO: PR auc : 0.1494835992108821
+INFO: TPR : 0.41540488600730896
+INFO: FPR : 0.2559122308004876
+INFO: POD : 0.03263020142912865
+INFO: localization POD : 0.19945722818374634
+INFO: Validation Dice score: 0.7577810883522034
+INFO: Evaluating for test set
+INFO: accuracy : 0.7543402777777778
+INFO: balanced accuracy : 0.56482137808001
+INFO: roc_auc : 0.6460325515166285
+INFO: PR auc : 0.15053481466506755
+INFO: TPR : 0.32192233204841614
+INFO: FPR : 0.19227956115400244
+INFO: POD : 0.012043537572026253
+INFO: localization POD : 0.1649109274148941
+INFO: Validation Dice score: 0.8068065643310547
+INFO: Evaluating for test set
+INFO: accuracy : 0.7144820601851852
+INFO: balanced accuracy : 0.575324529413291
+INFO: roc_auc : 0.6422830253334506
+INFO: PR auc : 0.14790740470189
+INFO: TPR : 0.3969717025756836
+INFO: FPR : 0.24632263307598537
+INFO: POD : 0.02829417958855629
+INFO: localization POD : 0.18945279717445374
+INFO: Validation Dice score: 0.759619414806366
+INFO: Evaluating for test set
+INFO: accuracy : 0.7713396990740741
+INFO: balanced accuracy : 0.5625406104820453
+INFO: roc_auc : 0.6483471316460416
+INFO: PR auc : 0.15206586405780537
+INFO: TPR : 0.2949308753013611
+INFO: FPR : 0.16984965461194637
+INFO: POD : 0.00990058109164238
+INFO: localization POD : 0.1571808159351349
+INFO: Validation Dice score: 0.8210387229919434
+INFO: Evaluating for test set
+INFO: accuracy : 0.6808449074074074
+INFO: balanced accuracy : 0.5800892340525362
+INFO: roc_auc : 0.644089588228103
+INFO: PR auc : 0.14837838675746384
+INFO: TPR : 0.4509545862674713
+INFO: FPR : 0.2907761072734661
+INFO: POD : 0.045508239418268204
+INFO: localization POD : 0.2076890617609024
+INFO: Validation Dice score: 0.7237505316734314
+INFO: Evaluating for test set
+INFO: accuracy : 0.7455873842592593
+INFO: balanced accuracy : 0.5674064584610108
+INFO: roc_auc : 0.6446910179310743
+INFO: PR auc : 0.1507854806968942
+INFO: TPR : 0.3390388488769531
+INFO: FPR : 0.2042259244209671
+INFO: POD : 0.018006784841418266
+INFO: localization POD : 0.18032266199588776
+INFO: Validation Dice score: 0.7924878597259521
+INFO: Evaluating for test set
+INFO: accuracy : 0.7479021990740741
+INFO: balanced accuracy : 0.5692838029681732
+INFO: roc_auc : 0.6477143236998827
+INFO: PR auc : 0.15139756098299922
+INFO: TPR : 0.3403554856777191
+INFO: FPR : 0.2017878911011784
+INFO: POD : 0.01952175796031952
+INFO: localization POD : 0.1787354052066803
+INFO: Validation Dice score: 0.7904118895530701
+INFO: Checkpoint 2 saved!
+INFO: Evaluating for test set
+INFO: accuracy : 0.7790075231481481
+INFO: balanced accuracy : 0.5599230818410388
+INFO: roc_auc : 0.6470316262195851
+INFO: PR auc : 0.15139978635815626
+INFO: TPR : 0.2791309952735901
+INFO: FPR : 0.15928484355952865
+INFO: POD : 0.009044039063155651
+INFO: localization POD : 0.1476290374994278
+INFO: Validation Dice score: 0.8262976408004761
+INFO: Evaluating for test set
+INFO: accuracy : 0.6997974537037037
+INFO: balanced accuracy : 0.5809252916932722
+INFO: roc_auc : 0.6462680889686884
+INFO: PR auc : 0.14982807797630876
+INFO: TPR : 0.4285714328289032
+INFO: FPR : 0.2667208451848842
+INFO: POD : 0.04086533933877945
+INFO: localization POD : 0.2035360336303711
+INFO: Validation Dice score: 0.7442906498908997
+INFO: Evaluating for test set
+INFO: accuracy : 0.7050057870370371
+INFO: balanced accuracy : 0.5757720906978355
+INFO: roc_auc : 0.6405079209332473
+INFO: PR auc : 0.1474413070215751
+INFO: TPR : 0.41013824939727783
+INFO: FPR : 0.25859406745225516
+INFO: POD : 0.030650053173303604
+INFO: localization POD : 0.19117063283920288
+INFO: Validation Dice score: 0.757635772228241
+INFO: Evaluating for test set
+INFO: accuracy : 0.7211371527777778
+INFO: balanced accuracy : 0.5784857871003588
+INFO: roc_auc : 0.6464292602518981
+INFO: PR auc : 0.15030997352621475
+INFO: TPR : 0.3956550359725952
+INFO: FPR : 0.2386834620073141
+INFO: POD : 0.03172290325164795
+INFO: localization POD : 0.19574987888336182
+INFO: Validation Dice score: 0.7632514238357544
+INFO: Evaluating for test set
+INFO: accuracy : 0.7336516203703703
+INFO: balanced accuracy : 0.5785907289997831
+INFO: roc_auc : 0.6471509063443704
+INFO: PR auc : 0.1506494749196514
+INFO: TPR : 0.3798551559448242
+INFO: FPR : 0.22267370987403495
+INFO: POD : 0.02836601436138153
+INFO: localization POD : 0.1922118067741394
+INFO: Validation Dice score: 0.7706950306892395
+INFO: Evaluating for test set
+INFO: accuracy : 0.7376302083333334
+INFO: balanced accuracy : 0.5762091123167229
+INFO: roc_auc : 0.6485930215108155
+INFO: PR auc : 0.15161765180023856
+INFO: TPR : 0.36932191252708435
+INFO: FPR : 0.21690369768386836
+INFO: POD : 0.026690896600484848
+INFO: localization POD : 0.19187122583389282
+INFO: Validation Dice score: 0.7770936489105225
+INFO: Evaluating for test set
+INFO: accuracy : 0.7072482638888888
+INFO: balanced accuracy : 0.5790514514911889
+INFO: roc_auc : 0.645400786836867
+INFO: PR auc : 0.14945701569842115
+INFO: TPR : 0.41474655270576477
+INFO: FPR : 0.2566436407964242
+INFO: POD : 0.03680272400379181
+INFO: localization POD : 0.19944524765014648
+INFO: Validation Dice score: 0.7499930262565613
+INFO: Evaluating for test set
+INFO: accuracy : 0.6961082175925926
+INFO: balanced accuracy : 0.5820267937561309
+INFO: roc_auc : 0.6472387279747069
+INFO: PR auc : 0.1504371559375886
+INFO: TPR : 0.4358130395412445
+INFO: FPR : 0.27175944737911417
+INFO: POD : 0.045913390815258026
+INFO: localization POD : 0.20977915823459625
+INFO: Validation Dice score: 0.7328372597694397
+INFO: Evaluating for test set
+INFO: accuracy : 0.7470341435185185
+INFO: balanced accuracy : 0.5685076662692445
+INFO: roc_auc : 0.6458123688059068
+INFO: PR auc : 0.15053180320196258
+INFO: TPR : 0.3396971821784973
+INFO: FPR : 0.20268183665176756
+INFO: POD : 0.02180251106619835
+INFO: localization POD : 0.1833215206861496
+INFO: Validation Dice score: 0.7835010290145874
+INFO: Evaluating for test set
+INFO: accuracy : 0.6987123842592593
+INFO: balanced accuracy : 0.583778143782975
+INFO: roc_auc : 0.6486496254004872
+INFO: PR auc : 0.15147981454287213
+INFO: TPR : 0.4364713728427887
+INFO: FPR : 0.26891507517269403
+INFO: POD : 0.048324279487133026
+INFO: localization POD : 0.21259160339832306
+INFO: Validation Dice score: 0.731438398361206
+INFO: Checkpoint 3 saved!
+INFO: Evaluating for test set
+INFO: accuracy : 0.7525318287037037
+INFO: balanced accuracy : 0.5603431704437815
+INFO: roc_auc : 0.6437706697155012
+INFO: PR auc : 0.14940315248022645
+INFO: TPR : 0.31402239203453064
+INFO: FPR : 0.19333604225924422
+INFO: POD : 0.013328121975064278
+INFO: localization POD : 0.16411937773227692
+INFO: Validation Dice score: 0.8041989207267761
+INFO: Evaluating for test set
+INFO: accuracy : 0.7286603009259259
+INFO: balanced accuracy : 0.5780952309617926
+INFO: roc_auc : 0.6470791082158834
+INFO: PR auc : 0.15083571025805742
+INFO: TPR : 0.38512179255485535
+INFO: FPR : 0.22893132872815927
+INFO: POD : 0.03134899213910103
+INFO: localization POD : 0.19204355776309967
+INFO: Validation Dice score: 0.7648740410804749
+INFO: Evaluating for test set
+INFO: accuracy : 0.7319155092592593
+INFO: balanced accuracy : 0.5724219750423928
+INFO: roc_auc : 0.641382499179431
+INFO: PR auc : 0.1477113827883862
+INFO: TPR : 0.36800527572631836
+INFO: FPR : 0.22316131653799268
+INFO: POD : 0.01878688670694828
+INFO: localization POD : 0.17564082145690918
+INFO: Validation Dice score: 0.7851951122283936
+INFO: Evaluating for test set
+INFO: accuracy : 0.7356047453703703
+INFO: balanced accuracy : 0.5768025436439798
+INFO: roc_auc : 0.6474415496625568
+INFO: PR auc : 0.1508849101333506
+INFO: TPR : 0.3732718825340271
+INFO: FPR : 0.21966680211296222
+INFO: POD : 0.025777753442525864
+INFO: localization POD : 0.18886522948741913
+INFO: Validation Dice score: 0.7777167558670044
+INFO: Evaluating for test set
+INFO: accuracy : 0.7390769675925926
+INFO: balanced accuracy : 0.5712511893905692
+INFO: roc_auc : 0.642273528934191
+INFO: PR auc : 0.1483464330990396
+INFO: TPR : 0.3561553657054901
+INFO: FPR : 0.21365298659081675
+INFO: POD : 0.019551457837224007
+INFO: localization POD : 0.17505766451358795
+INFO: Validation Dice score: 0.7834706902503967
+INFO: Evaluating for test set
+INFO: accuracy : 0.7544126157407407
+INFO: balanced accuracy : 0.561688181583994
+INFO: roc_auc : 0.6449477149657099
+INFO: PR auc : 0.15011312571835422
+INFO: TPR : 0.31468072533607483
+INFO: FPR : 0.19130434782608696
+INFO: POD : 0.01274580042809248
+INFO: localization POD : 0.16333875060081482
+INFO: Validation Dice score: 0.8047859072685242
+INFO: Evaluating for test set
+INFO: accuracy : 0.7014612268518519
+INFO: balanced accuracy : 0.5821484011674953
+INFO: roc_auc : 0.6470117774076114
+INFO: PR auc : 0.14993092784631423
+INFO: TPR : 0.4292297661304474
+INFO: FPR : 0.2649329540837058
+INFO: POD : 0.04375714436173439
+INFO: localization POD : 0.2064753770828247
+INFO: Validation Dice score: 0.7370852828025818
+INFO: Evaluating for test set
+INFO: accuracy : 0.6916232638888888
+INFO: balanced accuracy : 0.5774877824142202
+INFO: roc_auc : 0.6394270166941349
+INFO: PR auc : 0.14653346178352772
+INFO: TPR : 0.43120473623275757
+INFO: FPR : 0.27622917513206013
+INFO: POD : 0.03412799909710884
+INFO: localization POD : 0.1973908692598343
+INFO: Validation Dice score: 0.7485416531562805
+INFO: Evaluating for test set
+INFO: accuracy : 0.7010995370370371
+INFO: balanced accuracy : 0.5813681716542379
+INFO: roc_auc : 0.6471426137140311
+INFO: PR auc : 0.15014664923010274
+INFO: TPR : 0.427913099527359
+INFO: FPR : 0.2651767574156847
+INFO: POD : 0.04186524823307991
+INFO: localization POD : 0.20561988651752472
+INFO: Validation Dice score: 0.7410007119178772
+INFO: Evaluating for test set
+INFO: accuracy : 0.7102864583333334
+INFO: balanced accuracy : 0.5761415942555077
+INFO: roc_auc : 0.6431773453899262
+INFO: PR auc : 0.14858088784902426
+INFO: TPR : 0.4042133092880249
+INFO: FPR : 0.2519301097114994
+INFO: POD : 0.03528495132923126
+INFO: localization POD : 0.1991262137889862
+INFO: Validation Dice score: 0.7532984614372253
+INFO: Checkpoint 4 saved!
+INFO: Evaluating for test set
+INFO: accuracy : 0.72265625
+INFO: balanced accuracy : 0.5802046888671972
+INFO: roc_auc : 0.648812053953458
+INFO: PR auc : 0.15184462476535251
+INFO: TPR : 0.3976300060749054
+INFO: FPR : 0.23722064201544088
+INFO: POD : 0.034978874027729034
+INFO: localization POD : 0.20085540413856506
+INFO: Validation Dice score: 0.7626687288284302
+INFO: Evaluating for test set
+INFO: accuracy : 0.7431278935185185
+INFO: balanced accuracy : 0.5729496270857637
+INFO: roc_auc : 0.6455962521590933
+INFO: PR auc : 0.1505362990900837
+INFO: TPR : 0.35483869910240173
+INFO: FPR : 0.2089394555058919
+INFO: POD : 0.02031921222805977
+INFO: localization POD : 0.18636849522590637
+INFO: Validation Dice score: 0.7893421053886414
+INFO: Evaluating for test set
+INFO: accuracy : 0.7326388888888888
+INFO: balanced accuracy : 0.5762906743486741
+INFO: roc_auc : 0.6454387189330648
+INFO: PR auc : 0.14997975035004252
+INFO: TPR : 0.37590518593788147
+INFO: FPR : 0.22332385209264527
+INFO: POD : 0.026956023648381233
+INFO: localization POD : 0.1880125105381012
+INFO: Validation Dice score: 0.7720592021942139
+INFO: Evaluating for test set
+INFO: accuracy : 0.6941550925925926
+INFO: balanced accuracy : 0.580929678762226
+INFO: roc_auc : 0.642484803754903
+INFO: PR auc : 0.14807774467723275
+INFO: TPR : 0.4358130395412445
+INFO: FPR : 0.273953677366924
+INFO: POD : 0.043002352118492126
+INFO: localization POD : 0.20527847111225128
+INFO: Validation Dice score: 0.7359896302223206
+INFO: Evaluating for test set
+INFO: accuracy : 0.74609375
+INFO: balanced accuracy : 0.567402365646682
+INFO: roc_auc : 0.6450696701325402
+INFO: PR auc : 0.15006252698223743
+INFO: TPR : 0.33838051557540894
+INFO: FPR : 0.20357578220235675
+INFO: POD : 0.019413020461797714
+INFO: localization POD : 0.17765216529369354
+INFO: Validation Dice score: 0.7894595265388489
+INFO: Evaluating for test set
+INFO: accuracy : 0.7448640046296297
+INFO: balanced accuracy : 0.569308359854146
+INFO: roc_auc : 0.6453282931974482
+INFO: PR auc : 0.15045896352884905
+INFO: TPR : 0.34430545568466187
+INFO: FPR : 0.2056887444128403
+INFO: POD : 0.021252932026982307
+INFO: localization POD : 0.18213903903961182
+INFO: Validation Dice score: 0.7858277559280396
+INFO: Evaluating for test set
+INFO: accuracy : 0.7234519675925926
+INFO: balanced accuracy : 0.5777663612927836
+INFO: roc_auc : 0.6455378024904106
+INFO: PR auc : 0.14958305149239048
+INFO: TPR : 0.3910467326641083
+INFO: FPR : 0.23551401869158878
+INFO: POD : 0.028710901737213135
+INFO: localization POD : 0.19171495735645294
+INFO: Validation Dice score: 0.7674776911735535
+INFO: Evaluating for test set
+INFO: accuracy : 0.7334346064814815
+INFO: balanced accuracy : 0.5793344174387061
+INFO: roc_auc : 0.6507480621326666
+INFO: PR auc : 0.15273117800220093
+INFO: TPR : 0.3818301558494568
+INFO: FPR : 0.22316131653799268
+INFO: POD : 0.03072604537010193
+INFO: localization POD : 0.197596937417984
+INFO: Validation Dice score: 0.7758734226226807
+INFO: Evaluating for test set
+INFO: accuracy : 0.7288773148148148
+INFO: balanced accuracy : 0.5785056626627529
+INFO: roc_auc : 0.647838231647406
+INFO: PR auc : 0.15108547520864699
+INFO: TPR : 0.38578012585639954
+INFO: FPR : 0.2287687931735067
+INFO: POD : 0.03204139694571495
+INFO: localization POD : 0.19511939585208893
+INFO: Validation Dice score: 0.76545649766922
+INFO: Evaluating for test set
+INFO: accuracy : 0.7428385416666666
+INFO: balanced accuracy : 0.5716329713912278
+INFO: roc_auc : 0.6469303223773419
+INFO: PR auc : 0.1505265529379194
+INFO: TPR : 0.35220539569854736
+INFO: FPR : 0.2089394555058919
+INFO: POD : 0.020191429182887077
+INFO: localization POD : 0.18273423612117767
+INFO: Validation Dice score: 0.792293906211853
+INFO: Checkpoint 5 saved!
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full3d_A/checkpoint_epoch5.pth', lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full3d_A/checkpoint_epoch5.pth
+INFO: Creating dataset with 1539 examples and mode A
+INFO: Starting evaluation for checkpoint ./checkpoint/full3d_A/checkpoint_epoch5.pth
+INFO: accuracy : 0.7737573099415205
+INFO: balanced accuracy : 0.549693753762657
+INFO: roc_auc : 0.6604858957720089
+INFO: PR auc : 0.20726076325961024
+INFO: TPR : 0.2357446849346161
+INFO: FPR : 0.13635717332575004
+INFO: POD : 0.02209359221160412
+INFO: localization POD : 0.15991564095020294
+INFO: patient accuracy : 0.49603174603174605
+INFO: patient balanced accuracy : 0.49388976377952754
+INFO: patient TPR : 0.2240000069141388
+INFO: patient FPR : 0.23622047244094488
+INFO: Validation Dice score: 0.8074593544006348
+INFO: TPR: 0.2357446849346161
+INFO: FPR: 0.13635717332575004
+INFO: TPR Patient: 0.2240000069141388
+INFO: FPR Patient: 0.23622047244094488
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full3d_A/checkpoint_epoch5.pth', lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full3d_A/checkpoint_epoch5.pth
+INFO: Creating dataset with 1772 examples and mode A
+INFO: Starting evaluation for checkpoint ./checkpoint/full3d_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full3d_A/checkpoint_epoch5.pth', lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full3d_A/checkpoint_epoch5.pth
+INFO: Creating dataset with 1772 examples and mode A
+INFO: Starting evaluation for checkpoint ./checkpoint/full3d_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0], input_channels=1, load='./checkpoint/full3d_A/checkpoint_epoch5.pth', lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full3d_A/checkpoint_epoch5.pth
+INFO: Creating dataset with 1772 examples and mode A
+INFO: Starting evaluation for checkpoint ./checkpoint/full3d_A/checkpoint_epoch5.pth
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=4, classes=1, coronal_size=256, d3=True, dataset='duke3d', dataset_mode='A', epochs=5, eval_only=True, gpu_ids=[0, 1, 2, 3], input_channels=1, load='./checkpoint/full3d_A/checkpoint_epoch5.pth', lr=1e-05, name='full3d_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/full3d_A/checkpoint_epoch5.pth
+INFO: Creating dataset with 1772 examples and mode A
+INFO: Starting evaluation for checkpoint ./checkpoint/full3d_A/checkpoint_epoch5.pth
+INFO: number of patients is 252
+INFO: number of slices is 26371
+INFO: accuracy : 0.7857874179970422
+INFO: balanced accuracy : 0.5527396156917478
+INFO: roc_auc : 0.6698910920582852
+INFO: PR auc : 0.20458923243661176
+INFO: TPR : 0.2327008992433548
+INFO: FPR : 0.12722166147364725
+INFO: POD : 0.021729642525315285
+INFO: localization POD : 0.15794679522514343
+INFO: patient accuracy : 0.49603174603174605
+INFO: patient balanced accuracy : 0.49388976377952754
+INFO: patient TPR : 0.2240000069141388
+INFO: patient FPR : 0.23622047244094488
+INFO: Validation Dice score: 0.8179773092269897
+INFO: TPR: 0.2327008992433548
+INFO: FPR: 0.12722166147364725
+INFO: TPR Patient: 0.2240000069141388
+INFO: FPR Patient: 0.23622047244094488
