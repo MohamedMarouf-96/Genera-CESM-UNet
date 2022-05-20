@@ -23,6 +23,7 @@ from unet_local import UNet
 # from unet_local import UNet, UNet3d
 from utils.my_collate_fn import my_collate_fn
 from utils.balanced_sampling import get_balanced_weighted_sampler
+import torchdatasets as td
 
 dir_root = Path('/data/')
 
@@ -71,26 +72,55 @@ def train_net(net,
     if args.dataset == 'duke3d' :
         train_set = DukeBreastCancerMRIDataset(dir_root, 'train', args=args)
         val_set = DukeBreastCancerMRIDataset(dir_root, 'val', args=args)
+        n_train = len(train_set)
+        n_val = len(val_set)
 
     elif args.dataset == 'duke2d' :
         train_set = DBCMRIDataset(dir_root, 'train', dataset_mode = args.dataset_mode)
         val_set = DBCMRIDataset(dir_root, 'val', dataset_mode = args.dataset_mode)
+        n_train = len(train_set)
+        n_val = len(val_set)
 
 
     elif args.dataset == 'kaspernormA' :
         train_set = KasperNormADataset(dir_root, 'train', args = args)
         val_set = KasperNormADataset(dir_root, 'val', args = args)
+        n_train = len(train_set)
+        n_val = len(val_set)
+        train_set = td.datasets.WrapDataset(train_set).cache(td.cachers.Pickle(Path("./cache_train")))
+        val_set = td.datasets.WrapDataset(val_set).cache(td.cachers.Pickle(Path("./cache_val")))
+
+
     elif args.dataset == 'kaspern4' :
         train_set = KasperN4Dataset(dir_root, 'train', args = args)
         val_set = KasperN4Dataset(dir_root, 'val', args = args)
+        n_train = len(train_set)
+        n_val = len(val_set)
+        train_set = td.datasets.WrapDataset(train_set).cache(td.cachers.Pickle(Path("./cache_train")))
+        val_set = td.datasets.WrapDataset(val_set).cache(td.cachers.Pickle(Path("./cache_val")))
+        # train_set = KasperN4Dataset(dir_root, 'train', args = args)
+        # n_train = len(train_set.slice_numbers_per_example)
+        # # train_set = torch.utils.data.ConcatDataset(train_set)
+        # train_set = td.datasets.WrapDataset(train_set).cache(td.cachers.Pickle(Path("./cache_train")))
+        # train_set = td.datasets.ChainDataset(train_set)#.cache(td.cachers.Pickle(Path("./cache_train")))
+
+        # val_set = KasperN4Dataset(dir_root, 'val', args = args)
+        # n_val = len(val_set.slice_numbers_per_example)
+        # # val_set = torch.utils.data.ConcatDataset(val_set)
+        # val_set = td.datasets.WrapDataset(val_set).cache(td.cachers.Pickle(Path("./cache_val")))
+        # val_set = td.datasets.ChainDataset(val_set)#.cache(td.cachers.Pickle(Path("./cache_val")))
     elif args.dataset == 'kaspernormb' :
         train_set = KasperNormBDataset(dir_root, 'train', args = args)
         val_set = KasperNormBDataset(dir_root, 'val', args = args)
+        n_train = len(train_set)
+        n_val = len(val_set)
+        train_set = td.datasets.WrapDataset(train_set).cache(td.cachers.Pickle(Path("./cache_train")))
+        val_set = td.datasets.WrapDataset(val_set).cache(td.cachers.Pickle(Path("./cache_val")))
+        
     else :
         raise Exception('dataset not defined')
 
-    n_train = len(train_set)
-    n_val = len(val_set)
+    
     # 3. Create data loaders
     loader_args = dict(batch_size=batch_size, num_workers=32, pin_memory=True)
 
@@ -100,10 +130,9 @@ def train_net(net,
         train_loader_eval = train_loader = DataLoader(train_set, shuffle=True,collate_fn= my_collate_fn,**loader_args)
     else :
         train_loader = DataLoader(train_set, shuffle=True,collate_fn= my_collate_fn,**loader_args)
-        train_loader_eval = copy.deepcopy(train_loader)
+        train_loader_eval = DataLoader(train_set, shuffle=True,collate_fn= my_collate_fn,**loader_args)
 
     val_loader = DataLoader(val_set, shuffle=False, drop_last=True,collate_fn= my_collate_fn, **loader_args)
-
 
     logging.info(f'''Starting training:
         Epochs:          {epochs}

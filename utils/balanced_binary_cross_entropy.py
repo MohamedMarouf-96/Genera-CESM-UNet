@@ -6,8 +6,8 @@ from torch.nn import functional as F
 
 
 def balanced_binary_cross_entropy(input, label_orig):
-    label = torch.nn.functional.one_hot(label_orig.long(), num_classes = 2)
-    class_occurence = torch.sum(label, dim=(0,1,2,3,4)).float()
+    label = torch.nn.functional.one_hot(label_orig.long(), num_classes = label_orig.max().long().item()+1)
+    class_occurence = torch.sum(label, dim=[i for i in range(len(label_orig.size()))]).float()
     num_of_classes = (class_occurence > 0).sum()
     coefficients = torch.reciprocal(class_occurence) * torch.numel(label) / (num_of_classes * label.shape[1])
     integers = torch.argmax(label, dim=-1, keepdim=True)
@@ -21,8 +21,8 @@ class BBCELoss(nn.Module):
         super().__init__()
         self.loss_computer = nn.BCELoss(reduction='none')
     def forward(self,input,label_orig):
-        label = torch.nn.functional.one_hot(label_orig.long(), num_classes = 2)
-        class_occurence = torch.sum(label, dim=(0,1,2,3,4)).float()
+        label = torch.nn.functional.one_hot(label_orig.long(), num_classes = label_orig.max().long().item()+1)
+        class_occurence = torch.sum(label, dim=[i for i in range(len(label_orig.size()))]).float()
         num_of_classes = (class_occurence > 0).sum()
         coefficients = torch.reciprocal(class_occurence) * torch.numel(label) / (num_of_classes * label.shape[1])
         integers = torch.argmax(label, dim=-1, keepdim=True)

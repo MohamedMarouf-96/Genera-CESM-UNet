@@ -1,0 +1,787 @@
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   21333
+        Validation size: 2085
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: accuracy : 0.5975961538461538
+INFO: balanced accuracy : 0.5186579993963729
+INFO: roc_auc : 0.6489660020401069
+INFO: PR auc : 0.5075811145424987
+INFO: TPR : 0.07728337496519089
+INFO: FPR : 0.0399673735725938
+INFO: POD : 8.551614971707977e-10
+INFO: localization POD : 0.014016706496477127
+INFO: Validation Dice score: 0.5774038434028625
+INFO: Evaluating for test set
+INFO: accuracy : 0.6370192307692307
+INFO: balanced accuracy : 0.6316871759802255
+INFO: roc_auc : 0.6749821395142712
+INFO: PR auc : 0.5701865117618843
+INFO: TPR : 0.601873517036438
+INFO: FPR : 0.33849918433931486
+INFO: POD : 0.1990068256855011
+INFO: localization POD : 0.3721074163913727
+INFO: Validation Dice score: 0.5071884393692017
+INFO: Evaluating for test set
+INFO: accuracy : 0.6759615384615385
+INFO: balanced accuracy : 0.685328804856524
+INFO: roc_auc : 0.7382808470645768
+INFO: PR auc : 0.6208507763228375
+INFO: TPR : 0.7377049326896667
+INFO: FPR : 0.367047308319739
+INFO: POD : 0.30661919713020325
+INFO: localization POD : 0.3939496874809265
+INFO: Validation Dice score: 0.5013715028762817
+INFO: Evaluating for test set
+INFO: accuracy : 0.6644230769230769
+INFO: balanced accuracy : 0.6966811970154841
+INFO: roc_auc : 0.7791125917379493
+INFO: PR auc : 0.683860928498757
+INFO: TPR : 0.8770492076873779
+INFO: FPR : 0.4836867862969005
+INFO: POD : 0.35042327642440796
+INFO: localization POD : 0.3699606657028198
+INFO: Validation Dice score: 0.44964495301246643
+INFO: Evaluating for test set
+INFO: accuracy : 0.7100961538461539
+INFO: balanced accuracy : 0.6693393721513958
+INFO: roc_auc : 0.794109669113012
+INFO: PR auc : 0.7255087404054295
+INFO: TPR : 0.4414519965648651
+INFO: FPR : 0.10277324632952692
+INFO: POD : 0.1787387728691101
+INFO: localization POD : 0.4050833284854889
+INFO: Validation Dice score: 0.6022321581840515
+INFO: Evaluating for test set
+INFO: accuracy : 0.7105769230769231
+INFO: balanced accuracy : 0.668503654236278
+INFO: roc_auc : 0.8002213936145421
+INFO: PR auc : 0.7284871396659358
+INFO: TPR : 0.43325525522232056
+INFO: FPR : 0.09624796084828711
+INFO: POD : 0.17031589150428772
+INFO: localization POD : 0.40322479605674744
+INFO: Validation Dice score: 0.6031008362770081
+INFO: Evaluating for test set
+INFO: accuracy : 0.739423076923077
+INFO: balanced accuracy : 0.7157126429316412
+INFO: roc_auc : 0.8164085333007324
+INFO: PR auc : 0.742889993236858
+INFO: TPR : 0.5831381678581238
+INFO: FPR : 0.15171288743882544
+INFO: POD : 0.2489878088235855
+INFO: localization POD : 0.40241551399230957
+INFO: Validation Dice score: 0.6031901836395264
+INFO: Evaluating for test set
+INFO: accuracy : 0.7269230769230769
+INFO: balanced accuracy : 0.689653525678985
+INFO: roc_auc : 0.8139166612543983
+INFO: PR auc : 0.7474232310802762
+INFO: TPR : 0.4812646508216858
+INFO: FPR : 0.10195758564437195
+INFO: POD : 0.2132519781589508
+INFO: localization POD : 0.42340099811553955
+INFO: Validation Dice score: 0.6173640489578247
+INFO: Evaluating for test set
+INFO: accuracy : 0.7341346153846153
+INFO: balanced accuracy : 0.6931062345511574
+INFO: roc_auc : 0.8249825215567467
+INFO: PR auc : 0.7594647170661956
+INFO: TPR : 0.46370023488998413
+INFO: FPR : 0.07748776508972267
+INFO: POD : 0.21834422647953033
+INFO: localization POD : 0.42100951075553894
+INFO: Validation Dice score: 0.6338779330253601
+INFO: Evaluating for test set
+INFO: accuracy : 0.7360576923076924
+INFO: balanced accuracy : 0.7098377847649102
+INFO: roc_auc : 0.8192060393274525
+INFO: PR auc : 0.7467873626603462
+INFO: TPR : 0.5632318258285522
+INFO: FPR : 0.14355628058727568
+INFO: POD : 0.2513425648212433
+INFO: localization POD : 0.4227769374847412
+INFO: Validation Dice score: 0.6089646816253662
+INFO: Checkpoint 1 saved!
+INFO: Evaluating for test set
+INFO: accuracy : 0.7346153846153847
+INFO: balanced accuracy : 0.7057718977195885
+INFO: roc_auc : 0.8167581021657987
+INFO: PR auc : 0.7516119134935675
+INFO: TPR : 0.544496476650238
+INFO: FPR : 0.132952691680261
+INFO: POD : 0.23097383975982666
+INFO: localization POD : 0.3974229395389557
+INFO: Validation Dice score: 0.6097363829612732
+INFO: Evaluating for test set
+INFO: accuracy : 0.7423076923076923
+INFO: balanced accuracy : 0.7281080110486684
+INFO: roc_auc : 0.824079468655325
+INFO: PR auc : 0.7510195068572196
+INFO: TPR : 0.6487119197845459
+INFO: FPR : 0.19249592169657423
+INFO: POD : 0.2958246171474457
+INFO: localization POD : 0.4194973409175873
+INFO: Validation Dice score: 0.5979011058807373
+INFO: Evaluating for test set
+INFO: accuracy : 0.7350961538461539
+INFO: balanced accuracy : 0.7070679768176625
+INFO: roc_auc : 0.8225317190765269
+INFO: PR auc : 0.754223456922508
+INFO: TPR : 0.5503512620925903
+INFO: FPR : 0.1362153344208809
+INFO: POD : 0.2551427185535431
+INFO: localization POD : 0.42015984654426575
+INFO: Validation Dice score: 0.6143710613250732
+INFO: Evaluating for test set
+INFO: accuracy : 0.7442307692307693
+INFO: balanced accuracy : 0.7180144488464227
+INFO: roc_auc : 0.8257150880034844
+INFO: PR auc : 0.758744090112607
+INFO: TPR : 0.5714285969734192
+INFO: FPR : 0.13539967373572595
+INFO: POD : 0.26185479760169983
+INFO: localization POD : 0.4174172282218933
+INFO: Validation Dice score: 0.6176077127456665
+INFO: Evaluating for test set
+INFO: accuracy : 0.7408653846153846
+INFO: balanced accuracy : 0.7105407429197979
+INFO: roc_auc : 0.8243788944454844
+INFO: PR auc : 0.7603634872986336
+INFO: TPR : 0.5409836173057556
+INFO: FPR : 0.1199021207177814
+INFO: POD : 0.2550438940525055
+INFO: localization POD : 0.4255451261997223
+INFO: Validation Dice score: 0.6244266033172607
+INFO: Evaluating for test set
+INFO: accuracy : 0.7403846153846154
+INFO: balanced accuracy : 0.7149294558569022
+INFO: roc_auc : 0.8265565365557342
+INFO: PR auc : 0.7604452015359112
+INFO: TPR : 0.5725995302200317
+INFO: FPR : 0.14274061990212072
+INFO: POD : 0.2678983211517334
+INFO: localization POD : 0.42167046666145325
+INFO: Validation Dice score: 0.615281343460083
+INFO: Evaluating for test set
+INFO: accuracy : 0.7427884615384616
+INFO: balanced accuracy : 0.7132379627967038
+INFO: roc_auc : 0.8256434550393312
+INFO: PR auc : 0.7593362972675131
+INFO: TPR : 0.5480093955993652
+INFO: FPR : 0.12153344208809136
+INFO: POD : 0.25743043422698975
+INFO: localization POD : 0.423117995262146
+INFO: Validation Dice score: 0.6239641904830933
+INFO: Evaluating for test set
+INFO: accuracy : 0.7413461538461539
+INFO: balanced accuracy : 0.7161004160442558
+INFO: roc_auc : 0.8257351452334472
+INFO: PR auc : 0.760849221003312
+INFO: TPR : 0.5749414563179016
+INFO: FPR : 0.14274061990212072
+INFO: POD : 0.2724892497062683
+INFO: localization POD : 0.4252711832523346
+INFO: Validation Dice score: 0.61716628074646
+INFO: Evaluating for test set
+INFO: accuracy : 0.7408653846153846
+INFO: balanced accuracy : 0.7162255349549762
+INFO: roc_auc : 0.8257647535252969
+INFO: PR auc : 0.7609700270042645
+INFO: TPR : 0.578454315662384
+INFO: FPR : 0.14600326264274063
+INFO: POD : 0.2725980579853058
+INFO: localization POD : 0.42471784353256226
+INFO: Validation Dice score: 0.6152878999710083
+INFO: Evaluating for test set
+INFO: accuracy : 0.7389423076923077
+INFO: balanced accuracy : 0.7074882235406933
+INFO: roc_auc : 0.8239299945367926
+INFO: PR auc : 0.7591807691309198
+INFO: TPR : 0.5316159129142761
+INFO: FPR : 0.1166394779771615
+INFO: POD : 0.24930131435394287
+INFO: localization POD : 0.42393067479133606
+INFO: Validation Dice score: 0.6235111951828003
+INFO: Checkpoint 2 saved!
+INFO: Evaluating for test set
+INFO: accuracy : 0.7418269230769231
+INFO: balanced accuracy : 0.713665850369244
+INFO: roc_auc : 0.8252776493690568
+INFO: PR auc : 0.7596945663271044
+INFO: TPR : 0.5562061071395874
+INFO: FPR : 0.12887438825448613
+INFO: POD : 0.2640441954135895
+INFO: localization POD : 0.42191824316978455
+INFO: Validation Dice score: 0.6218720078468323
+INFO: Evaluating for test set
+INFO: accuracy : 0.7423076923076923
+INFO: balanced accuracy : 0.7178043254849074
+INFO: roc_auc : 0.8255164259162334
+INFO: PR auc : 0.7605799786644217
+INFO: TPR : 0.5807962417602539
+INFO: FPR : 0.14518760195758565
+INFO: POD : 0.27607113122940063
+INFO: localization POD : 0.42604318261146545
+INFO: Validation Dice score: 0.6176753044128418
+INFO: Evaluating for test set
+INFO: accuracy : 0.74375
+INFO: balanced accuracy : 0.7172513190016465
+INFO: roc_auc : 0.8277752520525233
+INFO: PR auc : 0.7613528708885495
+INFO: TPR : 0.5690866708755493
+INFO: FPR : 0.13458401305057097
+INFO: POD : 0.26742273569107056
+INFO: localization POD : 0.4206123352050781
+INFO: Validation Dice score: 0.6198937296867371
+INFO: Evaluating for test set
+INFO: accuracy : 0.7427884615384616
+INFO: balanced accuracy : 0.7116391150368098
+INFO: roc_auc : 0.8265995163342261
+INFO: PR auc : 0.7612505267189069
+INFO: TPR : 0.5374706983566284
+INFO: FPR : 0.11419249592169657
+INFO: POD : 0.2588873505592346
+INFO: localization POD : 0.42467477917671204
+INFO: Validation Dice score: 0.628889262676239
+INFO: Evaluating for test set
+INFO: accuracy : 0.7427884615384616
+INFO: balanced accuracy : 0.7132379627967038
+INFO: roc_auc : 0.8252002857677717
+INFO: PR auc : 0.760098433581382
+INFO: TPR : 0.5480093955993652
+INFO: FPR : 0.12153344208809136
+INFO: POD : 0.2634880244731903
+INFO: localization POD : 0.4257083535194397
+INFO: Validation Dice score: 0.6259706020355225
+INFO: Evaluating for test set
+INFO: accuracy : 0.74375
+INFO: balanced accuracy : 0.7211596135258318
+INFO: roc_auc : 0.8262155636463662
+INFO: PR auc : 0.7604771222780843
+INFO: TPR : 0.5948477983474731
+INFO: FPR : 0.15252854812398042
+INFO: POD : 0.28019416332244873
+INFO: localization POD : 0.4195791780948639
+INFO: Validation Dice score: 0.6145605444908142
+INFO: Evaluating for test set
+INFO: accuracy : 0.7346153846153847
+INFO: balanced accuracy : 0.6968894101646221
+INFO: roc_auc : 0.8241630404468369
+INFO: PR auc : 0.7604153500232151
+INFO: TPR : 0.48594847321510315
+INFO: FPR : 0.09216965742251224
+INFO: POD : 0.23393593728542328
+INFO: localization POD : 0.42661359906196594
+INFO: Validation Dice score: 0.6316255927085876
+INFO: Evaluating for test set
+INFO: accuracy : 0.7432692307692308
+INFO: balanced accuracy : 0.7163105394057712
+INFO: roc_auc : 0.8259357175330753
+INFO: PR auc : 0.7610771170944187
+INFO: TPR : 0.5655737519264221
+INFO: FPR : 0.132952691680261
+INFO: POD : 0.26922568678855896
+INFO: localization POD : 0.4212801456451416
+INFO: Validation Dice score: 0.6215955018997192
+INFO: Evaluating for test set
+INFO: accuracy : 0.74375
+INFO: balanced accuracy : 0.7145865727351567
+INFO: roc_auc : 0.8280503226348706
+INFO: PR auc : 0.7637838132007472
+INFO: TPR : 0.5515222549438477
+INFO: FPR : 0.12234910277324633
+INFO: POD : 0.2631595730781555
+INFO: localization POD : 0.42371541261672974
+INFO: Validation Dice score: 0.6258357167243958
+INFO: Evaluating for test set
+INFO: accuracy : 0.7408653846153846
+INFO: balanced accuracy : 0.7110736921730958
+INFO: roc_auc : 0.8256873899240117
+INFO: PR auc : 0.7611959606308473
+INFO: TPR : 0.544496476650238
+INFO: FPR : 0.12234910277324633
+INFO: POD : 0.2650779187679291
+INFO: localization POD : 0.4270956516265869
+INFO: Validation Dice score: 0.626623272895813
+INFO: Checkpoint 3 saved!
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='KasperN4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   21333
+        Validation size: 2085
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KasperN4_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Saved interrupt

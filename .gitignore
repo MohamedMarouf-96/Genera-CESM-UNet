@@ -9,3 +9,6 @@ checkpoint/
 INTERRUPTED.pth
 LICENSE
 sync_batchnorm/
+cache_train/
+cache_val/
+cache_test/
