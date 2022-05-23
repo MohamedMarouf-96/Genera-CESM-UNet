@@ -544,3 +544,77 @@ INFO: POD : 0.3554866313934326
 INFO: localization POD : 0.46132951974868774
 INFO: Validation Dice score: 0.6718842387199402
 INFO: Checkpoint 5 saved!
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=True, experiment_type='expA', gpu_ids=[0], input_channels=1, load='./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth', lr=1e-05, name='KaspernormA_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=True, experiment_type='expA', gpu_ids=[0], input_channels=1, load='./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth', lr=1e-05, name='KaspernormA_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=True, experiment_type='expA', gpu_ids=[0], input_channels=1, load='./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth', lr=1e-05, name='KaspernormA_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth
+INFO: balanced accuracy : 0.7845861025947036
+INFO: TPR : 0.7130434513092041
+INFO: FPR : 0.14387127307146239
+INFO: patient balanced accuracy : 0.680952380952381
+INFO: patient TPR : 0.8380952477455139
+INFO: patient FPR : 0.47619047619047616
+INFO: POD : 0.3618301451206207
+INFO: localization POD : 0.4641721844673157
+INFO: Validation Dice score: 0.6151060461997986
+INFO: TPR: 0.7130434513092041
+INFO: FPR: 0.14387127307146239
+INFO: TPR Patient: 0.8380952477455139
+INFO: FPR Patient: 0.47619047619047616
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=True, experiment_type='expA', full_set=True, gpu_ids=[0], input_channels=1, load='./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth', lr=1e-05, name='KaspernormA_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=True, experiment_type='expA', full_set=True, gpu_ids=[0], input_channels=1, load='./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth', lr=1e-05, name='KaspernormA_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=True, experiment_type='expA', full_set=True, gpu_ids=[0], input_channels=1, load='./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth', lr=1e-05, name='KaspernormA_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/KaspernormA_expA_A/checkpoint_epoch5.pth
+INFO: balanced accuracy : 0.7265314820634563
+INFO: TPR : 0.5921616554260254
+INFO: FPR : 0.13909870151913775
+INFO: patient balanced accuracy : 0.5885836693548387
+INFO: patient TPR : 0.9193548560142517
+INFO: patient FPR : 0.7421875
+INFO: POD : 0.26212388277053833
+INFO: localization POD : 0.35751986503601074
+INFO: Validation Dice score: 0.7946518063545227
+INFO: TPR: 0.5921616554260254
+INFO: FPR: 0.13909870151913775
+INFO: TPR Patient: 0.9193548560142517
+INFO: FPR Patient: 0.7421875

@@ -1,0 +1,37 @@
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='B', epochs=5, eval_only=False, experiment_type='expD', gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KaspernormA_expD_B', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='B', epochs=5, eval_only=True, experiment_type='expD', gpu_ids=[0], input_channels=1, load='./checkpoint/KaspernormA_expD_B/checkpoint_epoch5.pth', lr=1e-05, name='KaspernormA_expD_B', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='B', epochs=5, eval_only=False, experiment_type='expD', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KaspernormA_expD_B', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='B', epochs=5, eval_only=True, experiment_type='expD', full_set=True, gpu_ids=[0], input_channels=1, load='./checkpoint/KaspernormA_expD_B/checkpoint_epoch5.pth', lr=1e-05, name='KaspernormA_expD_B', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='B', epochs=5, eval_only=True, experiment_type='expD', full_set=False, gpu_ids=[0], input_channels=1, load='./checkpoint/KaspernormA_expD_B/checkpoint_epoch5.pth', lr=1e-05, name='KaspernormA_expD_B', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='B', epochs=5, eval_only=False, experiment_type='expD', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, name='KaspernormA_expD_B', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Saved interrupt

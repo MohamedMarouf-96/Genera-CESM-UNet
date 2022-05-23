@@ -4,6 +4,8 @@ import logging
 import os
 import sys
 from pathlib import Path
+
+import numpy as np
 import utils
 
 import torch
@@ -22,7 +24,7 @@ from unet_local import UNet3d
 from unet_local import UNet
 # from unet_local import UNet, UNet3d
 from utils.my_collate_fn import my_collate_fn
-from utils.balanced_sampling import get_balanced_weighted_sampler
+from utils.balanced_sampling import get_balanced_weighted_sampler, ClassBalancedRandomSampler
 import torchdatasets as td
 
 dir_root = Path('/data/')
@@ -81,7 +83,6 @@ def train_net(net,
         n_train = len(train_set)
         n_val = len(val_set)
 
-
     elif args.dataset == 'kaspernormA' :
         train_set = KasperNormADataset(dir_root, 'train', args = args)
         val_set = KasperNormADataset(dir_root, 'val', args = args)
@@ -125,8 +126,13 @@ def train_net(net,
     loader_args = dict(batch_size=batch_size, num_workers=32, pin_memory=True)
 
     if args.balanced :
-        balanced_sampler = get_balanced_weighted_sampler(train_set.get_labels())
-        train_loader = DataLoader(train_set,collate_fn= my_collate_fn, sampler= balanced_sampler,**loader_args)
+        # balanced_sampler = get_balanced_weighted_sampler(train_set.get_labels())
+        balanced_sampler = get_balanced_weighted_sampler(train_set.get_labels(),len(train_set))
+        # balanced_sampler = ClassBalancedRandomSampler(train_set.get_labels())
+        # for x in balanced_sampler :
+        #     print(x)
+        # exit()
+        # train_loader = DataLoader(train_set,collate_fn= my_collate_fn, sampler= balanced_sampler,**loader_args)
         train_loader_eval = train_loader = DataLoader(train_set, shuffle=True,collate_fn= my_collate_fn,**loader_args)
     else :
         train_loader = DataLoader(train_set, shuffle=True,collate_fn= my_collate_fn,**loader_args)
