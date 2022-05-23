@@ -273,6 +273,7 @@ def get_args():
     parser.add_argument('--sagital_size',type=int, default=256)
     parser.add_argument('--coronal_size',type=int,default=256)
     parser.add_argument('--experiment_type', type=str ,default='expA', help='which experiment to perform to debug the model')
+    parser.add_argument('--full_set', action='store_true', help='testing the model using all the images in the test set')
 
 
 

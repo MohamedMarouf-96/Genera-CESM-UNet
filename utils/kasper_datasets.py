@@ -993,6 +993,7 @@ class KasperN4Dataset():
         dataset_mode = args.dataset_mode
         experimet_type = args.experiment_type
         self.root = dataroot
+        self.args = args
 
 
         dir_mri = f"Duke-Breast-Cancer-MRI/manifest-1607053360376/3D-Dataset-KasperN4/"
@@ -1043,38 +1044,39 @@ class KasperN4Dataset():
 
 
         self.patient_id_category, self.index_of_patient_id, self.patient_id_per_example, self.slice_numbers_per_example, self.example_category = self.get_positive_stats()
+        if not self.args.full_set :
 
-        kasper_examples_ordered_pairs = [(x,int(y),z) for x,y,z in zip(kasper_slices['patients'],kasper_slices['slices'], kasper_slices['categorys'])]
-        all_examples_ordered_pairs = [(x,int(y),z) for x,y,z in zip(self.patient_id_per_example,self.slice_numbers_per_example,self.example_category)]
-        subset_examples_ordered_pairs = list(set(kasper_examples_ordered_pairs) & set(all_examples_ordered_pairs))
-        not_included_examples_ordered_paris = list(set(kasper_examples_ordered_pairs) - set(subset_examples_ordered_pairs))
-        all_examples_ordered_pairs_filtered = list(set(all_examples_ordered_pairs) - set(not_included_examples_ordered_paris))
-        positive_examples_ordered_pairs = [x for x in all_examples_ordered_pairs_filtered if x[2]]
-        negative_examples_ordered_pairs = [x for x in all_examples_ordered_pairs_filtered if not x[2]]
-        
-        if experimet_type == 'expA' :
-            selected = subset_examples_ordered_pairs
-        elif experimet_type == 'expB' :
-            positive_number = sum([int(x[2]) for x in subset_examples_ordered_pairs])
-            negative_nubmer = len(subset_examples_ordered_pairs) - positive_number
-            random.seed(42)
-            selected_positives = random.sample(positive_examples_ordered_pairs,positive_number)
-            selected_negatives = random.sample(negative_examples_ordered_pairs,negative_nubmer)
-            selected = selected_negatives + selected_positives
-        elif experimet_type == 'expC' :
-            positive_number = sum([int(x[2]) for x in all_examples_ordered_pairs_filtered])
-            negative_nubmer = positive_number
-            random.seed(42)
-            selected_positives = random.sample(positive_examples_ordered_pairs,positive_number)
-            selected_negatives = random.sample(negative_examples_ordered_pairs,negative_nubmer)
-            selected = selected_negatives + selected_positives
-        else : 
-            raise Exception('not implemeted error')        
+            kasper_examples_ordered_pairs = [(x,int(y),z) for x,y,z in zip(kasper_slices['patients'],kasper_slices['slices'], kasper_slices['categorys'])]
+            all_examples_ordered_pairs = [(x,int(y),z) for x,y,z in zip(self.patient_id_per_example,self.slice_numbers_per_example,self.example_category)]
+            subset_examples_ordered_pairs = list(set(kasper_examples_ordered_pairs) & set(all_examples_ordered_pairs))
+            not_included_examples_ordered_paris = list(set(kasper_examples_ordered_pairs) - set(subset_examples_ordered_pairs))
+            all_examples_ordered_pairs_filtered = list(set(all_examples_ordered_pairs) - set(not_included_examples_ordered_paris))
+            positive_examples_ordered_pairs = [x for x in all_examples_ordered_pairs_filtered if x[2]]
+            negative_examples_ordered_pairs = [x for x in all_examples_ordered_pairs_filtered if not x[2]]
+            
+            if experimet_type == 'expA' :
+                selected = subset_examples_ordered_pairs
+            elif experimet_type == 'expB' :
+                positive_number = sum([int(x[2]) for x in subset_examples_ordered_pairs])
+                negative_nubmer = len(subset_examples_ordered_pairs) - positive_number
+                random.seed(42)
+                selected_positives = random.sample(positive_examples_ordered_pairs,positive_number)
+                selected_negatives = random.sample(negative_examples_ordered_pairs,negative_nubmer)
+                selected = selected_negatives + selected_positives
+            elif experimet_type == 'expC' :
+                positive_number = sum([int(x[2]) for x in all_examples_ordered_pairs_filtered])
+                negative_nubmer = positive_number
+                random.seed(42)
+                selected_positives = random.sample(positive_examples_ordered_pairs,positive_number)
+                selected_negatives = random.sample(negative_examples_ordered_pairs,negative_nubmer)
+                selected = selected_negatives + selected_positives
+            else : 
+                raise Exception('not implemeted error')        
 
 
-        self.patient_id_per_example = [x[0] for x in selected]
-        self.slice_numbers_per_example = [x[1] for x in selected]
-        self.example_category = [x[1] for x in selected]
+            self.patient_id_per_example = [x[0] for x in selected]
+            self.slice_numbers_per_example = [x[1] for x in selected]
+            self.example_category = [x[1] for x in selected]
 
 
         print('only positive examples are used : {}'.format(not (False in self.patient_id_category)))
@@ -1120,10 +1122,11 @@ class KasperN4Dataset():
             include_example += list(np.amax(img_breast_mask,axis= (1,2)) > 0)
             patient_id_category.append(img_tumor_mask.sum() > 0)
 
+        if self.args.full_set:
 
-        # patient_id_per_example = [patient_id_per_example[i] for i in range(len(patient_id_per_example)) if include_example[i]]
-        # slice_numbers_per_example = [slice_numbers_per_example[i] for i in range(len(slice_numbers_per_example)) if include_example[i]]
-        # example_category = [example_category[i] for i in range(len(example_category)) if include_example[i]]
+            patient_id_per_example = [patient_id_per_example[i] for i in range(len(patient_id_per_example)) if include_example[i]]
+            slice_numbers_per_example = [slice_numbers_per_example[i] for i in range(len(slice_numbers_per_example)) if include_example[i]]
+            example_category = [example_category[i] for i in range(len(example_category)) if include_example[i]]
         
         return  patient_id_category, index_of_patient_id,patient_id_per_example, slice_numbers_per_example, example_category
 
@@ -1229,7 +1232,8 @@ class KasperN4Dataset():
         return {
             'image': img,
             'mask': mask,
-            'patient_id': self.patient_ids[index]
+            'patient_id': self.patient_ids[index],
+            'valid_from': 0
         }
 
     def __len__(self):
