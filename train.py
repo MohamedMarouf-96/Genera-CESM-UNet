@@ -97,7 +97,7 @@ def train_net(net,
         val_set = KasperN4Dataset(dir_root, 'val', args = args)
         n_train = len(train_set)
         n_val = len(val_set)
-        train_set = td.datasets.WrapDataset(train_set).cache(td.cachers.Pickle(Path("./cache_train")))
+        # train_set = td.datasets.WrapDataset(train_set).cache(td.cachers.Pickle(Path("./cache_train")))
         val_set = td.datasets.WrapDataset(val_set).cache(td.cachers.Pickle(Path("./cache_val")))
         # train_set = KasperN4Dataset(dir_root, 'train', args = args)
         # n_train = len(train_set.slice_numbers_per_example)
@@ -127,16 +127,13 @@ def train_net(net,
 
     if args.balanced :
         # balanced_sampler = get_balanced_weighted_sampler(train_set.get_labels())
-        balanced_sampler = get_balanced_weighted_sampler(train_set.get_labels(),len(train_set))
-        # balanced_sampler = ClassBalancedRandomSampler(train_set.get_labels())
-        # for x in balanced_sampler :
-        #     print(x)
-        # exit()
-        # train_loader = DataLoader(train_set,collate_fn= my_collate_fn, sampler= balanced_sampler,**loader_args)
-        train_loader_eval = train_loader = DataLoader(train_set, shuffle=True,collate_fn= my_collate_fn,**loader_args)
+        # balanced_sampler = get_balanced_weighted_sampler(train_set.get_labels(),len(train_set))
+        balanced_sampler = ClassBalancedRandomSampler(train_set.get_labels())
+        train_loader = DataLoader(train_set,collate_fn= my_collate_fn, sampler= balanced_sampler,**loader_args)
+        train_loader_eval = DataLoader(train_set, shuffle=False,collate_fn= my_collate_fn,**loader_args)
     else :
         train_loader = DataLoader(train_set, shuffle=True,collate_fn= my_collate_fn,**loader_args)
-        train_loader_eval = DataLoader(train_set, shuffle=True,collate_fn= my_collate_fn,**loader_args)
+        train_loader_eval = DataLoader(train_set, shuffle=False,collate_fn= my_collate_fn,**loader_args)
 
     val_loader = DataLoader(val_set, shuffle=False, drop_last=True,collate_fn= my_collate_fn, **loader_args)
 
@@ -163,7 +160,7 @@ def train_net(net,
     for epoch in range(epochs):
         net.train()
         epoch_loss = 0
-        with tqdm(total=n_train, desc=f'Epoch {epoch + 1}/{epochs}', unit='img') as pbar:
+        with tqdm(total=len(train_loader) * batch_size, desc=f'Epoch {epoch + 1}/{epochs}', unit='img') as pbar:
             for batch in train_loader:
                 images = batch['image']
                 true_masks = batch['mask']
@@ -217,7 +214,7 @@ def train_net(net,
                 pbar.set_postfix(**{'loss (batch)': loss.item()})
 
                 # Evaluation round
-                division_step = (n_train // (10 * batch_size))
+                division_step = (len(train_loader) * 32 // (10 * batch_size))
                 if division_step > 0:
                     if global_step % division_step == 0:
                         histograms = {}

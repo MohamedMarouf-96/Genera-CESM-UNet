@@ -197,10 +197,7 @@ class KasperNormADataset():
         assert len(self.example_category) == len(self.slice_numbers_per_example)
 
 
-        if hasattr(self,'positive_number') :
-            self.dataset_size = 2* self.positive_number
-        else :
-            self.dataset_size = len(self.slice_numbers_per_example)
+        self.dataset_size = len(self.slice_numbers_per_example)
     
     
     def get_subset_indecies(self,length,phase):
