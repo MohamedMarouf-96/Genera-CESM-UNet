@@ -94,7 +94,7 @@ class KasperNormADataset():
         self.args = args
 
 
-        dir_mri = f"Duke-Breast-Cancer-MRI/manifest-1607053360376/3D-Dataset-KasperN4/"
+        dir_mri = f"Duke-Breast-Cancer-MRI/manifest-1607053360376/3D-Dataset-Kasper/"
         if phase == 'val':
             self.dir_mri = os.path.join(self.root, dir_mri, 'train')
         else :
@@ -169,7 +169,7 @@ class KasperNormADataset():
                 selected_positives = random.sample(positive_examples_ordered_pairs,positive_number)
                 selected_negatives = random.sample(negative_examples_ordered_pairs,negative_nubmer)
                 selected = selected_negatives + selected_positives
-            elif experimet_type == 'expD' :
+            elif experimet_type == 'expE' :
                 if phase == 'train':
                     self.positive_number = sum([int(x[2]) for x in all_examples_ordered_pairs_filtered])
                     selected = all_examples_ordered_pairs_filtered
@@ -486,6 +486,17 @@ class KasperN4Dataset():
                 selected_positives = random.sample(positive_examples_ordered_pairs,positive_number)
                 selected_negatives = random.sample(negative_examples_ordered_pairs,negative_nubmer)
                 selected = selected_negatives + selected_positives
+            elif experimet_type in ['expE','expD','expF']  :
+                if phase == 'train':
+                    self.positive_number = sum([int(x[2]) for x in all_examples_ordered_pairs_filtered])
+                    selected = all_examples_ordered_pairs_filtered
+                else :
+                    positive_number = sum([int(x[2]) for x in all_examples_ordered_pairs_filtered])
+                    negative_nubmer = positive_number
+                    random.seed(42)
+                    selected_positives = random.sample(positive_examples_ordered_pairs,positive_number)
+                    selected_negatives = random.sample(negative_examples_ordered_pairs,negative_nubmer)
+                    selected = selected_negatives + selected_positives
             else : 
                 raise Exception('not implemeted error')        
 
@@ -501,7 +512,10 @@ class KasperN4Dataset():
         assert len(self.example_category) == len(self.slice_numbers_per_example)
 
 
-        self.dataset_size = len(self.slice_numbers_per_example)
+        if hasattr(self,'positive_number') :
+            self.dataset_size = 2* self.positive_number
+        else :
+            self.dataset_size = len(self.slice_numbers_per_example)
     
     
     def get_subset_indecies(self,length,phase):

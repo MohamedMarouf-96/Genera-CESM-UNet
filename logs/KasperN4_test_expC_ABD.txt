@@ -1,0 +1,17 @@
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='ABD', epochs=5, eval_only=False, experiment_type='expC', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=3, load=False, lr=1e-05, name='KasperN4_test_expC_ABD', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	3 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   31972
+        Validation size: 2782
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set

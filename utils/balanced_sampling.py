@@ -4,7 +4,7 @@ import torch
 from torch.utils.data import WeightedRandomSampler, Sampler, RandomSampler, SubsetRandomSampler
 from torch.utils.data import DataLoader
 import typing
-def get_balanced_weighted_sampler(elements_classes, epoch_size):
+def get_balanced_weighted_sampler(elements_classes, epoch_size, replacement ):
     y_train_indices = range(len(elements_classes))
     y_train = elements_classes
     class_sample_count = np.array(
@@ -12,7 +12,7 @@ def get_balanced_weighted_sampler(elements_classes, epoch_size):
     weight = 1. / class_sample_count
     samples_weight = np.array([weight[t] for t in y_train])
     samples_weight = torch.from_numpy(samples_weight)
-    sampler = WeightedRandomSampler(samples_weight.type('torch.DoubleTensor'),replacement= False,num_samples= epoch_size)
+    sampler = WeightedRandomSampler(samples_weight.type('torch.DoubleTensor'),replacement= replacement,num_samples= epoch_size)
     return sampler
 # def get_balanced_weighted_sampler(elements_classes):
 #     y_train_indices = range(len(elements_classes))

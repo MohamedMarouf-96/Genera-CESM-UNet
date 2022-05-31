@@ -97,19 +97,9 @@ def train_net(net,
         val_set = KasperN4Dataset(dir_root, 'val', args = args)
         n_train = len(train_set)
         n_val = len(val_set)
-        # train_set = td.datasets.WrapDataset(train_set).cache(td.cachers.Pickle(Path("./cache_train")))
+        train_set = td.datasets.WrapDataset(train_set).cache(td.cachers.Pickle(Path("./cache_train")))
         val_set = td.datasets.WrapDataset(val_set).cache(td.cachers.Pickle(Path("./cache_val")))
-        # train_set = KasperN4Dataset(dir_root, 'train', args = args)
-        # n_train = len(train_set.slice_numbers_per_example)
-        # # train_set = torch.utils.data.ConcatDataset(train_set)
-        # train_set = td.datasets.WrapDataset(train_set).cache(td.cachers.Pickle(Path("./cache_train")))
-        # train_set = td.datasets.ChainDataset(train_set)#.cache(td.cachers.Pickle(Path("./cache_train")))
-
-        # val_set = KasperN4Dataset(dir_root, 'val', args = args)
-        # n_val = len(val_set.slice_numbers_per_example)
-        # # val_set = torch.utils.data.ConcatDataset(val_set)
-        # val_set = td.datasets.WrapDataset(val_set).cache(td.cachers.Pickle(Path("./cache_val")))
-        # val_set = td.datasets.ChainDataset(val_set)#.cache(td.cachers.Pickle(Path("./cache_val")))
+        
     elif args.dataset == 'kaspernormb' :
         train_set = KasperNormBDataset(dir_root, 'train', args = args)
         val_set = KasperNormBDataset(dir_root, 'val', args = args)
@@ -126,9 +116,14 @@ def train_net(net,
     loader_args = dict(batch_size=batch_size, num_workers=32, pin_memory=True)
 
     if args.balanced :
-        # balanced_sampler = get_balanced_weighted_sampler(train_set.get_labels())
-        # balanced_sampler = get_balanced_weighted_sampler(train_set.get_labels(),len(train_set))
-        balanced_sampler = ClassBalancedRandomSampler(train_set.get_labels())
+        if args.experiment_type == 'expD' :
+            balanced_sampler = ClassBalancedRandomSampler(train_set.get_labels())
+        elif args.experiment_type == 'expE' :
+            balanced_sampler = get_balanced_weighted_sampler(train_set.get_labels(),2 * train_set.positive_number, replacemet = False)
+        elif args.experiment_type == 'expF' :
+            balanced_sampler = get_balanced_weighted_sampler(train_set.get_labels(),2 * train_set.positive_number, replacemet = True)
+        else :
+            balanced_sampler = None
         train_loader = DataLoader(train_set,collate_fn= my_collate_fn, sampler= balanced_sampler,**loader_args)
         train_loader_eval = DataLoader(train_set, shuffle=False,collate_fn= my_collate_fn,**loader_args)
     else :
