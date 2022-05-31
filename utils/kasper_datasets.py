@@ -169,7 +169,7 @@ class KasperNormADataset():
                 selected_positives = random.sample(positive_examples_ordered_pairs,positive_number)
                 selected_negatives = random.sample(negative_examples_ordered_pairs,negative_nubmer)
                 selected = selected_negatives + selected_positives
-            elif experimet_type == 'expE' :
+            elif experimet_type in ['expE','expD','expF']  :
                 if phase == 'train':
                     self.positive_number = sum([int(x[2]) for x in all_examples_ordered_pairs_filtered])
                     selected = all_examples_ordered_pairs_filtered
