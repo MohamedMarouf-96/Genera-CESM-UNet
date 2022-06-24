@@ -1,0 +1,599 @@
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='ABD', epochs=5, eval_only=False, experiment_type='expE', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=3, load=False, lr=1e-05, name='KasperN4_test_expE_ABD', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	3 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='ABD', epochs=5, eval_only=True, experiment_type='expE', full_set=False, gpu_ids=[0], input_channels=3, load='./checkpoint/KasperN4_test_expE_ABD/checkpoint_epoch5.pth', lr=1e-05, name='KasperN4_test_expE_ABD', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	3 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='ABD', epochs=5, eval_only=True, experiment_type='expE', full_set=True, gpu_ids=[0], input_channels=3, load='./checkpoint/KasperN4_test_expE_ABD/checkpoint_epoch5.pth', lr=1e-05, name='KasperN4_test_expE_ABD', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	3 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='ABD', epochs=5, eval_only=False, experiment_type='expE', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=3, load=False, lr=1e-05, name='KasperN4_test_expE_ABD', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	3 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   31972
+        Validation size: 2782
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='ABD', epochs=5, eval_only=False, experiment_type='expE', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=3, load=False, lr=1e-05, name='KasperN4_test_expE_ABD', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	3 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   31972
+        Validation size: 2782
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Evaluating for test set
+INFO: accuracy : 0.8546511627906976
+INFO: balanced accuracy : 0.8548319706140715
+INFO: roc_auc : 0.9333043164544191
+INFO: PR auc : 0.9218456798251037
+INFO: TPR : 0.8714180588722229
+INFO: FPR : 0.16175413371675054
+INFO: POD : 0.3822923004627228
+INFO: localization POD : 0.3547058403491974
+INFO: Validation Dice score: 0.6152979135513306
+INFO: Evaluating for test set
+INFO: accuracy : 0.7892441860465116
+INFO: balanced accuracy : 0.787222466670646
+INFO: roc_auc : 0.9377318555149589
+INFO: PR auc : 0.9328473023212213
+INFO: TPR : 0.6017634272575378
+INFO: FPR : 0.027318475916606758
+INFO: POD : 0.421583354473114
+INFO: localization POD : 0.5011038184165955
+INFO: Validation Dice score: 0.7001362442970276
+INFO: Evaluating for test set
+INFO: accuracy : 0.8361191860465116
+INFO: balanced accuracy : 0.8359055880909658
+INFO: roc_auc : 0.927571281952681
+INFO: PR auc : 0.9206907505939812
+INFO: TPR : 0.8163115382194519
+INFO: FPR : 0.1445003594536305
+INFO: POD : 0.4671938419342041
+INFO: localization POD : 0.4520588219165802
+INFO: Validation Dice score: 0.6674603223800659
+INFO: Evaluating for test set
+INFO: accuracy : 0.7205668604651163
+INFO: balanced accuracy : 0.7176218378776971
+INFO: roc_auc : 0.9208768872636149
+INFO: PR auc : 0.9155250556817585
+INFO: TPR : 0.44746509194374084
+INFO: FPR : 0.012221423436376708
+INFO: POD : 0.3071025013923645
+INFO: localization POD : 0.3832624852657318
+INFO: Validation Dice score: 0.6511505842208862
+INFO: Evaluating for test set
+INFO: accuracy : 0.7725290697674418
+INFO: balanced accuracy : 0.7702755881596344
+INFO: roc_auc : 0.9406774736933292
+INFO: PR auc : 0.9317391545011771
+INFO: TPR : 0.5635561943054199
+INFO: FPR : 0.023005032350826744
+INFO: POD : 0.41978690028190613
+INFO: localization POD : 0.5116997957229614
+INFO: Validation Dice score: 0.7014280557632446
+INFO: Evaluating for test set
+INFO: accuracy : 0.8662790697674418
+INFO: balanced accuracy : 0.8656689297367194
+INFO: roc_auc : 0.9481198277369318
+INFO: PR auc : 0.9456626186216182
+INFO: TPR : 0.809698760509491
+INFO: FPR : 0.07836089144500359
+INFO: POD : 0.4868542551994324
+INFO: localization POD : 0.5200638771057129
+INFO: Validation Dice score: 0.7066165208816528
+INFO: Evaluating for test set
+INFO: accuracy : 0.8114098837209303
+INFO: balanced accuracy : 0.8096245360248602
+INFO: roc_auc : 0.9374241674330257
+INFO: PR auc : 0.9339528408434661
+INFO: TPR : 0.6458486318588257
+INFO: FPR : 0.026599568655643422
+INFO: POD : 0.49150899052619934
+INFO: localization POD : 0.5819182395935059
+INFO: Validation Dice score: 0.7350813150405884
+INFO: Evaluating for test set
+INFO: accuracy : 0.7129360465116279
+INFO: balanced accuracy : 0.7099069223743907
+INFO: roc_auc : 0.9258072916529111
+INFO: PR auc : 0.927951424189555
+INFO: TPR : 0.43203526735305786
+INFO: FPR : 0.012221423436376708
+INFO: POD : 0.2557748258113861
+INFO: localization POD : 0.32231947779655457
+INFO: Validation Dice score: 0.6257665157318115
+INFO: Evaluating for test set
+INFO: accuracy : 0.8568313953488372
+INFO: balanced accuracy : 0.8561567460810047
+INFO: roc_auc : 0.9365644895732037
+INFO: PR auc : 0.9352728884509994
+INFO: TPR : 0.7942689061164856
+INFO: FPR : 0.08195542774982027
+INFO: POD : 0.5503754615783691
+INFO: localization POD : 0.6011608839035034
+INFO: Validation Dice score: 0.7362140417098999
+INFO: Evaluating for test set
+INFO: accuracy : 0.8299418604651163
+INFO: balanced accuracy : 0.8283845292847745
+INFO: roc_auc : 0.9501492485279833
+INFO: PR auc : 0.9486035454690922
+INFO: TPR : 0.6855253577232361
+INFO: FPR : 0.02875629043853343
+INFO: POD : 0.5151290893554688
+INFO: localization POD : 0.5736212134361267
+INFO: Validation Dice score: 0.7460359334945679
+INFO: Checkpoint 1 saved!
+INFO: Evaluating for test set
+INFO: accuracy : 0.8633720930232558
+INFO: balanced accuracy : 0.863783712973767
+INFO: roc_auc : 0.9496535141676494
+INFO: PR auc : 0.9440489497417057
+INFO: TPR : 0.9015429615974426
+INFO: FPR : 0.17397555715312724
+INFO: POD : 0.5325204133987427
+INFO: localization POD : 0.5494932532310486
+INFO: Validation Dice score: 0.6812355518341064
+INFO: Evaluating for test set
+INFO: accuracy : 0.8811773255813954
+INFO: balanced accuracy : 0.8808185400953226
+INFO: roc_auc : 0.9569712083188292
+INFO: PR auc : 0.9528049889195399
+INFO: TPR : 0.8479059338569641
+INFO: FPR : 0.08626887131560029
+INFO: POD : 0.5871440172195435
+INFO: localization POD : 0.6092571020126343
+INFO: Validation Dice score: 0.754761278629303
+INFO: Evaluating for test set
+INFO: accuracy : 0.8495639534883721
+INFO: balanced accuracy : 0.8485239687695276
+INFO: roc_auc : 0.9444555664075396
+INFO: PR auc : 0.9422185046070198
+INFO: TPR : 0.7531226873397827
+INFO: FPR : 0.056074766355140186
+INFO: POD : 0.5521584749221802
+INFO: localization POD : 0.5871018767356873
+INFO: Validation Dice score: 0.7545377016067505
+INFO: Evaluating for test set
+INFO: accuracy : 0.8691860465116279
+INFO: balanced accuracy : 0.8686713315525281
+INFO: roc_auc : 0.9453049439796404
+INFO: PR auc : 0.9444571608763823
+INFO: TPR : 0.8214548230171204
+INFO: FPR : 0.08411214953271028
+INFO: POD : 0.5832463502883911
+INFO: localization POD : 0.6165457367897034
+INFO: Validation Dice score: 0.7521069645881653
+INFO: Evaluating for test set
+INFO: accuracy : 0.8670058139534884
+INFO: balanced accuracy : 0.8663006807169634
+INFO: roc_auc : 0.9471325847753295
+INFO: PR auc : 0.9460665858483119
+INFO: TPR : 0.8016164302825928
+INFO: FPR : 0.06901509705248023
+INFO: POD : 0.5592024922370911
+INFO: localization POD : 0.5990079641342163
+INFO: Validation Dice score: 0.7471201419830322
+INFO: Evaluating for test set
+INFO: accuracy : 0.8615552325581395
+INFO: balanced accuracy : 0.8605840210316029
+INFO: roc_auc : 0.9555661434296577
+INFO: PR auc : 0.9539465447421487
+INFO: TPR : 0.771491527557373
+INFO: FPR : 0.0503235082674335
+INFO: POD : 0.5652802586555481
+INFO: localization POD : 0.604690432548523
+INFO: Validation Dice score: 0.7639340162277222
+INFO: Evaluating for test set
+INFO: accuracy : 0.8379360465116279
+INFO: balanced accuracy : 0.8365143615062929
+INFO: roc_auc : 0.9545170987417273
+INFO: PR auc : 0.954502126025685
+INFO: TPR : 0.7060984373092651
+INFO: FPR : 0.03306973400431344
+INFO: POD : 0.5401842594146729
+INFO: localization POD : 0.6029546856880188
+INFO: Validation Dice score: 0.7569734454154968
+INFO: Evaluating for test set
+INFO: accuracy : 0.8568313953488372
+INFO: balanced accuracy : 0.8556496549931834
+INFO: roc_auc : 0.9587587044033995
+INFO: PR auc : 0.9577934311761392
+INFO: TPR : 0.747244656085968
+INFO: FPR : 0.035945363048166784
+INFO: POD : 0.5681602358818054
+INFO: localization POD : 0.6140128374099731
+INFO: Validation Dice score: 0.7693554162979126
+INFO: Evaluating for test set
+INFO: accuracy : 0.8441133720930233
+INFO: balanced accuracy : 0.842728076101695
+INFO: roc_auc : 0.9587481400057366
+INFO: PR auc : 0.9582941996701193
+INFO: TPR : 0.7156502604484558
+INFO: FPR : 0.0301941049604601
+INFO: POD : 0.5444331169128418
+INFO: localization POD : 0.5938658118247986
+INFO: Validation Dice score: 0.760164737701416
+INFO: Evaluating for test set
+INFO: accuracy : 0.8462936046511628
+INFO: balanced accuracy : 0.8449402609723156
+INFO: roc_auc : 0.9588659330396783
+INFO: PR auc : 0.9591335232367868
+INFO: TPR : 0.7207935452461243
+INFO: FPR : 0.030913012221423435
+INFO: POD : 0.554074227809906
+INFO: localization POD : 0.5987313389778137
+INFO: Validation Dice score: 0.7642059922218323
+INFO: Checkpoint 2 saved!
+INFO: Evaluating for test set
+INFO: accuracy : 0.8829941860465116
+INFO: balanced accuracy : 0.8824335723880451
+INFO: roc_auc : 0.9605462004879696
+INFO: PR auc : 0.9589395818441961
+INFO: TPR : 0.8310065865516663
+INFO: FPR : 0.06613946800862688
+INFO: POD : 0.5996436476707458
+INFO: localization POD : 0.6218445301055908
+INFO: Validation Dice score: 0.7714807391166687
+INFO: Evaluating for test set
+INFO: accuracy : 0.8804505813953488
+INFO: balanced accuracy : 0.8797747776062237
+INFO: roc_auc : 0.9616628573209427
+INFO: PR auc : 0.9606378174910777
+INFO: TPR : 0.8177810311317444
+INFO: FPR : 0.058231488138030196
+INFO: POD : 0.5926873087882996
+INFO: localization POD : 0.6073498725891113
+INFO: Validation Dice score: 0.774944543838501
+INFO: Evaluating for test set
+INFO: accuracy : 0.8713662790697675
+INFO: balanced accuracy : 0.8704952748090353
+INFO: roc_auc : 0.9596286825509427
+INFO: PR auc : 0.9587446922196701
+INFO: TPR : 0.7905951738357544
+INFO: FPR : 0.04960460100647016
+INFO: POD : 0.5827442407608032
+INFO: localization POD : 0.6103929281234741
+INFO: Validation Dice score: 0.7707539796829224
+INFO: Evaluating for test set
+INFO: accuracy : 0.8786337209302325
+INFO: balanced accuracy : 0.8778348900853656
+INFO: roc_auc : 0.9589710487964247
+INFO: PR auc : 0.9585002742153568
+INFO: TPR : 0.8045554757118225
+INFO: FPR : 0.04888569374550683
+INFO: POD : 0.5820559859275818
+INFO: localization POD : 0.6138107776641846
+INFO: Validation Dice score: 0.7707769870758057
+INFO: Evaluating for test set
+INFO: accuracy : 0.8691860465116279
+INFO: balanced accuracy : 0.8682751666401676
+INFO: roc_auc : 0.9588315987472739
+INFO: PR auc : 0.9582332767411257
+INFO: TPR : 0.7847171425819397
+INFO: FPR : 0.04816678648454349
+INFO: POD : 0.5846520662307739
+INFO: localization POD : 0.6098557710647583
+INFO: Validation Dice score: 0.7731509804725647
+INFO: Evaluating for test set
+INFO: accuracy : 0.876453488372093
+INFO: balanced accuracy : 0.8756227052147452
+INFO: roc_auc : 0.9604062222189356
+INFO: PR auc : 0.9601375326981441
+INFO: TPR : 0.799412190914154
+INFO: FPR : 0.04816678648454349
+INFO: POD : 0.5845065116882324
+INFO: localization POD : 0.6044008731842041
+INFO: Validation Dice score: 0.7727156281471252
+INFO: Evaluating for test set
+INFO: accuracy : 0.8648255813953488
+INFO: balanced accuracy : 0.863787410512949
+INFO: roc_auc : 0.9598579299802288
+INFO: PR auc : 0.9596685977603419
+INFO: TPR : 0.7685525417327881
+INFO: FPR : 0.040977713874910136
+INFO: POD : 0.5795964002609253
+INFO: localization POD : 0.6122540235519409
+INFO: Validation Dice score: 0.7721041440963745
+INFO: Evaluating for test set
+INFO: accuracy : 0.8615552325581395
+INFO: balanced accuracy : 0.8604572482596475
+INFO: roc_auc : 0.9593386898350951
+INFO: PR auc : 0.9595033883184506
+INFO: TPR : 0.7597354650497437
+INFO: FPR : 0.038820992092020126
+INFO: POD : 0.5692128539085388
+INFO: localization POD : 0.5987435579299927
+INFO: Validation Dice score: 0.7680591344833374
+INFO: Evaluating for test set
+INFO: accuracy : 0.8659156976744186
+INFO: balanced accuracy : 0.8649053878956301
+INFO: roc_auc : 0.9599730819147548
+INFO: PR auc : 0.9599215456121029
+INFO: TPR : 0.7722263336181641
+INFO: FPR : 0.04241552839683681
+INFO: POD : 0.5788238644599915
+INFO: localization POD : 0.6080701351165771
+INFO: Validation Dice score: 0.7709953784942627
+INFO: Evaluating for test set
+INFO: accuracy : 0.873546511627907
+INFO: balanced accuracy : 0.8726599198901726
+INFO: roc_auc : 0.9606560702236641
+INFO: PR auc : 0.9608732793314321
+INFO: TPR : 0.7913299202919006
+INFO: FPR : 0.04601006470165349
+INFO: POD : 0.5810211300849915
+INFO: localization POD : 0.6032518148422241
+INFO: Validation Dice score: 0.7717186808586121
+INFO: Checkpoint 3 saved!
+INFO: Evaluating for test set
+INFO: accuracy : 0.8521075581395349
+INFO: balanced accuracy : 0.8508896015162024
+INFO: roc_auc : 0.958961540838528
+INFO: PR auc : 0.9585940121217563
+INFO: TPR : 0.7391623854637146
+INFO: FPR : 0.037383177570093455
+INFO: POD : 0.5629816651344299
+INFO: localization POD : 0.6076049208641052
+INFO: Validation Dice score: 0.7664309740066528
+INFO: Evaluating for test set
+INFO: accuracy : 0.8673691860465116
+INFO: balanced accuracy : 0.8663669723122984
+INFO: roc_auc : 0.9595951405883631
+INFO: PR auc : 0.9592330128177033
+INFO: TPR : 0.7744305729866028
+INFO: FPR : 0.041696621135873475
+INFO: POD : 0.5834242701530457
+INFO: localization POD : 0.6133246421813965
+INFO: Validation Dice score: 0.7743606567382812
+INFO: Evaluating for test set
+INFO: accuracy : 0.8677325581395349
+INFO: balanced accuracy : 0.86672642594278
+INFO: roc_auc : 0.9603195941580994
+INFO: PR auc : 0.9597663047549524
+INFO: TPR : 0.7744305729866028
+INFO: FPR : 0.040977713874910136
+INFO: POD : 0.5814526081085205
+INFO: localization POD : 0.6143448352813721
+INFO: Validation Dice score: 0.7733855247497559
+INFO: Evaluating for test set
+INFO: accuracy : 0.8651889534883721
+INFO: balanced accuracy : 0.8641627107399251
+INFO: roc_auc : 0.9603058604411376
+INFO: PR auc : 0.959977249351776
+INFO: TPR : 0.7700220346450806
+INFO: FPR : 0.041696621135873475
+INFO: POD : 0.5787548422813416
+INFO: localization POD : 0.6115207672119141
+INFO: Validation Dice score: 0.7716879844665527
+INFO: Evaluating for test set
+INFO: accuracy : 0.8717296511627907
+INFO: balanced accuracy : 0.8708230352465282
+INFO: roc_auc : 0.9604527055686525
+INFO: PR auc : 0.9600328173631469
+INFO: TPR : 0.7876561284065247
+INFO: FPR : 0.04601006470165349
+INFO: POD : 0.5885665416717529
+INFO: localization POD : 0.6164737939834595
+INFO: Validation Dice score: 0.7743601202964783
+INFO: Evaluating for test set
+INFO: accuracy : 0.8662790697674418
+INFO: balanced accuracy : 0.8652331483331229
+INFO: roc_auc : 0.9597507013439498
+INFO: PR auc : 0.9591218154994221
+INFO: TPR : 0.7692872881889343
+INFO: FPR : 0.038820992092020126
+INFO: POD : 0.5774665474891663
+INFO: localization POD : 0.6081610918045044
+INFO: Validation Dice score: 0.7732310891151428
+INFO: Evaluating for test set
+INFO: accuracy : 0.8684593023255814
+INFO: balanced accuracy : 0.8675087195897211
+INFO: roc_auc : 0.9598579299802287
+INFO: PR auc : 0.9596314041437402
+INFO: TPR : 0.7803086042404175
+INFO: FPR : 0.04529115744069015
+INFO: POD : 0.5853660106658936
+INFO: localization POD : 0.6165086030960083
+INFO: Validation Dice score: 0.7731406688690186
+INFO: Evaluating for test set
+INFO: accuracy : 0.8615552325581395
+INFO: balanced accuracy : 0.860473094856142
+INFO: roc_auc : 0.9589192832478762
+INFO: PR auc : 0.9590569967075775
+INFO: TPR : 0.7612050175666809
+INFO: FPR : 0.040258806613946804
+INFO: POD : 0.5715302228927612
+INFO: localization POD : 0.603792667388916
+INFO: Validation Dice score: 0.7684783935546875
+INFO: Evaluating for test set
+INFO: accuracy : 0.8684593023255814
+INFO: balanced accuracy : 0.8675007962914738
+INFO: roc_auc : 0.960263602850486
+INFO: PR auc : 0.9600565883339407
+INFO: TPR : 0.7795738577842712
+INFO: FPR : 0.04457225017972682
+INFO: POD : 0.5836836099624634
+INFO: localization POD : 0.6111746430397034
+INFO: Validation Dice score: 0.7726719975471497
+INFO: Evaluating for test set
+INFO: accuracy : 0.8673691860465116
+INFO: balanced accuracy : 0.8663748956105456
+INFO: roc_auc : 0.9601965189253261
+INFO: PR auc : 0.9600533440141052
+INFO: TPR : 0.775165319442749
+INFO: FPR : 0.04241552839683681
+INFO: POD : 0.5821087956428528
+INFO: localization POD : 0.6122455596923828
+INFO: Validation Dice score: 0.7729833126068115
+INFO: Checkpoint 4 saved!
+INFO: Evaluating for test set
+INFO: accuracy : 0.8688226744186046
+INFO: balanced accuracy : 0.8678285567289667
+INFO: roc_auc : 0.960634413208455
+INFO: PR auc : 0.9604704275262128
+INFO: TPR : 0.7766348123550415
+INFO: FPR : 0.040977713874910136
+INFO: POD : 0.578355073928833
+INFO: localization POD : 0.6041552424430847
+INFO: Validation Dice score: 0.7718536257743835
+INFO: Evaluating for test set
+INFO: accuracy : 0.8640988372093024
+INFO: balanced accuracy : 0.8630447333572442
+INFO: roc_auc : 0.9602828828762204
+INFO: PR auc : 0.9598873946161226
+INFO: TPR : 0.7663483023643494
+INFO: FPR : 0.040258806613946804
+INFO: POD : 0.5755206346511841
+INFO: localization POD : 0.6108797788619995
+INFO: Validation Dice score: 0.7708153128623962
+INFO: Evaluating for test set
+INFO: accuracy : 0.8677325581395349
+INFO: balanced accuracy : 0.8667422725392744
+INFO: roc_auc : 0.9597765841182241
+INFO: PR auc : 0.9590064639616005
+INFO: TPR : 0.7759000658988953
+INFO: FPR : 0.04241552839683681
+INFO: POD : 0.5840230584144592
+INFO: localization POD : 0.6142414808273315
+INFO: Validation Dice score: 0.7742934226989746
+INFO: Evaluating for test set
+INFO: accuracy : 0.8706395348837209
+INFO: balanced accuracy : 0.8696971345655999
+INFO: roc_auc : 0.9601796158890654
+INFO: PR auc : 0.9593630703518514
+INFO: TPR : 0.7832475900650024
+INFO: FPR : 0.04385334291876348
+INFO: POD : 0.5867065787315369
+INFO: localization POD : 0.6161960959434509
+INFO: Validation Dice score: 0.7748938202857971
+INFO: Evaluating for test set
+INFO: accuracy : 0.8691860465116279
+INFO: balanced accuracy : 0.8682355501489316
+INFO: roc_auc : 0.9605889862985044
+INFO: PR auc : 0.9600785802155201
+INFO: TPR : 0.7810433506965637
+INFO: FPR : 0.04457225017972682
+INFO: POD : 0.5845722556114197
+INFO: localization POD : 0.6121132969856262
+INFO: Validation Dice score: 0.773474931716919
+INFO: Evaluating for test set
+INFO: accuracy : 0.8691860465116279
+INFO: balanced accuracy : 0.8682355501489316
+INFO: roc_auc : 0.9604468951499379
+INFO: PR auc : 0.960099395734614
+INFO: TPR : 0.7810433506965637
+INFO: FPR : 0.04457225017972682
+INFO: POD : 0.5843057632446289
+INFO: localization POD : 0.6112829446792603
+INFO: Validation Dice score: 0.7733430862426758
+INFO: Evaluating for test set
+INFO: accuracy : 0.8659156976744186
+INFO: balanced accuracy : 0.8649212344921244
+INFO: roc_auc : 0.9601785594492992
+INFO: PR auc : 0.9597532039118417
+INFO: TPR : 0.7736958265304565
+INFO: FPR : 0.04385334291876348
+INFO: POD : 0.5807265043258667
+INFO: localization POD : 0.6130900979042053
+INFO: Validation Dice score: 0.771936297416687
+INFO: Evaluating for test set
+INFO: accuracy : 0.8684593023255814
+INFO: balanced accuracy : 0.8674849496949795
+INFO: roc_auc : 0.9607147026306935
+INFO: PR auc : 0.9603827674949865
+INFO: TPR : 0.778104305267334
+INFO: FPR : 0.043134435657800146
+INFO: POD : 0.5802531838417053
+INFO: localization POD : 0.6074244976043701
+INFO: Validation Dice score: 0.7720656394958496
+INFO: Evaluating for test set
+INFO: accuracy : 0.8633720930232558
+INFO: balanced accuracy : 0.862333749394528
+INFO: roc_auc : 0.9598288778866555
+INFO: PR auc : 0.9597099573146384
+INFO: TPR : 0.7670830488204956
+INFO: FPR : 0.04241552839683681
+INFO: POD : 0.5764557719230652
+INFO: localization POD : 0.6087658405303955
+INFO: Validation Dice score: 0.7701876163482666
+INFO: Evaluating for test set
+INFO: accuracy : 0.8488372093023255
+INFO: balanced accuracy : 0.8475752858593952
+INFO: roc_auc : 0.9577096597154692
+INFO: PR auc : 0.9579259898836564
+INFO: TPR : 0.7318148612976074
+INFO: FPR : 0.03666427030913012
+INFO: POD : 0.5590252876281738
+INFO: localization POD : 0.6069615483283997
+INFO: Validation Dice score: 0.7637476325035095
+INFO: Checkpoint 5 saved!
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='ABD', epochs=5, eval_only=True, experiment_type='expE', full_set=False, gpu_ids=[0], input_channels=3, load='./checkpoint/KasperN4_test_expE_ABD/checkpoint_epoch5.pth', lr=1e-05, name='KasperN4_test_expE_ABD', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	3 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/KasperN4_test_expE_ABD/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/KasperN4_test_expE_ABD/checkpoint_epoch5.pth
+INFO: balanced accuracy : 0.8785561333741205
+INFO: TPR : 0.7889263033866882
+INFO: FPR : 0.03181401040073417
+INFO: patient balanced accuracy : 0.8893649193548387
+INFO: patient TPR : 0.9193548560142517
+INFO: patient FPR : 0.140625
+INFO: POD : 0.5883668065071106
+INFO: localization POD : 0.6217888593673706
+INFO: Validation Dice score: 0.7795000076293945
+INFO: TPR: 0.7889263033866882
+INFO: FPR: 0.03181401040073417
+INFO: TPR Patient: 0.9193548560142517
+INFO: FPR Patient: 0.140625
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspern4', dataset_mode='ABD', epochs=5, eval_only=True, experiment_type='expE', full_set=True, gpu_ids=[0], input_channels=3, load='./checkpoint/KasperN4_test_expE_ABD/checkpoint_epoch5.pth', lr=1e-05, name='KasperN4_test_expE_ABD', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	3 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/KasperN4_test_expE_ABD/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/KasperN4_test_expE_ABD/checkpoint_epoch5.pth
+INFO: balanced accuracy : 0.8702934088848551
+INFO: TPR : 0.7896509766578674
+INFO: FPR : 0.04906413140359068
+INFO: patient balanced accuracy : 0.819304435483871
+INFO: patient TPR : 0.9354838728904724
+INFO: patient FPR : 0.296875
+INFO: POD : 0.5889072418212891
+INFO: localization POD : 0.6221950650215149
+INFO: Validation Dice score: 0.9087252020835876
+INFO: TPR: 0.7896509766578674
+INFO: FPR: 0.04906413140359068
+INFO: TPR Patient: 0.9354838728904724
+INFO: FPR Patient: 0.296875

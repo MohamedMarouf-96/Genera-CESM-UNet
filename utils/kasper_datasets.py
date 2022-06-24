@@ -322,6 +322,10 @@ class KasperNormADataset():
         slice_breast_mask = slice_breast_mask[np.newaxis]
         slice_tumor_mask = slice_tumor_mask[np.newaxis]
 
+        # TODO : this is normalization for each and every slice alone
+        slice_pre = imgnorm(slice_pre) * 2 - 1
+        slice_post = imgnorm(slice_post) * 2 - 1
+
         slice_pre = torch.as_tensor(slice_pre.copy()).float().contiguous()
         slice_post = torch.as_tensor(slice_post.copy()).float().contiguous()
         slice_bbox = torch.as_tensor(slice_bbox.copy()).long().contiguous()
@@ -1264,7 +1268,7 @@ def imgnorm(N_I,index1=0.001,index2=0.001):
     I_min = I_sort[int(index1*len(I_sort))]
     I_max = I_sort[-int(index2*len(I_sort))]
     
-    N_I =1.0*(N_I-I_min)/(I_max-I_min)
+    N_I =1.0*(N_I-I_min)/(I_max-I_min + 1e-10)
     N_I[N_I>1.0]=1.0
     N_I[N_I<0.0]=0.0
     

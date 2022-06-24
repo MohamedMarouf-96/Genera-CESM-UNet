@@ -119,13 +119,19 @@ def train_net(net,
         if args.experiment_type == 'expD' :
             balanced_sampler = ClassBalancedRandomSampler(train_set.get_labels())
         elif args.experiment_type == 'expE' :
-            balanced_sampler = get_balanced_weighted_sampler(train_set.get_labels(),2 * train_set.positive_number, replacemet = False)
+            balanced_sampler = get_balanced_weighted_sampler(train_set.get_labels(),2 * train_set.positive_number, replacement = False)
         elif args.experiment_type == 'expF' :
-            balanced_sampler = get_balanced_weighted_sampler(train_set.get_labels(),2 * train_set.positive_number, replacemet = True)
+            balanced_sampler = get_balanced_weighted_sampler(train_set.get_labels(),2 * train_set.positive_number, replacement = True)
         else :
             balanced_sampler = None
-        train_loader = DataLoader(train_set,collate_fn= my_collate_fn, sampler= balanced_sampler,**loader_args)
-        train_loader_eval = DataLoader(train_set, shuffle=False,collate_fn= my_collate_fn,**loader_args)
+
+        
+        if balanced_sampler == None :
+            train_loader = DataLoader(train_set, shuffle=True,collate_fn= my_collate_fn,**loader_args)
+            train_loader_eval = DataLoader(train_set, shuffle=False,collate_fn= my_collate_fn,**loader_args)
+        else :
+            train_loader = DataLoader(train_set,collate_fn= my_collate_fn, sampler= balanced_sampler,**loader_args)
+            train_loader_eval = DataLoader(train_set, shuffle=False,collate_fn= my_collate_fn,**loader_args)
     else :
         train_loader = DataLoader(train_set, shuffle=True,collate_fn= my_collate_fn,**loader_args)
         train_loader_eval = DataLoader(train_set, shuffle=False,collate_fn= my_collate_fn,**loader_args)
