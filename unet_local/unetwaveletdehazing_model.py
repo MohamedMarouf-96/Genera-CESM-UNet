@@ -1,9 +1,10 @@
+from telnetlib import DO
 import torch
 import torch.nn as nn
 import pywt
 import torch
 from torch.autograd import Variable
-from .unet_parts import ConfidenceScorer2D
+from .unet_parts import ConfidenceScorer2D, DoubleConv
 
 w=pywt.Wavelet('db1')
 
@@ -94,6 +95,54 @@ class Waveletnet(nn.Module):
         if self.with_confidence :
             classes = self.confidence_scorer(c6)
         return torch.sigmoid(logits), classes
+
+
+class WaveletnetFull(nn.Module):
+    def __init__(self,n_channels= 1,n_classes = 1, with_confidence = True):
+        super(WaveletnetFull, self).__init__()
+        self.bilinear = True
+        self.n_channels = n_channels
+        self.n_classes = n_classes
+        self.with_confidence = with_confidence
+        self.num=1
+        c=16
+        self.conv1 = DoubleConv(4*self.n_channels,c)
+        self.conv2 = DoubleConv(4*c,4*c)        
+        self.conv3 = DoubleConv(16*c,16*c)  
+        self.conv4 = DoubleConv(64*c,64*c)
+        self.convd2 = DoubleConv(2*c,c) 
+        self.convd3 = DoubleConv(8*c,4*c)        
+        self.convd4 = DoubleConv(32*c,16*c)  
+        self.outc = nn.Conv2d(c,4*self.n_classes,1)
+
+        self.with_confidence = with_confidence
+        if with_confidence :
+            self.confidence_scorer = ConfidenceScorer2D(64*c , 64*c)
+
+    def forward(self, x):
+        w1=wt(x)
+        c1=self.conv1(w1)
+        w2=wt(c1)
+        c2=self.conv2(w2)
+        w3=wt(c2)
+        c3=self.conv3(w3)
+        w4=wt(c3)
+        c4=self.conv4(w4)
+        iw4=iwt(c4)
+        iw4=torch.cat([c3,iw4],1)
+        ic3=self.convd3(iw4)
+        iw3=iwt(ic3)
+        iw3=torch.cat([c2,iw3],1)
+        ic2=self.convd2(iw3)
+        iw2=iwt(ic2)
+        iw2=torch.cat([c1,iw2],1)
+        ic1=self.convd1(iw2)
+        iw1=self.outc(ic1)
+        logits = iwt(iw1) 
+        if self.with_confidence :
+            classes = self.confidence_scorer(c4)
+        return torch.sigmoid(logits), classes
+
 
 
 class ACT(nn.Module):

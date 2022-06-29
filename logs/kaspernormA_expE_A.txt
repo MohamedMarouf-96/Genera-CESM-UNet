@@ -561,3 +561,24 @@ INFO: TPR: 0.7237687110900879
 INFO: FPR: 0.14805750994187825
 INFO: TPR Patient: 0.9354838728904724
 INFO: FPR Patient: 0.4921875
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=True, experiment_type='expC', full_set=False, gpu_ids=[0], input_channels=1, load='./checkpoint/kaspernormA_expE_A/checkpoint_epoch5.pth', lr=1e-05, name='kaspernormA_expE_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/kaspernormA_expE_A/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/kaspernormA_expE_A/checkpoint_epoch5.pth
+INFO: balanced accuracy : 0.8072688602527212
+INFO: TPR : 0.7499061822891235
+INFO: FPR : 0.13536844739146753
+INFO: patient balanced accuracy : 0.6824768160741885
+INFO: patient TPR : 0.875
+INFO: patient FPR : 0.5100463678516228
+INFO: POD : 0.33314526081085205
+INFO: localization POD : 0.3867444396018982
+INFO: Validation Dice score: 0.6092099547386169
+INFO: TPR: 0.7499061822891235
+INFO: FPR: 0.13536844739146753
+INFO: TPR Patient: 0.875
+INFO: FPR Patient: 0.5100463678516228

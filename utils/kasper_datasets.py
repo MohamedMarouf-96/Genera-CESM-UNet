@@ -92,9 +92,11 @@ class KasperNormADataset():
         experimet_type = args.experiment_type
         self.root = dataroot
         self.args = args
-
-
+        # TODO: select which type of images
+        # for images without curvature flow use
         dir_mri = f"Duke-Breast-Cancer-MRI/manifest-1607053360376/3D-Dataset-Kasper/"
+        # for images with curvature flow use 
+        # dir_mri = f"Duke-Breast-Cancer-MRI/manifest-1607053360376/3D-Dataset-KasperS/"
         if phase == 'val':
             self.dir_mri = os.path.join(self.root, dir_mri, 'train')
         else :
@@ -262,6 +264,12 @@ class KasperNormADataset():
         I_breast_mask = sitk.ReadImage(self.breast_mask_paths[index])
         I_tumor_mask = sitk.ReadImage(self.segmentation_paths[index])
 
+        # I_pre = sitk.CurvatureFlow(image1=I_pre,
+        #                             timeStep=0.125,
+        #                             numberOfIterations=5)
+        # I_post = sitk.CurvatureFlow(image1=I_post,
+        #                             timeStep=0.125,
+        #                             numberOfIterations=5)
         
         img_pre = np.array(sitk.GetArrayFromImage(I_pre))
         img_post = np.array(sitk.GetArrayFromImage(I_post))
@@ -273,6 +281,7 @@ class KasperNormADataset():
         # normalize to range [0,1]
         img_pre = imgnorm(img_pre)
         img_post = imgnorm(img_post)
+
 
         # change range to [-1,1]
         img_pre = img_pre * 2 - 1

@@ -2,7 +2,7 @@
 # rm -r cache_val
 EXPNAME=segarch
 # for ARCHNAME in unet2 unet3 unet4 unet5
-for ARCHNAME in unet3
+for ARCHNAME in unet
 do
     for NAME in A
     do

@@ -1,6 +1,7 @@
 import torch
 from torch import nn
 from .unet_parts import ConfidenceScorer2D
+from torch.nn import functional as F
 
 class VGGBlock(nn.Module):
     def __init__(self, in_channels, middle_channels, out_channels, norm_layer, noisy = False):
@@ -36,7 +37,20 @@ class ProgressiveVGGBlock(nn.Module):
         self.conv2 = nn.Conv2d(middle_channels, out_channels, 3, padding=1)
         self.bn2 = norm_layer(out_channels)
         self.to_image = ToImage(out_channels,output_nc,is_final)
-        self.noisy = noisy
+
+
+    def forward(self, x, image):
+        out = self.conv1(x)
+        out = self.bn1(out)
+        out = self.relu(out)
+
+        out = self.conv2(out)
+        out = self.bn2(out)
+        out = self.relu(out)
+
+        image = self.to_image(out,image)
+
+        return out, image
 
 class ToImage(nn.Module):
     def __init__(self, in_channels, out_channels, is_final = False):
@@ -52,23 +66,6 @@ class ToImage(nn.Module):
             image = x_image
 
         return image
-
-    def forward(self, x, image):
-        out = self.conv1(x)
-        if self.noisy :
-            out = out + torch.randn_like(out)
-        out = self.bn1(out)
-        out = self.relu(out)
-
-        out = self.conv2(out)
-        if self.noisy :
-            out = out + torch.randn_like(out)
-        out = self.bn2(out)
-        out = self.relu(out)
-
-        image = self.to_image(out,image)
-
-        return out, image
 
 
 class NestedUNet(nn.Module):
@@ -141,6 +138,8 @@ class ProgressiveNestedUNet(nn.Module):
         noisy = False
         self.bilinear = True
         nb_filter = [32, 64, 128, 256, 512]
+        self.n_channels = n_channels
+        self.n_classes = n_classes
         
 
         self.pool = nn.MaxPool2d(2, 2)

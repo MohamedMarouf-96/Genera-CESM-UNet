@@ -841,3 +841,41 @@ INFO: TPR: 0.7241273522377014
 INFO: FPR: 0.04018501230586438
 INFO: TPR Patient: 0.9435483813285828
 INFO: FPR Patient: 0.40625
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='B', epochs=5, eval_only=True, experiment_type='expA', full_set=False, gpu_ids=[0], input_channels=1, load='./checkpoint/KaspernormA_expA_B/checkpoint_epoch5.pth', lr=1e-05, name='KaspernormA_expA_B', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/KaspernormA_expA_B/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/KaspernormA_expA_B/checkpoint_epoch5.pth
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='B', epochs=5, eval_only=True, experiment_type='expA', full_set=False, gpu_ids=[0], input_channels=1, load='./checkpoint/KaspernormA_expA_B/checkpoint_epoch5.pth', lr=1e-05, name='KaspernormA_expA_B', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/KaspernormA_expA_B/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/KaspernormA_expA_B/checkpoint_epoch5.pth
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, axial_size=32, balanced=False, batch_size=1, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='B', epochs=5, eval_only=True, experiment_type='expA', full_set=False, gpu_ids=[0], input_channels=1, load='./checkpoint/KaspernormA_expA_B/checkpoint_epoch5.pth', lr=1e-05, name='KaspernormA_expA_B', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Model loaded from ./checkpoint/KaspernormA_expA_B/checkpoint_epoch5.pth
+INFO: Starting evaluation for checkpoint ./checkpoint/KaspernormA_expA_B/checkpoint_epoch5.pth
+INFO: balanced accuracy : 0.9628672963686677
+INFO: TPR : 0.9714682102203369
+INFO: FPR : 0.04573360619272177
+INFO: patient balanced accuracy : 0.8989510489510489
+INFO: patient TPR : 0.9755244851112366
+INFO: patient FPR : 0.17762237762237762
+INFO: POD : 0.7649790644645691
+INFO: localization POD : 0.7780510187149048
+INFO: Validation Dice score: 0.8648431897163391
+INFO: TPR: 0.9714682102203369
+INFO: FPR: 0.04573360619272177
+INFO: TPR Patient: 0.9755244851112366
+INFO: FPR Patient: 0.17762237762237762
