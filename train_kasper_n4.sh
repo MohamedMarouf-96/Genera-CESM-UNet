@@ -1,7 +1,7 @@
 EXPNAME=KasperN4_test
 for NAME in ABD
 do
-    for EXPENAME in expC expD expE expF
+    for EXPENAME in expD expE expF
     # for EXPENAME in expA expB expC
     do
         rm -r cache_train

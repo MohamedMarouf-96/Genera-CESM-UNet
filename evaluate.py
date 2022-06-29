@@ -223,6 +223,8 @@ def evaluate_metrics(net, net_single_device, dataloader, device, args,dice_posit
     patient_balanced_accuracy = balanced_accuracy_score(patient_gt_all, patient_pred_class_all)
     patient_tpr = (patient_pred_class_all*patient_gt_all)[patient_gt_all > 0].mean()
     patient_fpr = (patient_pred_class_all != patient_gt_all)[patient_gt_all == 0].mean()
+    pod = (dice_all*gt_all)[gt_all > 0].mean()
+    lpod = (localization_only_dice_all*gt_all)[gt_all > 0].mean()
 
     # logging.info('accuracy : {}'.format(accuracy))
     logging.info('balanced accuracy : {}'.format(balanced_accuracy))
@@ -234,8 +236,12 @@ def evaluate_metrics(net, net_single_device, dataloader, device, args,dice_posit
     logging.info('patient balanced accuracy : {}'.format(patient_balanced_accuracy))
     logging.info(f'patient TPR : {patient_tpr}')
     logging.info(f'patient FPR : {patient_fpr}')
-    logging.info(f'POD : {(dice_all*gt_all)[gt_all > 0].mean()}')
-    logging.info(f'localization POD : {(localization_only_dice_all*gt_all)[gt_all > 0].mean()}')
+    logging.info(f'POD : {pod}')
+    logging.info(f'localization POD : {lpod}')
+
+    string_to_be_printed = ['{:.3f}'.format(x) for x in [balanced_accuracy, tpr, fpr, patient_balanced_accuracy, patient_tpr, patient_fpr, pod, lpod ]]
+    string_to_be_printed  =  '    '.join(string_to_be_printed).replace('.',',')
+    logging.info(string_to_be_printed)
 
     # Fixes a potential division by zero error
     return [dice_all.mean(), tpr, fpr,patient_tpr,patient_fpr]

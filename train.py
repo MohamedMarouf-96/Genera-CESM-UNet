@@ -54,11 +54,11 @@ def evaluate_net(net,
 
     logging.info('''Starting evaluation for checkpoint {}'''.format(args.load))
     metrics = evaluate_metrics(net,net_single_device, val_loader, device,args)
-    logging.info('Validation Dice score: {}'.format(metrics[0]))
-    logging.info('TPR: {}'.format(metrics[1]))
-    logging.info('FPR: {}'.format(metrics[2]))
-    logging.info('TPR Patient: {}'.format(metrics[3]))
-    logging.info('FPR Patient: {}'.format(metrics[4]))
+    # logging.info('Validation Dice score: {}'.format(metrics[0]))
+    # logging.info('TPR: {}'.format(metrics[1]))
+    # logging.info('FPR: {}'.format(metrics[2]))
+    # logging.info('TPR Patient: {}'.format(metrics[3]))
+    # logging.info('FPR Patient: {}'.format(metrics[4]))
 
 
 def train_net(net,
@@ -278,6 +278,7 @@ def get_args():
     parser.add_argument('--coronal_size',type=int,default=256)
     parser.add_argument('--experiment_type', type=str ,default='expA', help='which experiment to perform to debug the model')
     parser.add_argument('--full_set', action='store_true', help='testing the model using all the images in the test set')
+    parser.add_argument('--model_name',default='unet', help='name of the model for selecting which network to trian')
 
 
 
@@ -307,13 +308,35 @@ if __name__ == '__main__':
     # Change here to adapt to your data
     # n_classes is the number of probabilities you want to get per pixel
     if not args.d3:
-        net = UNet(args.input_channels, n_classes=args.classes, bilinear=True)
+        if args.model_name == 'unet' :
+            net = UNet(args.input_channels, n_classes=args.classes, bilinear=True)
+        elif args.model_name == 'unet2' : #nestedunet
+            from unet_local import NestedUNet as UNet
+            net = UNet(args.input_channels, n_classes=args.classes)
+        elif args.model_name == 'unet3' : # unet+3
+            from unet_local import UNet_3Plus as UNet
+            net = UNet(args.input_channels, n_classes=args.classes)
+        elif args.model_name == 'unet4' : # wavelet unet dehazing
+            from unet_local import Waveletnet as UNet
+            net = UNet(args.input_channels, n_classes=args.classes)
+        elif args. model_name == 'unet5': # prognestedunet
+            from unet_local import ProgressiveNestedUNet as UNet
+            net = UNet(args.input_channels, n_classes=args.classes)
+        else :
+            raise Exception('model is not implemeted')
+
+
+
+
+
+
     else :
         net = UNet3d(args.input_channels,args.classes,bilinear=True)
 
     
     logging.info(f'expirement args: {args}')
     logging.info(f'Network:\n'
+                 f'\t{type(net).__name__} name\n'
                  f'\t{net.n_channels} input channels\n'
                  f'\t{net.n_classes} output channels (classes)\n'
                  f'\t{"Bilinear" if net.bilinear else "Transposed conv"} upscaling')
