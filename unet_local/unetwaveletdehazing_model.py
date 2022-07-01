@@ -110,9 +110,9 @@ class WaveletnetFull(nn.Module):
         self.conv2 = DoubleConv(4*c,4*c)        
         self.conv3 = DoubleConv(16*c,16*c)  
         self.conv4 = DoubleConv(64*c,64*c)
-        self.convd2 = DoubleConv(2*c,c) 
-        self.convd3 = DoubleConv(8*c,4*c)        
-        self.convd4 = DoubleConv(32*c,16*c)  
+        self.convd3 = DoubleConv(32*c,16*c)  
+        self.convd2 = DoubleConv(8*c,4*c)        
+        self.convd1 = DoubleConv(2*c,c) 
         self.outc = nn.Conv2d(c,4*self.n_classes,1)
 
         self.with_confidence = with_confidence
