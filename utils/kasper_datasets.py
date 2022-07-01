@@ -3,6 +3,7 @@ import os.path
 from random import random
 import typing
 from xml.etree.ElementInclude import include
+from matplotlib import transforms
 
 import numpy as np
 from tqdm import tqdm
@@ -14,6 +15,7 @@ import skimage
 import json
 import random
 import torchdatasets as td
+import torchio as tio
 
 def make_duke_dataset(dir_mri,read_cache=False, write_cache=False):
     patient_inputs = sorted(list(glob.glob(f'{dir_mri}/*')))
@@ -200,17 +202,36 @@ class KasperNormADataset():
 
 
         self.dataset_size = len(self.slice_numbers_per_example)
+
+        if self.args.augment :
+            self.augmentation_transform = tio.Compose([
+                tio.RandomFlip((1,2)),
+                tio.RandomAffine(
+                    scales=(0.2, 0.2,0),
+                    degrees=(15,15,0),
+                    translation=(32,32,0),),
+                # tio.RandomBiasField()
+                ])
     
     
     def get_subset_indecies(self,length,phase):
         index = np.random.RandomState(seed=42).permutation(length)
         if phase == 'train':
             # index = sorted(index)
-            index = sorted(index[length//10:])#[0:4]
+            if self.args.debug :
+                index = sorted(index[length//10:])[0:4]
+            else :
+                index = sorted(index[length//10:])
         elif phase == 'val' :
-            index = sorted(index[0:length//10:])#[0:4]
+            if self.args.debug :
+                index = sorted(index[0:length//10:])[0:4]
+            else :
+                index = sorted(index[0:length//10:])
         elif phase == 'test' :
-            index = sorted(index)#[0:20]
+            if self.args.debug :
+                index = sorted(index)[0:20]
+            else :
+                index = sorted(index)
         else :
             raise Exception('split "{}" is not defined'.format(phase))
         index = [True if i in index else False for i in range(length)]
@@ -380,6 +401,20 @@ class KasperNormADataset():
 
     def get_labels(self):
         return [int(x) for x in self.example_category]
+
+    def augment(self,sample):
+        subject_dict = {
+            'image': tio.ScalarImage(tensor = sample['image'].unsqueeze(-1)),
+            'mask': tio.LabelMap(tensor = sample['mask'].unsqueeze(-1)),
+        }
+        subject = tio.Subject(subject_dict)
+        print(subject['image'].tensor.max())
+        print(subject['mask'].tensor.min())
+        subject_augmented = self.augmentation_transform(subject)
+        print(subject_augmented['image'].tensor.max())
+        print(subject_augmented['mask'].tensor.min())
+        exit()
+
         
 class KasperN4Dataset():
     """ "

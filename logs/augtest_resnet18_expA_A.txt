@@ -1,0 +1,220 @@
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, augment=False, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, model_name='resnet18', name='augtest_resnet18_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	ResNet name
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   21333
+        Validation size: 2085
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, augment=True, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, model_name='resnet18', name='augtest_resnet18_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	ResNet name
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   21333
+        Validation size: 2085
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, augment=True, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, model_name='resnet18', name='augtest_resnet18_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	ResNet name
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   21333
+        Validation size: 2085
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, augment=True, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', epochs=5, eval_only=False, experiment_type='expA', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, model_name='resnet18', name='augtest_resnet18_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	ResNet name
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   21333
+        Validation size: 2085
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, augment=True, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', debug=False, epochs=5, eval_only=False, experiment_type='expA', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, model_name='resnet18', name='augtest_resnet18_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	ResNet name
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   48
+        Validation size: 99
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, augment=True, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', debug=False, epochs=5, eval_only=False, experiment_type='expA', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, model_name='resnet18', name='augtest_resnet18_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	ResNet name
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   48
+        Validation size: 99
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, augment=True, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', debug=False, epochs=5, eval_only=False, experiment_type='expA', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, model_name='resnet18', name='augtest_resnet18_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	ResNet name
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   48
+        Validation size: 99
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, augment=True, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', debug=False, epochs=5, eval_only=False, experiment_type='expA', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, model_name='resnet18', name='augtest_resnet18_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	ResNet name
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   48
+        Validation size: 99
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, augment=True, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', debug=False, epochs=5, eval_only=False, experiment_type='expA', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, model_name='resnet18', name='augtest_resnet18_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	ResNet name
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   48
+        Validation size: 99
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, augment=True, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', debug=False, epochs=5, eval_only=False, experiment_type='expA', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, model_name='resnet18', name='augtest_resnet18_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	ResNet name
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   48
+        Validation size: 99
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, augment=True, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', debug=False, epochs=5, eval_only=False, experiment_type='expA', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, model_name='resnet18', name='augtest_resnet18_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	ResNet name
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   48
+        Validation size: 99
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, augment=True, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', debug=False, epochs=5, eval_only=False, experiment_type='expA', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, model_name='resnet18', name='augtest_resnet18_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	ResNet name
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Starting training:
+        Epochs:          5
+        Batch size:      32
+        Learning rate:   1e-05
+        Training size:   48
+        Validation size: 99
+        Checkpoints:     True
+        Device:          cuda
+        Mixed Precision: False
+    
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, augment=True, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', debug=True, epochs=5, eval_only=False, experiment_type='expA', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, model_name='resnet18', name='augtest_resnet18_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	ResNet name
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling
+INFO: Saved interrupt
+INFO: Using device cuda
+INFO: expirement args: Namespace(amp=False, augment=True, axial_size=32, balanced=True, batch_size=32, classes=1, coronal_size=256, d3=False, dataset='kaspernormA', dataset_mode='A', debug=True, epochs=5, eval_only=False, experiment_type='expA', full_set=False, gpu_ids=[0, 1, 2, 3], input_channels=1, load=False, lr=1e-05, model_name='resnet18', name='augtest_resnet18_expA_A', resample=False, sagital_size=256, unregistered=True)
+INFO: Network:
+	ResNet name
+	1 input channels
+	1 output channels (classes)
+	Bilinear upscaling

@@ -111,7 +111,8 @@ def train_net(net,
     else :
         raise Exception('dataset not defined')
 
-    
+    if args.augment :
+        train_set = train_set.map(train_set.augment)
     # 3. Create data loaders
     loader_args = dict(batch_size=batch_size, num_workers=32, pin_memory=True)
 
@@ -279,6 +280,8 @@ def get_args():
     parser.add_argument('--experiment_type', type=str ,default='expA', help='which experiment to perform to debug the model')
     parser.add_argument('--full_set', action='store_true', help='testing the model using all the images in the test set')
     parser.add_argument('--model_name',default='unet', help='name of the model for selecting which network to trian')
+    parser.add_argument('--augment',action='store_true', help='apply data augmentation on the cached dataset, augmentaiton are mostly in the form of random affine and random intensity scaling')
+    parser.add_argument('--debug',action='store_true', help='in case specified, this run is for debuggin the pipeline and hence smaller subset is loaded to speed up things')
 
 
 
