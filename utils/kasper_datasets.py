@@ -332,8 +332,8 @@ class KasperNormADataset():
         slice_tumor_mask = slice_tumor_mask[np.newaxis]
 
         # TODO : this is normalization for each and every slice alone
-        slice_pre = imgnorm(slice_pre) * 2 - 1
-        slice_post = imgnorm(slice_post) * 2 - 1
+        # slice_pre = imgnorm(slice_pre) * 2 - 1
+        # slice_post = imgnorm(slice_post) * 2 - 1
 
         slice_pre = torch.as_tensor(slice_pre.copy()).float().contiguous()
         slice_post = torch.as_tensor(slice_post.copy()).float().contiguous()

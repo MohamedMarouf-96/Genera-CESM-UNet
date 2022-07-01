@@ -99,6 +99,7 @@ def evaluate(net, net_single_device, dataloader, device, args):
 
     # Fixes a potential division by zero error
     return dice_all.mean()
+    # return balanced_accuracy
 
 def evaluate_metrics(net, net_single_device, dataloader, device, args,dice_positive_threshold =0.15, dice_negative_threshold=200):
 

@@ -1,0 +1,6 @@
+INFO: Using device cuda
+INFO: Using device cuda
+INFO: Using device cuda
+INFO: Using device cuda
+INFO: Using device cuda
+INFO: Using device cuda

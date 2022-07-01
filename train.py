@@ -319,12 +319,21 @@ if __name__ == '__main__':
         elif args.model_name == 'unet4' : # wavelet unet dehazing
             from unet_local import Waveletnet as UNet
             net = UNet(args.input_channels, n_classes=args.classes)
-        elif args. model_name == 'unet5': # prognestedunet
+        elif args.model_name == 'unet5': # prognestedunet
             from unet_local import ProgressiveNestedUNet as UNet
             net = UNet(args.input_channels, n_classes=args.classes)
-        elif args. model_name == 'unet6': # prognestedunet
+        elif args.model_name == 'unet6': # prognestedunet
             from unet_local import WaveletnetFull as UNet
             net = UNet(args.input_channels, n_classes=args.classes)
+        elif args.model_name == 'resnet18' :
+            from unet_local import resnet18 as Net
+            net = Net(args.input_channels,n_classes = args.classes)
+        elif args.model_name == 'resnet34' :
+            from unet_local import resnet34 as Net
+            net = Net(args.input_channels,n_classes = args.classes)
+        elif args.model_name == 'resnet50' :
+            from unet_local import resnet50 as Net
+            net = Net(args.input_channels,n_classes = args.classes)
         else :
             raise Exception('model is not implemeted')
 
