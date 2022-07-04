@@ -39,7 +39,11 @@ def evaluate_net(net,
     elif args.dataset == 'duke2d' :
         val_set = DBCMRIDataset(dir_root, 'test', dataset_mode = args.dataset_mode)
     elif args.dataset == 'kaspernormA' :
-        val_set = KasperNormADataset(dir_root, 'test', args = args)
+        if args.train_set :
+            val_set = KasperNormADataset(dir_root, 'train', args = args)
+            val_set = td.datasets.WrapDataset(val_set).cache(td.cachers.Pickle(Path("./cache_train")))
+        else :
+            val_set = KasperNormADataset(dir_root, 'test', args = args)
     elif args.dataset == 'kaspern4' :
         val_set = KasperN4Dataset(dir_root, 'test', args = args)
     elif args.dataset == 'kaspernormb' :
@@ -269,6 +273,7 @@ def get_args():
     parser.add_argument('--dataset_mode',type=str, default='B',help='type of input to the network')
     parser.add_argument('--unregistered', action='store_true', default=False, help='Use unregistered dataset')
     parser.add_argument('--eval_only',action='store_true',help='only evaluate given checkpoint')
+    parser.add_argument('--train_set',action='store_true',help='if specified with eval_only, they evaluate the model on the train set and not the test set')
     parser.add_argument('--gpu_ids',type=str, default="0",help='type of input to the network')
     parser.add_argument('--input_channels', type=int, default= 3)
     parser.add_argument('--classes', type=int, default= 1)
