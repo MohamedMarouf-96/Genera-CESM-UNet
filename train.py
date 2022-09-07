@@ -4,7 +4,8 @@ import logging
 import os
 import sys
 from pathlib import Path
-
+from collections import OrderedDict
+from PIL import Image
 import numpy as np
 import utils
 
@@ -18,6 +19,7 @@ from tqdm import tqdm
 
 from utils.data_loading import DukeBreastCancerMRIDataset, DBCMRIDataset
 from utils.kasper_datasets import KasperN4Dataset,KasperNormADataset,KasperNormBDataset
+from utils.cesm_datasets import CESM
 from utils.dice_score import dice_loss
 from evaluate import evaluate, evaluate_metrics
 from unet_local import UNet3d
@@ -27,7 +29,7 @@ from utils.my_collate_fn import my_collate_fn
 from utils.balanced_sampling import get_balanced_weighted_sampler, ClassBalancedRandomSampler
 import torchdatasets as td
 
-dir_root = Path('/data/')
+dir_root = Path('/workspace/CDD-CESM-Dataset/dataset')
 
 def evaluate_net(net,
                  net_single_device,
@@ -75,43 +77,14 @@ def train_net(net,
               save_checkpoint: bool = True,
               amp: bool = False):
     # 1. Create dataset
-    if args.dataset == 'duke3d' :
-        train_set = DukeBreastCancerMRIDataset(dir_root, 'train', args=args)
-        val_set = DukeBreastCancerMRIDataset(dir_root, 'val', args=args)
-        n_train = len(train_set)
-        n_val = len(val_set)
-
-    elif args.dataset == 'duke2d' :
-        train_set = DBCMRIDataset(dir_root, 'train', dataset_mode = args.dataset_mode)
-        val_set = DBCMRIDataset(dir_root, 'val', dataset_mode = args.dataset_mode)
-        n_train = len(train_set)
-        n_val = len(val_set)
-
-    elif args.dataset == 'kaspernormA' :
-        train_set = KasperNormADataset(dir_root, 'train', args = args)
-        val_set = KasperNormADataset(dir_root, 'val', args = args)
+    if args.dataset == 'cesm' :
+        train_set = CESM(dir_root, 'train', args = args)
+        val_set = CESM(dir_root, 'val', args = args)
         n_train = len(train_set)
         n_val = len(val_set)
         train_set = td.datasets.WrapDataset(train_set).cache(td.cachers.Pickle(Path("./cache_train")))
         val_set = td.datasets.WrapDataset(val_set).cache(td.cachers.Pickle(Path("./cache_val")))
 
-
-    elif args.dataset == 'kaspern4' :
-        train_set = KasperN4Dataset(dir_root, 'train', args = args)
-        val_set = KasperN4Dataset(dir_root, 'val', args = args)
-        n_train = len(train_set)
-        n_val = len(val_set)
-        train_set = td.datasets.WrapDataset(train_set).cache(td.cachers.Pickle(Path("./cache_train")))
-        val_set = td.datasets.WrapDataset(val_set).cache(td.cachers.Pickle(Path("./cache_val")))
-        
-    elif args.dataset == 'kaspernormb' :
-        train_set = KasperNormBDataset(dir_root, 'train', args = args)
-        val_set = KasperNormBDataset(dir_root, 'val', args = args)
-        n_train = len(train_set)
-        n_val = len(val_set)
-        train_set = td.datasets.WrapDataset(train_set).cache(td.cachers.Pickle(Path("./cache_train")))
-        val_set = td.datasets.WrapDataset(val_set).cache(td.cachers.Pickle(Path("./cache_val")))
-        
     else :
         raise Exception('dataset not defined')
 
@@ -166,10 +139,23 @@ def train_net(net,
     for epoch in range(epochs):
         net.train()
         epoch_loss = 0
+        # for batch in train_loader :
+        #     pass
+        # exit()
         with tqdm(total=len(train_loader) * batch_size, desc=f'Epoch {epoch + 1}/{epochs}', unit='img') as pbar:
             for batch in train_loader:
                 images = batch['image']
                 true_masks = batch['mask']
+
+                for j in range(len(images)) :
+                    combined = [utils.tensor2im(true_masks[j] * 2 - 1),utils.tensor2im(images[j])]
+                    combined =  np.concatenate(combined,axis=1)
+                                        
+                    # visuals = OrderedDict([('input_label', util.tensor2label(data['label'][0], opt.label_nc)),
+                    #                        ('synthesized_image', util.tensor2im(generated.data[0])),
+                    #                        ('real_image', util.tensor2im(data['image'][0]))])
+                    image_pil = Image.fromarray(combined)
+                    image_pil.save(f'./test_image_{j}_{batch["class"][j]}.png')
 
                 assert images.shape[1] == net_single_device.n_channels, \
                     f'Network has been defined with {net_single_device.n_channels} input channels, ' \

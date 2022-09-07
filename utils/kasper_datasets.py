@@ -204,12 +204,16 @@ class KasperNormADataset():
         self.dataset_size = len(self.slice_numbers_per_example)
 
         if self.args.augment :
+            # self.augmentation_transform = tio.OneOf([
+            #     tio.RandomFlip((1)),
+            #     tio.RandomFlip((0))
+            # ])
             self.augmentation_transform = tio.Compose([
-                tio.RandomFlip((1,2)),
-                tio.RandomAffine(
-                    scales=(0.2, 0.2,0),
-                    degrees=(15,15,0),
-                    translation=(32,32,0),),
+                tio.RandomFlip((0,1)),
+                # tio.RandomAffine(
+                #     scales=(0.2, 0.2,0),
+                #     degrees=(15,15,0),
+                #     translation=(32,32,0),),
                 # tio.RandomBiasField()
                 ])
     
@@ -408,12 +412,10 @@ class KasperNormADataset():
             'mask': tio.LabelMap(tensor = sample['mask'].unsqueeze(-1)),
         }
         subject = tio.Subject(subject_dict)
-        print(subject['image'].tensor.max())
-        print(subject['mask'].tensor.min())
         subject_augmented = self.augmentation_transform(subject)
-        print(subject_augmented['image'].tensor.max())
-        print(subject_augmented['mask'].tensor.min())
-        exit()
+        sample['image'] = subject_augmented['image'].tensor.squeeze(-1)
+        sample['mask'] = subject_augmented['mask'].tensor.squeeze(-1)
+        return sample
 
         
 class KasperN4Dataset():
